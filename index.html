@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Initialize TailwindCSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Open Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9fafb;
+            /* Light theme background */
+        }
+
+        .question-card {
+            width: 600px;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .option {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 1rem;
+        }
+
+        .submit-result {
+            background-color: #ffffff;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #eaeaea;
+            text-align: center;
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        .jump-to-result {
+            display: block;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #fef3c7;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #fde68a;
+        }
+    </style>
+</head>
+
+<body class="text-gray-900 font-sans">
+    <div id="app" class="question-card">
+        <div class="question" v-if="currentQuestion">
+            <div class="question-number mb-4 text-lg font-bold">
+                第 {{ currentQuestion.question_number }} 題
+            </div>
+            <div class="question-text mb-4 text-xl font-bold">{{ currentQuestion.question }}</div>
+            <form @submit.prevent="submitAnswer">
+                <div class="options text-lg font-bold">
+                    <label class="option" v-for="(option, key) in currentQuestion.options" :key="key">
+                        <input class="mr-2 w-4 h-4" type="checkbox" :value="key" v-model="selectedOptions" /> {{ key }}:
+                        {{ option }}
+                    </label>
+
+
+                </div>
+                <div class="flex row pb-2 space-x-4">
+                    <button type="button" @click="goBack"
+                        class="back-button px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400 text-lg font-bold">
+                        上一題
+                    </button>
+                    <button type="submit"
+                        class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 text-lg font-bold">
+                        下一題
+                    </button>
+                    <button type="button" @click="jumpToResult"
+                        class="jump-to-result px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 text-lg font-bold">
+                        直接繳交
+                    </button>
+                </div>
+            </form>
+            <div class="submit-result" v-if="showResult">
+                <p v-if="isCorrect" class="text-green-600 text-lg font-bold">正確!</p>
+                <p v-else class="text-red-600 text-lg font-bold">
+                    錯誤，正確答案應為 {{ currentQuestion.correct_answer }}.
+                </p>
+            </div>
+        </div>
+        <div class="pt-60 result" v-else>
+
+            <div class="result-text mb-4 text-green-600 text-lg font-bold">
+                測驗結束!
+            </div>
+            <div class="score text-lg font-bold">
+                你的答對率: {{ score }}/{{ questions.length }} 題
+            </div>
+            <div class="wrong-answers " v-if="wrongAnswers.length > 0">
+                <h3 class="text-lg font-semibold mb-2">以下是你答錯的題目:</h3>
+                <div v-for="wrongAnswer in wrongAnswers" :key="wrongAnswer.question_number" class="card">
+                    <div>
+                        第 {{ wrongAnswer.question_number }} 題 : {{ wrongAnswer.question
+                        }}
+                    </div>
+                    <div>你的答案 : {{ wrongAnswer.selected_answer }}</div>
+                    <div>正確答案 : {{ wrongAnswer.correct_answer }}</div>
+                </div>
+            </div>
+            <button @click="restartExam"
+                class="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 text-lg font-bold">
+                重新開始測驗
+            </button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp, ref } = Vue;
+        const selectedOptions = ref([]);
+
+        createApp({
+            setup() {
+                var default_questions = ref([
+                    {
+                        "question_number": 1,
+                        "question": "有關比特幣之描述，以下那些是正確的？(多選題)",
+                        "options": {
+                            "A": "不可偽造比特幣",
+                            "B": "沒有通貨膨脹的問題",
+                            "C": "可改交易內容",
+                            "D": "沒有發行單位",
+                        },
+                        "correct_answer": [
+                            "A",
+                            "B",
+                            "D"
+                        ]
+                    },
+                    {
+                        "question_number": 2,
+                        "question": "何謂「智能合約」？",
+                        "options": {
+                            "A": "具有智慧的程式",
+                            "B": "可在區塊鏈上執行的程式",
+                            "C": " 此合約可以累積智能。",
+                            "D": "此合約具有人工智慧"
+                        },
+                        "correct_answer": [
+                            "B",
+                        ]
+                    },
+                    {
+                        "question_number": 3,
+                        "question": "以Solidity開發智能合約，通常第一行是 pragma solidity ^0.4.17; 請問這一行表示什麼？",
+                        "options": {
+                            "A": "表示此智能合約的類別種類",
+                            "B": "表示此智能合約的建構子的版本要求",
+                            "C": "表示此智能合約的編譯器的版本要求",
+                            "D": "表示此智能合約的繼承世代。",
+
+                        },
+                        "correct_answer": ["C"]
+                    },
+                    {
+                        "question_number": 4,
+                        "question": "以太坊區塊鏈因具有智能合約之功能，所以它有兩種帳戶，請問是哪兩種帳戶？",
+                        "options": {
+                            "A": "內部帳戶",
+                            "B": "外部帳戶",
+                            "C": "混合帳戶",
+                            "D": " 合約帳戶"
+                        },
+                        "correct_answer": ["B", "D"]
+                    },
+                    {
+                        "question_number": 5,
+                        "question": "要取出「電子錢包」中的加密貨幣，請問應該用該「電子錢包」的什麼金鑰進行解密取出？",
+                        "options": {
+                            "A": ". 密碼",
+                            "B": "申請者名稱",
+                            "C": "私密金鑰",
+                            "D": "公開金鑰"
+                        },
+                        "correct_answer": ["C"]
+                    },
+                    {
+                        "question_number": 6,
+                        "question": "比特幣是利用「何種」過程所產生的，它沒有發行單位，它是透過P2P網路的參與者來對比特幣進行確認，因此政府或任何人都無法操控比特幣的貨幣總量，也不會有通貨膨脹的問題產生？",
+                        "options": {
+                            "A": "交易",
+                            "B": "會議",
+                            "C": "鑄造",
+                            "D": "挖礦"
+                        },
+                        "correct_answer": ["D"]
+                    },
+                    {
+                        "question_number": 7,
+                        "question": "以太坊之外部帳戶的公鑰長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "60",
+                            "B": "64",
+                            "C": "40",
+                            "D": "32"
+
+                        },
+                        "correct_answer": ["D"]
+                    },
+                    {
+                        "question_number": 8,
+                        "question": "有多種語言可以用來開發以太坊Smart Contract，請問本課程是採用哪一種語言？",
+                        "options": {
+                            "A": "SHA-128",
+                            "B": "SHA-512",
+                            "C": "SHA-200",
+                            "D": "Solidity"
+                        },
+                        "correct_answer": ["D"]
+                    },
+                    {
+                        "question_number": 9,
+                        "question": "在Remix 智能合約之開發環境中，若要使用自建私有鏈網絡，則應該Environment選用哪一種",
+                        "options": {
+                            "A": "Solidity Block",
+                            "B": "JavaScript VM",
+                            "C": " Web3 Provider。",
+                            "D": " Injected Web3。"
+                        },
+                        "correct_answer": ["C"]
+                    },
+                    {
+                        "question_number": 10,
+                        "question": "在Remix 智能合約之開發環境中，共有三種不同的區塊鏈網絡，請問是哪三種？",
+                        "options": {
+                            "A": "Solidity Block",
+                            "B": "Web3 Provider",
+                            "C": "JavaScript VM",
+                            "D": "Injected Web3"
+                        },
+                        "correct_answer": ["B", "C", "D"]
+                    },
+                    {
+                        "question_number": 11,
+                        "question": "有關以太坊區塊鏈之外部帳戶的描述，以下那些是正確的？(多選題)",
+                        "options": {
+                            "A": "外部帳戶的私鑰 (Account Private Key)是用來發送交易和簽名",
+                            "B": "外部帳戶擁有私鑰、公鑰、及位址。",
+                            "C": "外部帳戶的公鑰 (Account Public Key)是用來驗證交易的真假",
+                            "D": "外部帳戶的位址 (Account Address)長度為30Bytes(相當於十六進制的60位)"
+                        },
+                        "correct_answer": ["A", "B", "C"]
+                    },
+                    {
+                        "question_number": 12,
+                        "question": "為建置Ethereum 區塊鏈環境，可採用以下哪一套件安裝，即可獲得節點及使用者介面？",
+                        "options": {
+                            "A": "Go",
+                            "B": "Geth",
+                            "C": "Get",
+                            "D": "Party",
+                        },
+                        "correct_answer": ["B"]
+                    },
+                    {
+                        "question_number": 13,
+                        "question": "比特幣是利用密碼技術來控制貨幣的生產和轉移，故被稱之為哪一種類型貨幣？",
+                        "options": {
+                            "A": " 塑膠貨幣",
+                            "B": "加密貨幣",
+                            "C": "移動貨幣",
+                            "D": "生成貨幣"
+                        },
+                        "correct_answer": ["B"]
+                    },
+                    {
+                        "question_number": 14,
+                        "question": "以太坊之外部帳戶的私鑰長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": " 60",
+                            "B": "40",
+                            "C": "32",
+                            "D": "64",
+
+                        },
+                        "correct_answer": ["D"]
+                    },
+                    {
+                        "question_number": 15,
+                        "question": "Ganache(舊名稱TestRPC)提供快速結塊、快速確認區塊功能之(純記憶體)私有測試鏈網絡，請問它預設提供10測試帳戶，每一帳戶有多少ETH？",
+                        "options": {
+                            "A": "10",
+                            "B": "500",
+                            "C": "100",
+                            "D": "200",
+
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    ,
+                    {
+                        "question_number": 16,
+                        "question": "以下有關Slidity語言的描述，那些是正確的？",
+                        "options": {
+                            "A": "Solidity 中可用浮點數",
+                            "B": "Solidity 中可用中文",
+                            "C": "Solidity 中的虛擬貨幣單位通常採用ether",
+                            "D": "Solidity 中的時間是從1970年1月1日開始起算，並以秒為單位。"
+                        },
+                        "correct_answer": ["C", "D"]
+                    },
+                    {
+                        "question_number": 17,
+                        "question": "比特幣(Bitcoin)是一種目前被使用最廣泛的電子貨幣之一，2009年是由誰以開源軟體(Open Source Software)形式推出的？",
+                        "options": {
+                            "A": "庫克",
+                            "B": " 比爾蓋茲",
+                            "C": "祖克柏",
+                            "D": "中本聰"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    ,
+                    {
+                        "question_number": 18,
+                        "question": "以下是有關geth console的區塊及節點指令之用法，那些是正確的？(多選題)",
+                        "options": {
+                            "A": "admin.nodeInfo 可以查看目前連線之節點的各種資訊",
+                            "B": "eth.blockNumber 可以查看目前區塊總數",
+                            "C": "admin.peerCount 可以查看與此節點相連之其他節點數目",
+                            "D": "eth.getBlock(0) 可以取得創始區塊"
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    }
+                    ,
+                    {
+                        "question_number": 19,
+                        "question": "在Remix 智能合約之開發環境中，若要使用官方測試鏈網絡，則應該Environment選用哪一種？",
+                        "options": {
+                            "A": " Injected Web3",
+                            "B": "Solidity Block",
+                            "C": "Web3 Provider",
+                            "D": "JavaScript VM (London or Berlin)"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    ,
+
+                    {
+                        "question_number": 20,
+                        "question": "在比特幣或以太幣之區塊鏈中，產生區塊所用到的雜湊函數主要是哪一種？",
+                        "options": {
+                            "A": "SHA-200",
+                            "B": "SHA-256。",
+                            "C": "SHA-128",
+                            "D": "SHA-512",
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 21,
+                        "question": "所謂比特幣之工作量證明，即在尋找滿足每一區塊之Difficulty的甚麼東西？",
+                        "options": {
+                            "A": "Merker Tree Hash",
+                            "B": "NONCE",
+                            "C": "TimStamp",
+                            "D": "Transaction"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 22,
+                        "question": "Hash Tree是一個儲存Hash值的樹，在P2P網路中，下載資料之前需先從可信節點先獲得文件的MerkleTree，一旦獲得了樹根(MerkleRoot)，就可通過Hash值以驗證什麼資料的完整性？",
+                        "options": {
+                            "A": "Timestamp",
+                            "B": "困難度",
+                            "C": "交易",
+                            "D": "NONCE"
+                        },
+                        "correct_answer": ["C"]
+                    },
+                    {
+                        "question_number": 23,
+                        "question": "當你要開發 DApp 時，需要提供兩個數值，才能夠跟智能合約溝通，請問是哪兩種數值？(多選題)",
+                        "options": {
+                            "A": "智能合約的 ByteCode",
+                            "B": "智能合約的 Source Code",
+                            "C": " 智能合約的位址",
+                            "D": " 智能合約的位址"
+                        },
+                        "correct_answer": ["C", "D"]
+                    }, {
+                        "question_number": 24,
+                        "question": "為什麼比特幣的數量不會無限制成長，而會趨近一個固定數值，不會有通膨的問題？",
+                        "options": {
+                            "A": " 因為比特幣發行總量有人在操控",
+                            "B": "因為比特幣發行總量設計成固定的。",
+                            "C": "因為比特幣發行總量有中介第三方控管",
+                            "D": " 因為比特幣發行總量受制於交易量",
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 25,
+                        "question": "利用「電子錢包」之什麼金鑰可加密虛擬貨幣，將貨幣存至「電子錢包」中？",
+                        "options": {
+                            "A": "公開金鑰",
+                            "B": "申請者名稱",
+                            "C": "私密金鑰",
+                            "D": "密碼"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 26,
+                        "question": "在啟動節點之指令中，其中有關參數的使用，以下那些描述是正確的？(多選題)",
+                        "options": {
+                            "A": "port是網絡監聽埠，默認是30303",
+                            "B": "console可以啟動命令行模式",
+                            "C": "rpc是用來啟動rpc通信，以便進行智能合約的部屬和調試",
+                            "D": "rpcapi可決定允許那些API通過rpc進入",
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    }
+                    , {
+                        "question_number": 27,
+                        "question": "以下是有關geth console的挖礦指令之用法，那些是正確的？(多選題)",
+                        "options": {
+                            "A": "miner.start(2) 表示開始挖礦，並設執行緒為2",
+                            "B": "eth.mining 用來確認是否有在挖礦",
+                            "C": "miner.sleep() 表示暫停挖礦",
+                            "D": "miner.stop() 表示停止挖礦",
+                        },
+                        "correct_answer": ["A", "B", "D"]
+                    }
+                    , {
+                        "question_number": 28,
+                        "question": "以下有關Slidity語言的描述，那些是正確的",
+                        "options": {
+                            "A": "Solidity 是動態型語言，編譯後可以在 EVM 上執行",
+                            "B": "Solidity 語言仍處於持續開發階段，變動非常的頻繁",
+                            "C": "Solidity是一種合約式導向的程式語言，可用來撰寫智能合約。",
+                            "D": "EVM (Ethereum Virtual Machine)中文為「以太坊虛擬機」，是智能合約的執行環境"
+                        },
+                        "correct_answer": ["B", "C", "D"]
+                    }
+                    , {
+                        "question_number": 29,
+                        "question": "最早初期比特幣之挖礦，每個成功創造一個新區塊的人就可以獲得多少比特幣？",
+                        "options": {
+                            "A": "150BIT",
+                            "B": "12.5BIT",
+                            "C": "25BIT",
+                            "D": "50BIT",
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 30,
+                        "question": "以太坊之合約帳戶的位址長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "40",
+                            "B": "60",
+                            "C": "32",
+                            "D": "64",
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 31,
+                        "question": "在初始化創世區塊指令中，可使用哪一參數來指定初始區塊位置？",
+                        "options": {
+                            "A": "init",
+                            "B": "block",
+                            "C": "chain",
+                            "D": "datadir",
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 32,
+                        "question": "難度(Difficulty)決定了礦工在挖礦時的難度，當礦工經過努力產出一個區塊時其 Block Hash必須小於難度，此區塊才是合法區塊，礦工這種努力稱之為？",
+                        "options": {
+                            "A": "Proof of Work",
+                            "B": "Proof of Block",
+                            "C": "Proof of Mining",
+                            "D": "Proof of Stake"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 33,
+                        "question": "以太坊之智能合約和一般程式是不一樣，請問以下那些是智能合約和一般程式不同之處？(多選題)",
+                        "options": {
+                            "A": "智能合約部署之後不能修改",
+                            "B": "智能合約寫入資料需要成本",
+                            "C": "智能合約需要有固定主機進行執行工作",
+                            "D": ". 智能合約整合金流容易"
+                        },
+                        "correct_answer": ["A", "B", "D"]
+                    }
+                    , {
+                        "question_number": 34,
+                        "question": "對於比特幣區塊而言，要產生每一區塊的HASH值，其輸入包含哪些項目(多選題)",
+                        "options": {
+                            "A": "Previous Block Hash。",
+                            "B": "Version。",
+                            "C": "Timestamp",
+                            "D": "Merker Tree Hash"
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    }, {
+                        "question_number": 35,
+                        "question": " 以太坊之外部帳戶的位址長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "64",
+                            "B": "40",
+                            "C": "60",
+                            "D": "32"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 36,
+                        "question": "以下是有關geth console的帳戶餘額及交易指令之用法，那些是正確的？(多選題)",
+                        "options": {
+                            "A": "txpool.status 可查看待決的交易",
+                            "B": " personal.unlockAccount(eth.accounts[0]) 可將eth.accounts[0]解鎖，會被要求輸入密碼",
+                            "C": "eth.getTransaction(XXXXXX) 可以取得交易號碼為XXXXXX之交易收據。",
+                            "D": "eth.getBalance(eth.accounts[0]) 可用來查看accounts[0]的帳戶餘額"
+                        },
+                        "correct_answer": ["A","B","D"]
+                    }
+                    , {
+                        "question_number": 37,
+                        "question": "以太坊之外部帳戶的英文簡稱為何？",
+                        "options": {
+                            "A": "EOD",
+                            "B": "EOA",
+                            "C": "DOE",
+                            "D": "DOA"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 38,
+                        "question": "以太坊區塊鏈網絡之節點，其礦工預設是哪一位使用者？",
+                        "options": {
+                            "A": "節點上第二位使用者",
+                            "B": "節點上第十位使用者",
+                            "C": "節點上第一位使用者",
+                            "D": "節點上第二十位使用者"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 39,
+                        "question": "比特幣的挖礦程序，其中參與挖礦者必須隨時在網路上監聽，把最新區塊的雜湊值和最新收到的交易，以及自選之NONCE合併成一新區塊，並對此區塊進行雜湊值計算，若雜湊值滿足Difficulty，則完成挖礦工作，並迅速將此先的區塊廣播出去，取得更多節點的對此區塊之確認，以完成此區塊掛鏈動作。上述尋找滿足條件之NONCE是採用甚麼方法？",
+                        "options": {
+                            "A": "簡化法",
+                            "B": "暴力法",
+                            "C": "估計法",
+                            "D": "推論法"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 40,
+                        "question": "在 geth console中，要新增一使用者帳號，應使用什麼指令？",
+                        "options": {
+                            "A": "personal.listAccounts",
+                            "B": " eth.accounts",
+                            "C": "personal.newAccount",
+                            "D": "newAccount"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 41,
+                        "question": "有關以太坊區塊鏈之合約帳戶的描述，以下那些是正確的？",
+                        "options": {
+                            "A": "合約帳戶可用以收取其他帳戶轉來的以太幣",
+                            "B": "每個智能合約在部署後，就會產一個對應的合約帳戶",
+                            "C": "合約帳戶擁有公鑰及私鑰",
+                            "D": "合約帳戶之原文為Contract Account，簡稱CA"
+                        },
+                        "correct_answer": ["A","B","D"]
+                    }
+                    , {
+                        "question_number": 42,
+                        "question": "在Remix 智能合約之開發環境中，若要使用內建虛擬網絡，則應該Environment選用哪一種？",
+                        "options": {
+                            "A": "Web3 Provider",
+                            "B": "JavaScript VM(London or Berlin)",
+                            "C": "Solidity Block",
+                            "D": "Injected Web3"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 43,
+                        "question": "有關智能合約和一般程式的差異，以下那些是正確的說法？",
+                        "options": {
+                            "A": " 智能合約寫入資料需要成本",
+                            "B": "智能合約需要有固定主機儲存",
+                            "C": "智能合約整合金流較容易",
+                            "D": "智能合約部署之後不能修改"
+                        },
+                        "correct_answer": ["A","C","D"]
+                    }
+                    , {
+                        "question_number": 44,
+                        "question": "在啟動節點之指令中，其中有關參數的使用，以下那些描述是正確的？(多選題)",
+                        "options": {
+                            "A": "networkid=42表示公有鏈網絡",
+                            "B": "networkid用於設置當前區塊鏈網路的ID",
+                            "C": "maxpeers可以限制至多有幾個節點連接到你的節點",
+                            "D": "nodiscover可確保你的節點不會被自動添加節點的人發現"
+                        },
+                        "correct_answer": ["B","C","D"]
+                    }
+                    , {
+                        "question_number": 45,
+                        "question": "在 geth console中，要查看礦工帳號，應使用什麼指令？",
+                        "options": {
+                            "A": "miner",
+                            "B": "setEtherbase",
+                            "C": "eth.coin",
+                            "D": "eth.coinbase"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 46,
+                        "question": "有關智能合約編輯器Remix的描述，以下那些是正確的？(多選題)",
+                        "options": {
+                            "A": "使用本機版Remix，其網址為 http://localhost:8888",
+                            "B": "Remix線上版網址為 http://remix.ethereum.org",
+                            "C": "要使用 Remix 發布智能合約至以太坊區塊鏈(包含測試鏈、主鏈)，必須透過電子錢包(如MetaMask)",
+                            "D": "Remix有本機版及線上版兩種版本"
+                        },
+                        "correct_answer": ["B","C","D"]
+                    }
+                    , {
+                        "question_number": 47,
+                        "question": "公有鏈網絡的networked為何？",
+                        "options": {
+                            "A": "30",
+                            "B": "10",
+                            "C": "1",
+                            "D": "20"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 48,
+                        "question": "有關電子錢包 MetaMask的描述，以下那些是正確的？(多選題)",
+                        "options": {
+                            "A": "Proof of Work",
+                            "B": "Proof of Block",
+                            "C": "Proof of Mining",
+                            "D": "Proof of Stake"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 49,
+                        "question": "有一Solidity智能合約如下，請問有關此合約，下列選項是正確的 https://cdn.discordapp.com/attachments/672820483862953994/1231254968191684638/image.png?ex=66364a8c&is=6623d58c&hm=bac61bdd532f601fb8c2c2342214788c74336fffb94fa3ad69cd538ef282b1d2&",
+                        "options": {
+                            "A": "第1列 宣告此合約的compiler的版本，必須為大於等於0.4.24，小於0.5",
+                            "B": "第3列 是合約內部的狀態變數宣告",
+                            "C": "第7列 定義函數是公開的、只有檢視不挖礦、有傳回值",
+                            "D": "第四列 是建構子宣告定義"
+                        },
+                        "correct_answer": ["A" , "B" , "C" , "D"]
+                    }
+                    , {
+                        "question_number": 50,
+                        "question": "首次數位貨幣公開募資，其英文簡稱為何？",
+                        "options": {
+                            "A": "IOI",
+                            "B": "ICO",
+                            "C": "ICE",
+                            "D": "IEO"
+                        },
+                        "correct_answer": ["B"]
+                    }
+
+
+
+
+
+
+                    // Add more questions as needed
+                ]);
+
+                //// random shuffle questions ////
+
+                function shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+                    }
+                }
+
+                function randomizeQuiz(quizRef) {
+                    const quiz = quizRef.value;
+
+                    // Shuffle the entire quiz
+                    shuffleArray(quiz);
+
+                    quiz.forEach((question, index) => {
+                        // Update the question number
+                        question.question_number = index + 1;
+
+                        // Store the correct option values before shuffling
+                        const correctOptionValues = question.correct_answer.map(answer => question.options[answer]);
+
+                        // Extract options values and shuffle them
+                        const optionsValues = Object.values(question.options);
+                        shuffleArray(optionsValues);
+
+                        // Assign shuffled values back to the keys
+                        Object.keys(question.options).forEach((key, idx) => {
+                            question.options[key] = optionsValues[idx];
+                        });
+
+                        // Update correct answer keys based on shuffled options
+                        question.correct_answer = correctOptionValues.map(value => {
+                            return Object.keys(question.options).find(key => question.options[key] === value);
+                        });
+                    });
+                }
+
+
+
+
+                randomizeQuiz(default_questions);
+                console.log(default_questions);
+                // Now, default_questions is already randomized
+                let questions = default_questions;
+                ////
+                const currentQuestionIndex = ref(0);
+                const currentQuestion = ref(
+                    questions.value[currentQuestionIndex.value]
+                );
+                // const selectedOption = ref("");
+                const score = ref(0);
+                const showResult = ref(false);
+                const isCorrect = ref(false);
+                const wrongAnswers = ref([]);
+
+                function submitAnswer() {
+                    showResult.value = true;
+                    const correctOptions = currentQuestion.value.correct_answer;
+
+                    const isCorrectAnswer = correctOptions.every(option => selectedOptions.value.includes(option)) &&
+                        selectedOptions.value.every(option => correctOptions.includes(option));
+
+                    if (isCorrectAnswer) {
+                        isCorrect.value = true;
+                        score.value++;
+                    } else {
+                        isCorrect.value = false;
+                        // Check if the current question is already in the wrongAnswers array
+                        const alreadyExists = wrongAnswers.value.some(wrongAnswer =>
+                            wrongAnswer.question_number === currentQuestion.value.question_number
+                        );
+
+                        if (!alreadyExists) {
+                            wrongAnswers.value.push({
+                                ...currentQuestion.value,
+                                selected_answer: selectedOptions.value.join(", "),
+                            });
+                        }
+                    }
+
+                    setTimeout(() => {
+                        nextQuestion();
+                        selectedOptions.value = []; // Ensure selected options are reset
+                    }, 1000);
+                }
+
+
+                function nextQuestion() {
+                    if (currentQuestionIndex.value < questions.value.length - 1) {
+                        currentQuestionIndex.value++;
+                        currentQuestion.value = questions.value[currentQuestionIndex.value];
+                        showResult.value = false;
+                        isCorrect.value = false;
+                    } else {
+                        currentQuestion.value = null;
+                    }
+
+                }
+
+                function goBack() {
+                    if (currentQuestionIndex.value > 0) {
+                        currentQuestionIndex.value--;
+                        currentQuestion.value =
+                            questions.value[currentQuestionIndex.value];
+                        // selectedOption.value = "";
+                        showResult.value = false;
+                        isCorrect.value = false;
+                    }
+                }
+
+                function jumpToResult() {
+                    currentQuestion.value = null;
+                }
+
+                function restartExam() {
+                    selectedOptions.value = []; // Add this line
+
+                    // Reshuffle the questions
+                    randomizeQuiz(questions);
+
+                    // Reset the quiz state
+                    currentQuestionIndex.value = 0;
+                    currentQuestion.value = questions.value[currentQuestionIndex.value];
+                    // selectedOption.value = "";
+                    score.value = 0;
+                    showResult.value = false;
+                    isCorrect.value = false;
+                    wrongAnswers.value = [];
+                }
+
+
+
+                return {
+                    questions,
+                    currentQuestion,
+                    selectedOptions,
+                    submitAnswer,
+                    goBack,
+                    jumpToResult,
+                    score,
+                    showResult,
+                    isCorrect,
+                    wrongAnswers,
+                    restartExam,
+                };
+            },
+        }).mount("#app");
+    </script>
+</body>
+
+</html>
