@@ -151,373 +151,367 @@
                 var default_questions = ref([
                     {
                         "question_number": 1,
-                        "question": "有關比特幣之描述，以下那些是正確的？(多選題)",
+                        "question": "Solidity智能合約的第一行是版本宣告，請問下列那些是正確的寫法？ (多選題)",
                         "options": {
-                            "A": "不可偽造比特幣",
-                            "B": "沒有通貨膨脹的問題",
-                            "C": "可改交易內容",
-                            "D": "沒有發行單位",
+                            "A": "pragma solidity 0.5.0;",
+                            "B": "Pragma solidity 0.4.20;",
+                            "C": "pragma solidity ^0.4.22;",
+                            "D": "Solidity ^0.4.21;"
                         },
-                        "correct_answer": [
-                            "A",
-                            "B",
-                            "D"
-                        ]
+                        "correct_answer": ["A", "C"]
                     },
                     {
                         "question_number": 2,
-                        "question": "何謂「智能合約」？",
+                        "question": "有一solidity程式碼片段如右，struct Member{ string mbrName; uint mbrAge; } mapping(uint => Member) public mbrHash; ，針對此一程式片段請問下列那些選項是正確的？[^1^][1] (多選題)",
                         "options": {
-                            "A": "具有智慧的程式",
-                            "B": "可在區塊鏈上執行的程式",
-                            "C": " 此合約可以累積智能。",
-                            "D": "此合約具有人工智慧"
+                            "A": "mbrHash如同是資料庫中的一張資料表",
+                            "B": "若是 uint id = 3; string name = \"John\"; uint age = 24; 則可以建構 mbrHash[id] = Member({mbrName:name, mbrAge:age});",
+                            "C": "在solidity智能合約中，為了模擬一資料表，通常結構型別會與映射型別一起搭配使用",
+                            "D": "mbrHash是映射型別變數"
                         },
-                        "correct_answer": [
-                            "B",
-                        ]
+                        "correct_answer": ["A", "B", "C", "D"]
                     },
                     {
                         "question_number": 3,
-                        "question": "以Solidity開發智能合約，通常第一行是 pragma solidity ^0.4.17; 請問這一行表示什麼？",
+                        "question": "下列有關陣列(Array)的敘述，何者有誤?",
                         "options": {
-                            "A": "表示此智能合約的類別種類",
-                            "B": "表示此智能合約的建構子的版本要求",
-                            "C": "表示此智能合約的編譯器的版本要求",
-                            "D": "表示此智能合約的繼承世代。",
+                            "A": "陣列可以在宣告時指定長度，也可以動態可變長度",
+                            "B": "對於存儲在 memory 的陣列來說，如果它被宣告 public，則其元素不能是映射類型",
+                            "C": "對存儲在 storage 的陣列來說，其元素類型可以是任意的",
+                            "D": "創建一個存儲在 memory 上的陣列，該陣列可以通過 成員.length 的值來修改陣列的大小。",
 
                         },
-                        "correct_answer": ["C"]
+                        "correct_answer": ["D"]
                     },
                     {
                         "question_number": 4,
-                        "question": "以太坊區塊鏈因具有智能合約之功能，所以它有兩種帳戶，請問是哪兩種帳戶？",
+                        "question": "以下有關Slidity語言的描述，那些是正確的？(多選題)",
                         "options": {
-                            "A": "內部帳戶",
-                            "B": "外部帳戶",
-                            "C": "混合帳戶",
-                            "D": " 合約帳戶"
+                            "A": "EVM (Ethereum Virtual Machine)中文為「以太坊虛擬機」，是智能合約的執行環境",
+                            "B": "Solidity 是動態型語言，編譯後可以在 EVM 上執行",
+                            "C": "Solidity 語言仍處於持續開發階段，變動非常的頻繁",
+                            "D": " Solidity是一種合約式導向的程式語言，可用來撰寫智能合約"
                         },
-                        "correct_answer": ["B", "D"]
+                        "correct_answer": ["A","C", "D"]
                     },
                     {
                         "question_number": 5,
-                        "question": "要取出「電子錢包」中的加密貨幣，請問應該用該「電子錢包」的什麼金鑰進行解密取出？",
+                        "question": "有一事件 event MyEvent(address indexed _from, uint myInt)，請問上述 indexed 是表示甚麼？",
                         "options": {
-                            "A": ". 密碼",
-                            "B": "申請者名稱",
-                            "C": "私密金鑰",
-                            "D": "公開金鑰"
+                            "A": "表示_from是索引欄位",
+                            "B": "表示_from 是數值型態",
+                            "C": "表示_from是特殊欄位",
+                            "D": "表示_from是位址型態"
                         },
-                        "correct_answer": ["C"]
+                        "correct_answer": ["A"]
                     },
                     {
                         "question_number": 6,
-                        "question": "比特幣是利用「何種」過程所產生的，它沒有發行單位，它是透過P2P網路的參與者來對比特幣進行確認，因此政府或任何人都無法操控比特幣的貨幣總量，也不會有通貨膨脹的問題產生？",
+                        "question": "參見檔案：Herent.sol，為何在 constructor(string memory _msg1)中，必須為參數_msg1加上memory？ https://cdn.discordapp.com/attachments/672820483862953994/1252302868564807822/0e7680e9cd50b76677e3b4f5c118531c.png?ex=6671b96e&is=667067ee&hm=1c7129bf513f2f90916b9e04bf0986d097f5d65c1cf8793b565e7b12520abc9e&",
                         "options": {
-                            "A": "交易",
-                            "B": "會議",
-                            "C": "鑄造",
-                            "D": "挖礦"
+                            "A": "因為_msg1是建構子的輸入參數，因只是短暫使用，故宣告為memory",
+                            "B": "因為_msg1是特殊型別，故必須宣告為memory",
+                            "C": "因為_msg1是合約中的重要參數，故必須宣告為memory",
+                            "D": "因為_msg1是用來設定狀態變數，故必須宣告為memory"
                         },
-                        "correct_answer": ["D"]
+                        "correct_answer": ["A"]
                     },
                     {
                         "question_number": 7,
-                        "question": "以太坊之外部帳戶的公鑰長度為幾位？(以16進制表示)",
+                        "question": "有關Solidity語言的描述，以下那些是正確的？(多選題)",
                         "options": {
-                            "A": "60",
-                            "B": "64",
-                            "C": "40",
-                            "D": "32"
+                            "A": "可以在 EVM 上執行",
+                            "B": "是靜態型語言",
+                            "C": "是一種合約式導向的程式語言",
+                            "D": "可以用來撰寫比特幣智能合約"
 
                         },
-                        "correct_answer": ["D"]
+                        "correct_answer": ["A", "B", "C",]
                     },
                     {
                         "question_number": 8,
-                        "question": "有多種語言可以用來開發以太坊Smart Contract，請問本課程是採用哪一種語言？",
+                        "question": "首次數位貨幣公開募資，其英文簡稱為何？",
                         "options": {
-                            "A": "SHA-128",
-                            "B": "SHA-512",
-                            "C": "SHA-200",
-                            "D": "Solidity"
+                            "A": "IOI",
+                            "B": "IEO",
+                            "C": "ICE",
+                            "D": "ICO"
                         },
                         "correct_answer": ["D"]
                     },
                     {
                         "question_number": 9,
-                        "question": "在Remix 智能合約之開發環境中，若要使用自建私有鏈網絡，則應該Environment選用哪一種",
+                        "question": "以太坊區塊鏈因具有智能合約之功能，所以它有兩種帳戶，請問是哪兩種帳戶？(多選題)",
                         "options": {
-                            "A": "Solidity Block",
-                            "B": "JavaScript VM",
-                            "C": " Web3 Provider。",
-                            "D": " Injected Web3。"
+                            "A": "外部帳戶",
+                            "B": "合約帳戶",
+                            "C": "內部帳戶",
+                            "D": "混合帳戶"
                         },
-                        "correct_answer": ["C"]
+                        "correct_answer": ["A", "B"]
                     },
                     {
                         "question_number": 10,
-                        "question": "在Remix 智能合約之開發環境中，共有三種不同的區塊鏈網絡，請問是哪三種？",
+                        "question": "在一智能合約中，假若 a 是一變數，則 delete a; 是代表甚麼意義？",
                         "options": {
-                            "A": "Solidity Block",
-                            "B": "Web3 Provider",
-                            "C": "JavaScript VM",
-                            "D": "Injected Web3"
-                        },
-                        "correct_answer": ["B", "C", "D"]
-                    },
-                    {
-                        "question_number": 11,
-                        "question": "有關以太坊區塊鏈之外部帳戶的描述，以下那些是正確的？(多選題)",
-                        "options": {
-                            "A": "外部帳戶的私鑰 (Account Private Key)是用來發送交易和簽名",
-                            "B": "外部帳戶擁有私鑰、公鑰、及位址。",
-                            "C": "外部帳戶的公鑰 (Account Public Key)是用來驗證交易的真假",
-                            "D": "外部帳戶的位址 (Account Address)長度為30Bytes(相當於十六進制的60位)"
-                        },
-                        "correct_answer": ["A", "B", "C"]
-                    },
-                    {
-                        "question_number": 12,
-                        "question": "為建置Ethereum 區塊鏈環境，可採用以下哪一套件安裝，即可獲得節點及使用者介面？",
-                        "options": {
-                            "A": "Go",
-                            "B": "Geth",
-                            "C": "Get",
-                            "D": "Party",
-                        },
-                        "correct_answer": ["B"]
-                    },
-                    {
-                        "question_number": 13,
-                        "question": "比特幣是利用密碼技術來控制貨幣的生產和轉移，故被稱之為哪一種類型貨幣？",
-                        "options": {
-                            "A": " 塑膠貨幣",
-                            "B": "加密貨幣",
-                            "C": "移動貨幣",
-                            "D": "生成貨幣"
-                        },
-                        "correct_answer": ["B"]
-                    },
-                    {
-                        "question_number": 14,
-                        "question": "以太坊之外部帳戶的私鑰長度為幾位？(以16進制表示)",
-                        "options": {
-                            "A": " 60",
-                            "B": "40",
-                            "C": "32",
-                            "D": "64",
-
+                            "A": "清除記憶體 a",
+                            "B": "刪除記憶體 a 內容為空白",
+                            "C": "刪除記憶體 a 內容為空白",
+                            "D": "還原記憶體 a 內容為0"
                         },
                         "correct_answer": ["D"]
                     },
                     {
-                        "question_number": 15,
-                        "question": "Ganache(舊名稱TestRPC)提供快速結塊、快速確認區塊功能之(純記憶體)私有測試鏈網絡，請問它預設提供10測試帳戶，每一帳戶有多少ETH？",
+                        "question_number": 11,
+                        "question": "在Solidity語言中，有關定長位元組陣列，下列哪些是合法的型態？(多選題)",
                         "options": {
-                            "A": "10",
-                            "B": "500",
-                            "C": "100",
-                            "D": "200",
+                            "A": "在Solidity語言中，有關定長位元組陣列，下列哪些是合法的型態？(多選題)",
+                            "B": "在Solidity語言中，有關定長位元組陣列，下列哪些是合法的型態？(多選題)",
+                            "C": "byte",
+                            "D": "bytes64"
+                        },
+                        "correct_answer": ["A", "B"]
+                    },
+                    {
+                        "question_number": 12,
+                        "question": "下列有關映射型別(mapping)的敘述，何者有誤？",
+                        "options": {
+                            "A": "映射型別有 length 成員，也提供迭代（iterable）",
+                            "B": "映射型別有 length 成員，也提供迭代（iterable）",
+                            "C": "它是一種「主鍵－資料」形式的資料結構",
+                            "D": "主鍵是唯一值，透過使用該唯一值便能夠取得對映的資料內容",
+                        },
+                        "correct_answer": ["A"]
+                    },
+                    {
+                        "question_number": 13,
+                        "question": "下列有關Solidity中各種函數之可見性，哪些是正確的？(多選題)",
+                        "options": {
+                            "A": " private - 僅在當前合約內才可訪問",
+                            "B": "private - 僅在當前合約內才可訪問",
+                            "C": "private - 僅在當前合約內才可訪問",
+                            "D": "internal - 僅在當前合約及所繼承的合約內，才可訪問"
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    },
+                    {
+                        "question_number": 14,
+                        "question": "下列有關陣列型別的敘述，何者有誤？",
+                        "options": {
+                            "A": " 對於 memory 陣列來說，陣列元素可以是 mapping 型別",
+                            "B": "對於 memory 陣列來說，陣列元素可以是 mapping 型別",
+                            "C": "對於 memory 陣列來說，陣列元素可以是 mapping 型別",
+                            "D": "對於 memory 陣列來說，陣列元素可以是 mapping 型別",
 
                         },
-                        "correct_answer": ["C"]
+                        "correct_answer": ["A"]
+                    },
+                    {
+                        "question_number": 15,
+                        "question": "現有一指令 uint128[] storage x ; 請問對於此指令之變數 x 的描述，下列哪些是正確的？(多選題)",
+                        "options": {
+                            "A": "x是元素個數不定的陣列變數",
+                            "B": "x是元素個數為128的陣列變數",
+                            "C": "x是元素個數為128的陣列變數",
+                            "D": "可以用指令 x.push(77)；將 整數 77 儲存至陣列 x 的第0個位置中",
+
+                        },
+                        "correct_answer": ["A"]
                     }
                     ,
                     {
                         "question_number": 16,
-                        "question": "以下有關Slidity語言的描述，那些是正確的？",
+                        "question": "有一Solidity智能合約如下，請問有關此合約，下列選項是正確的？ https://cdn.discordapp.com/attachments/672820483862953994/1252306112246710323/d25178caee5119830d16e246fc29de95.png?ex=6671bc73&is=66706af3&hm=3829e041bf36550e0e5a69ab606a326cf76ebdfa8768969981fd2c53cbeec00e&",
                         "options": {
-                            "A": "Solidity 中可用浮點數",
-                            "B": "Solidity 中可用中文",
-                            "C": "Solidity 中的虛擬貨幣單位通常採用ether",
-                            "D": "Solidity 中的時間是從1970年1月1日開始起算，並以秒為單位。"
+                            "A": "第3列 是合約內部的狀態變數宣告",
+                            "B": "第四列 是建構子宣告定義",
+                            "C": "第四列 是建構子宣告定義",
+                            "D": "第四列 是建構子宣告定義"
                         },
-                        "correct_answer": ["C", "D"]
+                        "correct_answer": ["A", "B", "C", "D"]
                     },
                     {
                         "question_number": 17,
-                        "question": "比特幣(Bitcoin)是一種目前被使用最廣泛的電子貨幣之一，2009年是由誰以開源軟體(Open Source Software)形式推出的？",
+                        "question": "以太坊之外部帳戶的英文簡稱為何？",
                         "options": {
-                            "A": "庫克",
-                            "B": " 比爾蓋茲",
-                            "C": "祖克柏",
-                            "D": "中本聰"
+                            "A": "DOE",
+                            "B": "DOA",
+                            "C": "EOA",
+                            "D": "EOD"
                         },
-                        "correct_answer": ["D"]
+                        "correct_answer": ["C"]
                     }
                     ,
                     {
                         "question_number": 18,
-                        "question": "以下是有關geth console的區塊及節點指令之用法，那些是正確的？(多選題)",
+                        "question": "下列是有關Solidity函數型態的敘述，哪些是正確的？(多選題)",
                         "options": {
-                            "A": "admin.nodeInfo 可以查看目前連線之節點的各種資訊",
-                            "B": "eth.blockNumber 可以查看目前區塊總數",
-                            "C": "admin.peerCount 可以查看與此節點相連之其他節點數目",
-                            "D": "eth.getBlock(0) 可以取得創始區塊"
+                            "A": "函數型態預設是 external，因此 external 可以省去",
+                            "B": "有兩個方式可以訪問函數，一種是直接用函數名，一種是 this.函數名，前者用於合約內部函數，後者用於合約外部函數",
+                            "C": "函數型態有兩類：內部(internal)函數和外部(external)函數",
+                            "D": "內部(internal)函數：此種函數只能在當前合約內被呼叫"
                         },
-                        "correct_answer": ["A", "B", "C", "D"]
+                        "correct_answer": ["B"]
                     }
                     ,
                     {
                         "question_number": 19,
-                        "question": "在Remix 智能合約之開發環境中，若要使用官方測試鏈網絡，則應該Environment選用哪一種？",
+                        "question": "在以太坊智能合約中，下列哪兩個函數最常被用來進行虛擬貨幣的交易？(多選題)",
                         "options": {
-                            "A": " Injected Web3",
-                            "B": "Solidity Block",
-                            "C": "Web3 Provider",
-                            "D": "JavaScript VM (London or Berlin)"
+                            "A": "send()函?",
+                            "B": "transmission()函?",
+                            "C": "receive()函?",
+                            "D": "transfer()函?"
                         },
-                        "correct_answer": ["A"]
+                        "correct_answer": ["A", "D"]
                     }
                     ,
 
                     {
                         "question_number": 20,
-                        "question": "在比特幣或以太幣之區塊鏈中，產生區塊所用到的雜湊函數主要是哪一種？",
+                        "question": "參見檔案：Herent.sol，請問當執行摧毀合約指令 selfdestruct(owner);時，若智能合約B中尚有虛擬貨幣餘額，請問這些餘額會如何處理？ https://cdn.discordapp.com/attachments/672820483862953994/1252306781854761070/e8561229a3c4539b1564c33cff8a7521.png?ex=6671bd13&is=66706b93&hm=0d77464906dae6a4587b8373f632d431658befa8b365afe3099436f357557907&",
                         "options": {
-                            "A": "SHA-200",
-                            "B": "SHA-256。",
-                            "C": "SHA-128",
-                            "D": "SHA-512",
-                        },
-                        "correct_answer": ["B"]
-                    }
-                    , {
-                        "question_number": 21,
-                        "question": "所謂比特幣之工作量證明，即在尋找滿足每一區塊之Difficulty的甚麼東西？",
-                        "options": {
-                            "A": "Merker Tree Hash",
-                            "B": "NONCE",
-                            "C": "TimStamp",
-                            "D": "Transaction"
+                            "A": "餘額自我消失",
+                            "B": "餘額由智能合約擁有者與以太坊官方平分。",
+                            "C": "餘額歸給以太坊官方",
+                            "D": "餘額歸給智能合約擁有者",
                         },
                         "correct_answer": ["D"]
                     }
                     , {
-                        "question_number": 22,
-                        "question": "Hash Tree是一個儲存Hash值的樹，在P2P網路中，下載資料之前需先從可信節點先獲得文件的MerkleTree，一旦獲得了樹根(MerkleRoot)，就可通過Hash值以驗證什麼資料的完整性？",
+                        "question_number": 21,
+                        "question": "以太坊之合約位址(CA)及外部帳戶位址(EOA)的長度皆為幾個Bytes？",
                         "options": {
-                            "A": "Timestamp",
-                            "B": "困難度",
-                            "C": "交易",
-                            "D": "NONCE"
+                            "A": "30",
+                            "B": "10",
+                            "C": "20",
+                            "D": "40"
                         },
                         "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 22,
+                        "question": "參見檔案：Herent.sol，為了完成owner虛擬貨幣的轉移，owner必須宣告甚麼？ https://cdn.discordapp.com/attachments/672820483862953994/1252307106103820329/6dc0eb700818f088134fce0b3242608b.png?ex=6671bd60&is=66706be0&hm=83591588fb476c4f2315acbbc002e188eb1504263fe615d01bd80eab205e9ba7&",
+                        "options": {
+                            "A": "public",
+                            "B": "external",
+                            "C": "address",
+                            "D": "payable"
+                        },
+                        "correct_answer": ["D"]
                     },
                     {
                         "question_number": 23,
-                        "question": "當你要開發 DApp 時，需要提供兩個數值，才能夠跟智能合約溝通，請問是哪兩種數值？(多選題)",
+                        "question": "下列有關於儲存地點的敘述，何者有誤？",
                         "options": {
-                            "A": "智能合約的 ByteCode",
-                            "B": "智能合約的 Source Code",
-                            "C": " 智能合約的位址",
-                            "D": " 智能合約的位址"
+                            "A": "輸入函數的參數與回傳值是以 memory 的方式儲存",
+                            "B": "合約的狀態變數是儲存在 storage",
+                            "C": " 合約的狀態變數是儲存在 storage",
+                            "D": " 為了節省 gas，通常會盡量將區域變數宣告為 memory"
                         },
-                        "correct_answer": ["C", "D"]
+                        "correct_answer": ["C"]
                     }, {
                         "question_number": 24,
-                        "question": "為什麼比特幣的數量不會無限制成長，而會趨近一個固定數值，不會有通膨的問題？",
+                        "question": "以下有關Slidity語言的描述，那些是正確的？(多選題)",
                         "options": {
-                            "A": " 因為比特幣發行總量有人在操控",
-                            "B": "因為比特幣發行總量設計成固定的。",
-                            "C": "因為比特幣發行總量有中介第三方控管",
-                            "D": " 因為比特幣發行總量受制於交易量",
+                            "A": "Solidity 中的虛擬貨幣單位通常採用ether",
+                            "B": "Solidity 中可用中文。",
+                            "C": "Solidity 中可用浮點數",
+                            "D": "Solidity 中的時間是從1970年1月1日開始起算，並以秒為單位",
                         },
-                        "correct_answer": ["B"]
+                        "correct_answer": ["A", "D"]
                     }
                     , {
                         "question_number": 25,
-                        "question": "利用「電子錢包」之什麼金鑰可加密虛擬貨幣，將貨幣存至「電子錢包」中？",
+                        "question": "下列有關Solidity內建全域變數的敘述，何者有誤?",
                         "options": {
-                            "A": "公開金鑰",
-                            "B": "申請者名稱",
-                            "C": "私密金鑰",
-                            "D": "密碼"
+                            "A": "tx.gasprice(uint)： 表示交易的 gas 的單價",
+                            "B": "now(uint)：表示當前區塊的Unix時間戳記",
+                            "C": "block.timestamp(uint)：表示當前區塊的 Unix 時間戳記",
+                            "D": "block.gaslimit(uint)：表示當前區塊鏈礦工的位址"
                         },
-                        "correct_answer": ["A"]
+                        "correct_answer": ["D"]
                     }
                     , {
                         "question_number": 26,
-                        "question": "在啟動節點之指令中，其中有關參數的使用，以下那些描述是正確的？(多選題)",
+                        "question": "有一solidity程式碼片段如右， struct Member{ string mbrName; uint mbrAge; }，針對此一程式片段請問下列那些選項是正確的？(多選題)",
                         "options": {
-                            "A": "port是網絡監聽埠，默認是30303",
-                            "B": "console可以啟動命令行模式",
-                            "C": "rpc是用來啟動rpc通信，以便進行智能合約的部屬和調試",
-                            "D": "rpcapi可決定允許那些API通過rpc進入",
+                            "A": "這結構型別語法有錯誤，應將{ }改為 [ ]",
+                            "B": "這是一結構自定型別",
+                            "C": "這個結構型別稱為Member",
+                            "D": "這個結構型別有兩個欄位(成員)",
                         },
-                        "correct_answer": ["A", "B", "C", "D"]
+                        "correct_answer": ["B", "C", "D"]
                     }
                     , {
                         "question_number": 27,
-                        "question": "以下是有關geth console的挖礦指令之用法，那些是正確的？(多選題)",
+                        "question": "參見檔案：Herent.sol，其中 onlyOwner( )稱為？https://cdn.discordapp.com/attachments/672820483862953994/1252308617487585391/176dd67da90d454e8e60a9656a5c7bd2.png?ex=6671bec9&is=66706d49&hm=5b80b996c3be763fd41f4edfb280458a149bb83459e86af20acbf2b08d0629d5&",
                         "options": {
                             "A": "miner.start(2) 表示開始挖礦，並設執行緒為2",
                             "B": "eth.mining 用來確認是否有在挖礦",
                             "C": "miner.sleep() 表示暫停挖礦",
                             "D": "miner.stop() 表示停止挖礦",
                         },
-                        "correct_answer": ["A", "B", "D"]
+                        "correct_answer": ["C"]
                     }
                     , {
                         "question_number": 28,
-                        "question": "以下有關Slidity語言的描述，那些是正確的",
+                        "question": "在Solidity語言中，uint型態與下列何者是一樣的型態？",
                         "options": {
-                            "A": "Solidity 是動態型語言，編譯後可以在 EVM 上執行",
-                            "B": "Solidity 語言仍處於持續開發階段，變動非常的頻繁",
-                            "C": "Solidity是一種合約式導向的程式語言，可用來撰寫智能合約。",
-                            "D": "EVM (Ethereum Virtual Machine)中文為「以太坊虛擬機」，是智能合約的執行環境"
-                        },
-                        "correct_answer": ["B", "C", "D"]
-                    }
-                    , {
-                        "question_number": 29,
-                        "question": "最早初期比特幣之挖礦，每個成功創造一個新區塊的人就可以獲得多少比特幣？",
-                        "options": {
-                            "A": "150BIT",
-                            "B": "12.5BIT",
-                            "C": "25BIT",
-                            "D": "50BIT",
-                        },
-                        "correct_answer": ["D"]
-                    }
-                    , {
-                        "question_number": 30,
-                        "question": "以太坊之合約帳戶的位址長度為幾位？(以16進制表示)",
-                        "options": {
-                            "A": "40",
-                            "B": "60",
-                            "C": "32",
-                            "D": "64",
+                            "A": "uint256",
+                            "B": "uint512",
+                            "C": "int256",
+                            "D": "uint128"
                         },
                         "correct_answer": ["A"]
                     }
                     , {
-                        "question_number": 31,
-                        "question": "在初始化創世區塊指令中，可使用哪一參數來指定初始區塊位置？",
+                        "question_number": 29,
+                        "question": "下列有關智能合約的描述，那些是正確的？(多選題)",
                         "options": {
-                            "A": "init",
-                            "B": "block",
-                            "C": "chain",
-                            "D": "datadir",
+                            "A": "constant與view意義是一樣的，現已建議constant不要用",
+                            "B": "constant與view意義是一樣的，現已建議constant不要用",
+                            "C": "constant與view意義是一樣的，現已建議constant不要用",
+                            "D": "若函數宣告為payable時，表示可透過此函數，將加密貨幣傳輸給智能合約",
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    }
+                    , {
+                        "question_number": 30,
+                        "question": "以太坊之外部帳戶的位址長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "64",
+                            "B": "40",
+                            "C": "60",
+                            "D": "32",
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 31,
+                        "question": "下列有關Solidity的敘述何者有誤？",
+                        "options": {
+                            "A": "註解之撰寫無法提高程式碼的維護性與閱讀性",
+                            "B": "狀態變數類似於傳統物件導向程式語言的物件變數",
+                            "C": "支援繼承、函數庫化，並允許使用者自訂複雜的資料型別",
+                            "D": "函數宣告就是程式設計師實作智能合約處理邏輯的地方",
                         },
                         "correct_answer": ["A"]
                     }
                     , {
                         "question_number": 32,
-                        "question": "難度(Difficulty)決定了礦工在挖礦時的難度，當礦工經過努力產出一個區塊時其 Block Hash必須小於難度，此區塊才是合法區塊，礦工這種努力稱之為？",
+                        "question": "Ganache(舊名稱TestRPC)提供快速結塊、快速確認區塊功能之(純記憶體)私有測試鏈網絡，請問它預設提供10測試帳戶，每一帳戶有多少ETH？",
                         "options": {
-                            "A": "Proof of Work",
-                            "B": "Proof of Block",
-                            "C": "Proof of Mining",
-                            "D": "Proof of Stake"
+                            "A": "10",
+                            "B": "500",
+                            "C": "200",
+                            "D": "100"
                         },
-                        "correct_answer": ["A"]
+                        "correct_answer": ["D"]
                     }
                     , {
                         "question_number": 33,
-                        "question": "以太坊之智能合約和一般程式是不一樣，請問以下那些是智能合約和一般程式不同之處？(多選題)",
+                        "question": "有關智能合約和一般程式的差異，以下那些是正確的說法？(多選題)",
                         "options": {
                             "A": "智能合約部署之後不能修改",
                             "B": "智能合約寫入資料需要成本",
@@ -528,193 +522,456 @@
                     }
                     , {
                         "question_number": 34,
-                        "question": "對於比特幣區塊而言，要產生每一區塊的HASH值，其輸入包含哪些項目(多選題)",
+                        "question": "下列哪些屬於參照型別(reference type)?(多選題)",
                         "options": {
-                            "A": "Previous Block Hash。",
-                            "B": "Version。",
-                            "C": "Timestamp",
-                            "D": "Merker Tree Hash"
+                            "A": "布林型別(boolean)",
+                            "B": "映射型別(mapping)",
+                            "C": "整數型別(integer)",
+                            "D": "結構型別(struct)"
                         },
-                        "correct_answer": ["A", "B", "C", "D"]
+                        "correct_answer": ["B", "D"]
                     }, {
                         "question_number": 35,
-                        "question": " 以太坊之外部帳戶的位址長度為幾位？(以16進制表示)",
+                        "question": "下列有關布林型別(Boolean)的敘述，何者有誤?",
                         "options": {
-                            "A": "64",
-                            "B": "40",
-                            "C": "60",
-                            "D": "32"
+                            "A": "在 || 運算中，若第一個運算元的值為true，接下來的運算元就不必運算了，直接可回傳true",
+                            "B": "!= 表示邏輯NOT ; && 表示邏輯AND ; || 表示邏輯OR ; ! 表示邏輯不等於",
+                            "C": "在 && 運算中，兩者必須為 true，結果才會為 true，否則皆為 false",
+                            "D": "Solidity不會自動將非布林型別的變數轉換成布林型別，因此if (1) { ... }在 Solidity中是不合法的"
                         },
                         "correct_answer": ["B"]
                     }
                     , {
                         "question_number": 36,
-                        "question": "以下是有關geth console的帳戶餘額及交易指令之用法，那些是正確的？(多選題)",
+                        "question": "下列關於資料儲存位置(Data Location)的敘述，何者有誤?",
                         "options": {
-                            "A": "txpool.status 可查看待決的交易",
-                            "B": " personal.unlockAccount(eth.accounts[0]) 可將eth.accounts[0]解鎖，會被要求輸入密碼",
-                            "C": "eth.getTransaction(XXXXXX) 可以取得交易號碼為XXXXXX之交易收據。",
-                            "D": "eth.getBalance(eth.accounts[0]) 可用來查看accounts[0]的帳戶餘額"
+                            "A": "函數參數(包括返回的參數)，其預設存儲位置是memory",
+                            "B": "若資料屬性是memory，則資料不是永久存在的；若資料屬性是storage，則資料永久存儲在區塊鏈中",
+                            "C": "區域複雜類型變數( local variables)和狀態變數(state variables)，其預設存儲位置是 memory",
+                            "D": "所有的複雜類型，例如陣列和結構體，都有一個額外屬性：資料存儲位置，即 memory 或 storage"
                         },
-                        "correct_answer": ["A","B","D"]
+                        "correct_answer": ["C"]
                     }
                     , {
                         "question_number": 37,
-                        "question": "以太坊之外部帳戶的英文簡稱為何？",
+                        "question": "下列關於位址(Address)類型的敘述，何者有誤?",
                         "options": {
-                            "A": "EOD",
-                            "B": "EOA",
-                            "C": "DOE",
-                            "D": "DOA"
+                            "A": "為確保乙太幣轉帳的安全，一定要檢查.send 的返回值，或者改用. transfer",
+                            "B": "位址類型是一個數值類型，位址佔用 20 位元組",
+                            "C": "getCode()：如果參數是合約位址，則返回'0x'；如果參數是外部帳號位址，則返回對應的位元組程式碼",
+                            "D": "如果執行失敗，.transfer 會拋出異常並終止代碼，而＜address> .send 則是返回 false，但代碼繼續執行"
                         },
-                        "correct_answer": ["B"]
+                        "correct_answer": ["C"]
                     }
                     , {
                         "question_number": 38,
-                        "question": "以太坊區塊鏈網絡之節點，其礦工預設是哪一位使用者？",
+                        "question": "Solidity之陣列可以宣告成 type [M]，其中 type 是陣列元素的型別，而[M]是表示陣列元素的什麼？",
                         "options": {
-                            "A": "節點上第二位使用者",
-                            "B": "節點上第十位使用者",
-                            "C": "節點上第一位使用者",
-                            "D": "節點上第二十位使用者"
-                        },
-                        "correct_answer": ["C"]
-                    }
-                    , {
-                        "question_number": 39,
-                        "question": "比特幣的挖礦程序，其中參與挖礦者必須隨時在網路上監聽，把最新區塊的雜湊值和最新收到的交易，以及自選之NONCE合併成一新區塊，並對此區塊進行雜湊值計算，若雜湊值滿足Difficulty，則完成挖礦工作，並迅速將此先的區塊廣播出去，取得更多節點的對此區塊之確認，以完成此區塊掛鏈動作。上述尋找滿足條件之NONCE是採用甚麼方法？",
-                        "options": {
-                            "A": "簡化法",
-                            "B": "暴力法",
-                            "C": "估計法",
-                            "D": "推論法"
-                        },
-                        "correct_answer": ["B"]
-                    }
-                    , {
-                        "question_number": 40,
-                        "question": "在 geth console中，要新增一使用者帳號，應使用什麼指令？",
-                        "options": {
-                            "A": "personal.listAccounts",
-                            "B": " eth.accounts",
-                            "C": "personal.newAccount",
-                            "D": "newAccount"
-                        },
-                        "correct_answer": ["C"]
-                    }
-                    , {
-                        "question_number": 41,
-                        "question": "有關以太坊區塊鏈之合約帳戶的描述，以下那些是正確的？",
-                        "options": {
-                            "A": "合約帳戶可用以收取其他帳戶轉來的以太幣",
-                            "B": "每個智能合約在部署後，就會產一個對應的合約帳戶",
-                            "C": "合約帳戶擁有公鑰及私鑰",
-                            "D": "合約帳戶之原文為Contract Account，簡稱CA"
-                        },
-                        "correct_answer": ["A","B","D"]
-                    }
-                    , {
-                        "question_number": 42,
-                        "question": "在Remix 智能合約之開發環境中，若要使用內建虛擬網絡，則應該Environment選用哪一種？",
-                        "options": {
-                            "A": "Web3 Provider",
-                            "B": "JavaScript VM(London or Berlin)",
-                            "C": "Solidity Block",
-                            "D": "Injected Web3"
-                        },
-                        "correct_answer": ["B"]
-                    }
-                    , {
-                        "question_number": 43,
-                        "question": "有關智能合約和一般程式的差異，以下那些是正確的說法？",
-                        "options": {
-                            "A": " 智能合約寫入資料需要成本",
-                            "B": "智能合約需要有固定主機儲存",
-                            "C": "智能合約整合金流較容易",
-                            "D": "智能合約部署之後不能修改"
-                        },
-                        "correct_answer": ["A","C","D"]
-                    }
-                    , {
-                        "question_number": 44,
-                        "question": "在啟動節點之指令中，其中有關參數的使用，以下那些描述是正確的？(多選題)",
-                        "options": {
-                            "A": "networkid=42表示公有鏈網絡",
-                            "B": "networkid用於設置當前區塊鏈網路的ID",
-                            "C": "maxpeers可以限制至多有幾個節點連接到你的節點",
-                            "D": "nodiscover可確保你的節點不會被自動添加節點的人發現"
-                        },
-                        "correct_answer": ["B","C","D"]
-                    }
-                    , {
-                        "question_number": 45,
-                        "question": "在 geth console中，要查看礦工帳號，應使用什麼指令？",
-                        "options": {
-                            "A": "miner",
-                            "B": "setEtherbase",
-                            "C": "eth.coin",
-                            "D": "eth.coinbase"
-                        },
-                        "correct_answer": ["D"]
-                    }
-                    , {
-                        "question_number": 46,
-                        "question": "有關智能合約編輯器Remix的描述，以下那些是正確的？(多選題)",
-                        "options": {
-                            "A": "使用本機版Remix，其網址為 http://localhost:8888",
-                            "B": "Remix線上版網址為 http://remix.ethereum.org",
-                            "C": "要使用 Remix 發布智能合約至以太坊區塊鏈(包含測試鏈、主鏈)，必須透過電子錢包(如MetaMask)",
-                            "D": "Remix有本機版及線上版兩種版本"
-                        },
-                        "correct_answer": ["B","C","D"]
-                    }
-                    , {
-                        "question_number": 47,
-                        "question": "公有鏈網絡的networked為何？",
-                        "options": {
-                            "A": "30",
-                            "B": "10",
-                            "C": "1",
-                            "D": "20"
-                        },
-                        "correct_answer": ["C"]
-                    }
-                    , {
-                        "question_number": 48,
-                        "question": "有關電子錢包 MetaMask的描述，以下那些是正確的？(多選題)",
-                        "options": {
-                            "A": "Proof of Work",
-                            "B": "Proof of Block",
-                            "C": "Proof of Mining",
-                            "D": "Proof of Stake"
+                            "A": "個數",
+                            "B": "寬度",
+                            "C": "複雜度",
+                            "D": "多元型別"
                         },
                         "correct_answer": ["A"]
                     }
                     , {
-                        "question_number": 49,
-                        "question": "有一Solidity智能合約如下，請問有關此合約，下列選項是正確的 https://cdn.discordapp.com/attachments/672820483862953994/1231254968191684638/image.png?ex=66364a8c&is=6623d58c&hm=bac61bdd532f601fb8c2c2342214788c74336fffb94fa3ad69cd538ef282b1d2&",
+                        "question_number": 39,
+                        "question": "以太坊之合約帳戶的位址長度為幾位？(以16進制表示)",
                         "options": {
-                            "A": "第1列 宣告此合約的compiler的版本，必須為大於等於0.4.24，小於0.5",
-                            "B": "第3列 是合約內部的狀態變數宣告",
-                            "C": "第7列 定義函數是公開的、只有檢視不挖礦、有傳回值",
-                            "D": "第四列 是建構子宣告定義"
+                            "A": "40",
+                            "B": "64",
+                            "C": "32",
+                            "D": "60"
                         },
-                        "correct_answer": ["A" , "B" , "C" , "D"]
+                        "correct_answer": ["A"]
                     }
                     , {
-                        "question_number": 50,
-                        "question": "首次數位貨幣公開募資，其英文簡稱為何？",
+                        "question_number": 40,
+                        "question": "下列哪些屬於數值型別(value type)?(多選題)",
                         "options": {
-                            "A": "IOI",
-                            "B": "ICO",
-                            "C": "ICE",
-                            "D": "IEO"
+                            "A": "列舉型別(enum type)",
+                            "B": "結構型別(struct)",
+                            "C": "整數型別(integer)",
+                            "D": "布林型別(boolean)"
+                        },
+                        "correct_answer": ["A","C" , "D"]
+                    }
+                    , {
+                        "question_number": 41,
+                        "question": "有關智能合約的事件描述，下列哪些是正確的？(多選題)",
+                        "options": {
+                            "A": "使用Event方式永久儲存資訊需要較高的gas成本",
+                            "B": "Event必須搭配emit才可以被呼叫使用",
+                            "C": "可以將交易明細的執行結果，透過Event方式永久寫入區塊鏈中",
+                            "D": "事件是一種在Ethereum中進行紀錄的機制"
+                        },
+                        "correct_answer": ["B" ,"C", "D"]
+                    }
+                    , {
+                        "question_number": 42,
+                        "question": "現有一指令 uint128[] memory x = new uint128[](5); 請問對於此指令之變數 x 的描述，下列哪些是正確的？(多選題)",
+                        "options": {
+                            "A": "x是元素個數為5的陣列變數",
+                            "B": "可以用指令 x[0] = 77；將 整數 77 儲存至陣列 x 的第0個位置中",
+                            "C": "可以用指令 x[0] = 77；將 整數 77 儲存至陣列 x 的第0個位置中",
+                            "D": "x的陣列元素儲存資料不需要挖礦"
+                        },
+                        "correct_answer": ["A","B", "D"]
+                    }
+                    , {
+                        "question_number": 43,
+                        "question": "為了讓等號兩邊的型別一致，編譯器會協助進行自動型別轉換，請問這是哪一種型別轉換？",
+                        "options": {
+                            "A": "動態轉換",
+                            "B": "隱式轉換",
+                            "C": "適性轉換",
+                            "D": "顯示轉換"
                         },
                         "correct_answer": ["B"]
                     }
+                    , {
+                        "question_number": 44,
+                        "question": "在Solidity語言中，有關整數型態，下列哪些是合法的？(多選題)",
+                        "options": {
+                            "A": "int128",
+                            "B": "int256",
+                            "C": "uint256",
+                            "D": "int512"
+                        },
+                        "correct_answer": ["A","B", "C"]
+                    }
+                    , {
+                        "question_number": 45,
+                        "question": "參見檔案：Herent.sol，請問當呼叫close( )時，必須通過onlyOwner( )所訂定之條件，若沒有滿足，則會產生甚麼結果？https://cdn.discordapp.com/attachments/672820483862953994/1252311720081494046/56decfa465fb1eca706837044528dc11.png?ex=6671c1ac&is=6670702c&hm=23b76143951095c6c34706fedc97852e1a3b23b2d175d9825d116ac857d1fe6f&",
+                        "options": {
+                            "A": "畫面沒有任何回應",
+                            "B": "畫面輸出'who create contract can call this function.'",
+                            "C": "程式執行中止",
+                            "D": "程式不受任何影響"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 46,
+                        "question": "下列有關Solidity的敘述，何者'有誤'？",
+                        "options": {
+                            "A": "事件(Event)是乙太坊虛擬機器(EVM)日誌基礎設施，他提供的一個便利介面，用於獲取當前發生的事件",
+                            "B": "狀態變數(State Variable)和其他語言的成員變數很相似，狀態變數會被永久存儲在合約的存儲空間(storage)裡",
+                            "C": "結構類型(Struct Type)是一組使用者自定的變數組合在一起形成的類型",
+                            "D": "單行註解使用“#”，多行註解使用'/ … /'"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 47,
+                        "question": "下列何者不是Solidity的貨幣單位(Ether Unit)?",
+                        "options": {
+                            "A": "finney",
+                            "B": "minute",
+                            "C": "wei",
+                            "D": "ether(ETH)"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 48,
+                        "question": "以太坊智能合約中，那些型別是屬於數值型別？(多選題)",
+                        "options": {
+                            "A": "布林型別",
+                            "B": "位址型別",
+                            "C": "列舉型別",
+                            "D": "byte陣列型別"
+                        },
+                        "correct_answer": ["B", "C", "D"]
+                    }
+                    , {
+                        "question_number": 49,
+                        "question": "下列有關智能合約的函數之可視度，那些描述是正確的？(多選題)",
+                        "options": {
+                            "A": "宣告為public的函數可經由內部呼叫或經由交易方式呼叫",
+                            "B": "宣告為private的函數只能被自己合約呼叫，即便是繼承此合約的其他合約也不能呼叫",
+                            "C": "宣告為external的函數可被其他智能合約呼叫或經由交易方式呼叫",
+                            "D": "宣告為internal的函數只能被自己合約呼叫或繼承此合約的其他合約呼叫"
+                        },
+                        "correct_answer": ["A", "B", "C", "D"]
+                    }
+                    , {
+                        "question_number": 50,
+                        "question": "請問內建函數 revert() 具有甚麼作用？",
+                        "options": {
+                            "A": "表示放棄執行，並紀錄狀態",
+                            "B": "表示繼續執行，並還原狀態",
+                            "C": "表示放棄執行，並還原狀態",
+                            "D": "表示繼續執行，並保留狀態"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 51,
+                        "question": "Solidity的函數之可見性修飾詞包括有哪些？(多選題)",
+                        "options": {
+                            "A": "external",
+                            "B": "public",
+                            "C": "private",
+                            "D": "internal"
+                        },
+                        "correct_answer": ["A","B","C","D"]
+                    }
+                    , {
+                        "question_number": 52,
+                        "question": "為了能夠對函數及變數做適當的存取限制，可透過設定可視角度（visibilities）來控制，下列有關可視角度(visibilities)的敘述，何者'有誤'？",
+                        "options": {
+                            "A": "共有四種可視角度，分別是 external、public、internal 與 private",
+                            "B": "狀態變數之可視角度的宣告必須置於型別宣告後，預設的可視角度為 external ，且不可設定為internal",
+                            "C": "可視角度若用在函數宣告時，必須置於函數的傳入參數與回傳參數之間，預設的可視角度是 public",
+                            "D": "internal"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 53,
+                        "question": "下列關於Solidity錯誤處理函數、數學及加密功能函數，哪些敘述是正確?(多選題)",
+                        "options": {
+                            "A": "require(bool condition)：用於判斷輸入或外部元件的錯誤，當 condition 為假時，會拋出異常",
+                            "B": "revert()：終止執行，並將改變的狀態還原",
+                            "C": "keccak256( ... ) returns (bytes32)：使用 keccak-256 計算 hash 值",
+                            "D": "internal"
+                        },
+                        "correct_answer": ["A","B","C"]
+                    }
+                    , {
+                        "question_number": 54,
+                        "question": "有關string 及bytes 兩型別的描述，以下那些是正確的(多選題)",
+                        "options": {
+                            "A": "bytes 型別相當於 byte[ ] 陣列型別",
+                            "B": "bytes 型別相當於 byte[ ] 陣列型別",
+                            "C": "目前string已可以直接透過length成員，取得string的長度",
+                            "D": "這兩型別是屬於非固定長度的特殊陣列型別"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 55,
+                        "question": "下列關於位址(Address)類型的敘述，何者'有誤'?",
+                        "options": {
+                            "A": "如果執行失敗，.transfer 會拋出異常並終止代碼，而＜address> .send 則是返回 false，但代碼繼續執行",
+                            "B": "位址類型是一個數值類型，位址佔用 20 位元組",
+                            "C": "getCode()：如果參數是合約位址，則返回'0x'如果參數是外部帳號位址，則返回對應的位元組程式碼",
+                            "D": "為確保乙太幣轉帳的安全，一定要檢查.send 的返回值，或者改用. transfer"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    , {
+                        "question_number": 56,
+                        "question": "在使用Solidity語言開發以太坊智能合約中，請問下列哪些是智能合約的可能組成？(多選題)",
+                        "options": {
+                            "A": "引用其他合約",
+                            "B": "編譯器版本宣告",
+                            "C": "事件",
+                            "D": "函數宣告"
+                        },
+                        "correct_answer": ["A","B","C","D"]
+                    }
+                    , {
+                        "question_number": 57,
+                        "question": "在智能合約中，請問內建變數 msg.value 表示甚麼？",
+                        "options": {
+                            "A": "當前訊息所傳輸的當量",
+                            "B": "當前訊息所傳輸的數值",
+                            "C": "當前訊息所傳輸的gas",
+                            "D": "當前訊息所傳輸的加密貨幣數量"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 58,
+                        "question": "有關以太坊區塊鏈之合約帳戶的描述，以下那些是正確的？(多選題)",
+                        "options": {
+                            "A": "合約帳戶擁有公鑰及私鑰",
+                            "B": "合約帳戶之原文為Contract Account，簡稱CA",
+                            "C": "每個智能合約在部署後，就會產一個對應的合約帳戶",
+                            "D": "合約帳戶可用以收取其他帳戶轉來的以太幣"
+                        },
+                        "correct_answer": ["B","C","D"]
+                    }
+                    , {
+                        "question_number": 59,
+                        "question": "有關Solidity之陣列型別，下列那些是正確的描述？",
+                        "options": {
+                            "A": "對於一個memory陣列而言，其元素型別可以是除了mapping型別之外的任意型別",
+                            "B": "對於一個storage陣列而言，其元素型別可以是任意型別",
+                            "C": "陣列儲存空間大小可以在編譯時決定",
+                            "D": "陣列儲存空間大小不可以在執行階段動態時決定"
+                        },
+                        "correct_answer": ["A","B","C"]
+                    }
+                    , {
+                        "question_number": 60,
+                        "question": "下列是有關Solidity函數型態的敘述，何者'有誤'？",
+                        "options": {
+                            "A": "可以在函數呼叫中，返回一個函數",
+                            "B": "不可將一個函數當作參數進行傳遞",
+                            "C": "函數的回傳值可為一個以上的值",
+                            "D": "可將一個函數賦值給一個函數類型的變數"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 61,
+                        "question": "以太坊之外部帳戶的私鑰長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "40",
+                            "B": "32",
+                            "C": "60",
+                            "D": "64"
+                        },
+                        "correct_answer": ["D"]
+                    }
+                    , {
+                        "question_number": 62,
+                        "question": "對於一個 storage 陣列而言，請問其元素儲存資料時，是否需要進行挖礦工作",
+                        "options": {
+                            "A": "需要挖礦",
+                            "B": "不需要挖礦",
+                            "C": "Solidity沒有明確規定",
+                            "D": "視當時的GAS多寡，才決定是否挖礦"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 63,
+                        "question": "用 truffle 來開發Dapp有其方便性及優勢，請問以下有關 truffle 的相關敘述，那些是正確的？(多選題)",
+                        "options": {
+                            "A": "truffle 框架需預先訂製，花費不斐",
+                            "B": "利用truffle部署智能合約時，必須先調整truffle-config.js配置檔",
+                            "C": "truffle可以一併完成智能合約編譯、部署、及Dapp的測試",
+                            "D": "可藉由 truffle unbox 安裝特定的某一DApp框架"
+                        },
+                        "correct_answer": ["B","C","D"]
+                    }
+                    , {
+                        "question_number": 64,
+                        "question": "下列有關整數型別(interger)的敘述，何者'有誤'?",
+                        "options": {
+                            "A": "對有號整數的負數進行右移運算時，等同於乘法運算",
+                            "B": "uint表示無號整數，其中 M 為位元長度，範圍必須落在 0 < M <= 256，同時 M % 8 之餘數運算必須為 0",
+                            "C": "Solidity 的整數型別分為有號數與無號數兩種，並且可根據能表達的數字大小，訂定不同資料長度",
+                            "D": "a++ 表示將 a 的資料值當成該運算式之值進行計算後，才執行加 1 的動作；++a表示先執行加 1 的動作，再將結果當成該運算式之值進行計算"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 65,
+                        "question": "在本課程最後介紹三個DApp範例，其中第一、二範例皆實作於Ganache區塊鏈上，並使用其內建的帳戶錢包，請問下列那些敘述是正確的？(多選題)",
+                        "options": {
+                            "A": "預設使用Ganache的第一位帳戶當作部屬合約的人",
+                            "B": "必須將Metamask錢包開關Disable",
+                            "C": "TestRPC是Ganache的舊名稱",
+                            "D": "Ganache區塊鏈是屬於記憶體區塊鏈"
+                        },
+                        "correct_answer": ["C","D"]
+                    }
+                    , {
+                        "question_number": 66,
+                        "question": "modifier onlyOwner{ require(msg.sender==owner, 'error'); _;}}，請問這個函數修飾子具有甚麼作用？",
+                        "options": {
+                            "A": "過濾條件作用",
+                            "B": "控制作用",
+                            "C": "提升效能作用",
+                            "D": "美化作用"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 67,
+                        "question": "有一事件 event MyEvent(address indexed _from, uint myInt)，請問上述 indexed 是表示甚麼？",
+                        "options": {
+                            "A": "表示_from是索引欄位",
+                            "B": "表示_from 是數值型態",
+                            "C": "表示_from是位址型態",
+                            "D": "表示_from是特殊欄位"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 68,
+                        "question": "下列關於資料儲存位置(Data Location)的敘述，何者'有誤'?",
+                        "options": {
+                            "A": "區域複雜類型變數( local variables)和狀態變數(state variables)，其預設存儲位置是 memory",
+                            "B": "所有的複雜類型，例如陣列和結構體，都有一個額外屬性：資料存儲位置，即 memory 或 storage",
+                            "C": "函數參數(包括返回的參數)，其預設存儲位置是memory",
+                            "D": "若資料屬性是memory，則資料不是永久存在的；若資料屬性是storage，則資料永久存儲在區塊鏈中"
+                        },
+                        "correct_answer": ["A"]
+                    }
 
-
-
+                    , {
+                        "question_number": 69,
+                        "question": "Ganache(舊名稱TestRPC)提供快速結塊、快速確認區塊功能之(純記憶體)私有測試鏈網絡，請問它預設提供10測試帳戶，每一帳戶有多少ETH？",
+                        "options": {
+                            "A": "100",
+                            "B": "10",
+                            "C": "200",
+                            "D": "500"
+                        },
+                        "correct_answer": ["A"]
+                    }
+                    , {
+                        "question_number": 70,
+                        "question": "以太坊之外部帳戶的公鑰長度為幾位？(以16進制表示)",
+                        "options": {
+                            "A": "40",
+                            "B": "32",
+                            "C": "60",
+                            "D": "64"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 71,
+                        "question": "Solidity語言中，可變長位元組陣列包含哪兩種",
+                        "options": {
+                            "A": "enum",
+                            "B": "bytes",
+                            "C": "struct",
+                            "D": "string"
+                        },
+                        "correct_answer": ["B","D"]
+                    }
+                    , {
+                        "question_number": 72,
+                        "question": "有一solidity程式碼片段如右， struct Member{ string mbrName; uint mbrAge; } mapping(uint => Member) public mbrHash; ，針對此一程式片段請問下列那些選項是正確的？(多選題)",
+                        "options": {
+                            "A": "若是 uint id = 3; string name = 'John'; uint age = 24; 則可以建構 mbrHash[id] = Member({mbrName:name, mbrAge:age});",
+                            "B": "mbrHash如同是資料庫中的一張資料表",
+                            "C": "在solidity智能合約中，為了模擬一資料表，通常結構型別會與映射型別一起搭配使用",
+                            "D": "mbrHash是映射型別變數"
+                        },
+                        "correct_answer": ["A", "B","C","D"]
+                    }
+                    , {
+                        "question_number": 73,
+                        "question": "下列有關陣列型別的敘述，何者'有誤'？",
+                        "options": {
+                            "A": "對於 storage 陣列而言，它的元素型別可以是任意型別，包括其它陣列、mapping 型別或結構型別(struct type)",
+                            "B": "對於 storage 陣列而言，它的元素型別可以是任意型別，包括其它陣列、mapping 型別或結構型別(struct type)",
+                            "C": "陣列可混合宣告成固定與不固定長度",
+                            "D": "length 成員修改陣列大小的方式只適用於 storage 變數"
+                        },
+                        "correct_answer": ["B"]
+                    }
+                    , {
+                        "question_number": 74,
+                        "question": "下列有關Solidity的敘述，何者有'有誤'？",
+                        "options": {
+                            "A": "條件陳述式的大括弧｛｝在單一語句前後是可以省略",
+                            "B": "Solidity 允許多重繼承",
+                            "C": "if (1) { ... }在 Solidity 中是合法的",
+                            "D": "A"
+                        },
+                        "correct_answer": ["C"]
+                    }
+                    
 
 
 
