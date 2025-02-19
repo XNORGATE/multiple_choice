@@ -3,36 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- 讓手機可以正確縮放 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Interface</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="text-gray-900 font-sans flex justify-center items-center min-h-screen bg-gray-100 overflow-auto">
-    <div class="w-full flex items-center justify-between px-4 py-2 bg-white shadow fixed top-0 left-0 z-50">
+<body class="text-gray-900 font-sans bg-gray-100 min-h-screen overflow-auto">
 
-        <!-- 左上角按鈕 -->
-        <a href="https://quiz.xnor-development.com/iot"
-            class="text-gray-600 bg-gray-100 px-3 py-2 rounded hover:bg-gray-200">
-            往 物聯網智慧應用及技術
+    <!-- 頂部固定列 -->
+    <div class="w-full flex items-center justify-between px-2 py-1 bg-white shadow fixed top-0 left-0 z-50">
+
+        <!-- 左上角按鈕：在小螢幕用 text-xs px-2 py-1，md 以上才用 text-sm px-3 py-2 -->
+        <a href="https://quiz.xnor-development.com/iot" class="text-gray-600 bg-gray-100 text-xs px-2 py-1 rounded hover:bg-gray-200
+              md:text-sm md:px-3 md:py-2">
+            往 TQC物聯網智慧應用及技術
         </a>
 
-        <!-- 右上角名字 -->
-        <div class="text-sm text-gray-600">
-            xnor-development.com
+        <!-- 右上角名字：同理，小螢幕 text-xs，md 以上 text-sm -->
+        <div class="text-xs text-gray-600 md:text-sm">
+            xnor-development.com ©
         </div>
-    </div>
-    <div class="pt-16">
 
-        <div id="app" class="question-card bg-white p-6 rounded-lg shadow-lg w-[800px]">
+    </div>
+
+
+    <!-- 主內容，留上方空間 pt-16 避免被固定列擋住 -->
+    <div class="pt-16 min-h-screen flex flex-col justify-center items-center px-4 box-border">
+        <!-- 主要容器：max-w-2xl + w-full，能在小螢幕自動縮放 -->
+        <div id="app" class="question-card bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
+            <!-- 這裡放你的 Vue 程式碼、模板 (照原樣) -->
             <div v-if="!sectionSelected" class="text-center">
                 <img src="https://nic.tut.edu.tw/var/file/12/1012/pictures/684/m/mczh-tw400x400_small14858_202087529952.png"
-                    alt="TQC 雲端技術及網路服務 第2版-專業級" class="mb-4 mx-auto w-3/4">
+                    alt="TQC  雲端技術及網路服務 第2版-專業級" class="mb-4 mx-auto w-3/4">
                 <p class="text-xl font-bold mb-4">TQC 雲端技術及網路服務 第2版-專業級(題庫尚未完成請勿作答)</p>
-
                 <p class="text-xl font-bold mb-4">請選擇要開始的部分</p>
                 <p class="mb-4">每部分包含 60 題，共 360 題</p>
+
                 <div class="grid grid-cols-3 gap-4 mb-4">
                     <button v-for="section in 6" :key="section" @click="changeSection(section)"
                         class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
@@ -43,16 +51,29 @@
                 <div class="mt-4 flex items-center justify-center gap-4">
                     <!-- Toggle Switch -->
                     <label class="relative inline-flex items-center cursor-pointer">
+                        <!-- 隱藏的 checkbox -->
                         <input type="checkbox" class="sr-only peer" v-model="shuffleQuestions">
-                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300
-                              rounded-full peer peer-checked:bg-blue-600
-                              peer-checked:after:translate-x-full
-                              after:content-[''] after:absolute after:top-[2px] after:left-[2px]
-                              after:bg-white after:border-gray-300 after:border after:rounded-full
-                              after:h-5 after:w-5 after:transition-all">
+
+                        <!-- 外層軌道 -->
+                        <div class="w-9 h-5 bg-gray-200 rounded-full peer
+                                 peer-checked:bg-blue-600
+                                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300
+                                 relative
+                                 md:w-11 md:h-6
+                                 peer-checked:after:translate-x-full
+                      
+                                 after:content-[''] after:absolute after:top-[1px] after:left-[1px]
+                                 after:bg-white after:border-gray-300 after:border after:rounded-full
+                                 after:h-4 after:w-4 md:after:h-6 md:after:w-6
+                                 after:transition-all">
                         </div>
-                        <span class="ml-3 text-sm font-medium text-gray-900">題目打亂順序</span>
+
+                        <!-- 文字 -->
+                        <span class="ml-2 text-sm md:text-base text-gray-900">
+                            題目打亂順序
+                        </span>
                     </label>
+
 
                     <!-- 下載 JSON 按鈕 -->
                     <button @click="downloadJson" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
@@ -63,14 +84,16 @@
                 <div class="mt-6">
                     <input v-model="searchQuery" type="text" placeholder="輸入 5 個字以上的關鍵字"
                         class="px-4 py-2 border rounded w-2/3">
-                    <p v-if="searchQuery.length > 0 && searchQuery.length < 5" class="text-red-500 text-sm mt-1">請輸入至少 5
-                        個字
+                    <p v-if="searchQuery.length > 0 && searchQuery.length < 5" class="text-red-500 text-sm mt-1">
+                        請輸入至少 5 個字
                     </p>
                     <button @click="searchQuestion"
                         class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 ml-2"
-                        :disabled="searchQuery.length < 5">搜尋題目</button>
-
+                        :disabled="searchQuery.length < 5">
+                        搜尋題目
+                    </button>
                 </div>
+
                 <div v-if="searchResults.length" class="mt-4 p-4 border rounded bg-gray-200 text-left">
                     <p class="font-bold">搜尋結果：</p>
                     <div v-for="result in searchResults" :key="result.question_number" class="mb-4 p-2 border-b">
@@ -81,8 +104,8 @@
                         <p class="font-bold text-green-600">正確答案: {{ result.correct_answer.join(', ') }}</p>
                     </div>
                 </div>
-
             </div>
+
             <div v-else>
                 <div class="text-center text-lg font-bold mb-4">目前進行第 {{ currentQuestionIndex + 1 }} 題，共 {{
                     questions.length
