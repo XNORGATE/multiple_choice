@@ -1,0 +1,5433 @@
+[
+    {
+        "question_number": 1,
+        "question": "下列哪一項為上網瀏覽網頁一定需要的軟體？",
+        "options": {
+            "A": "文書處理",
+            "B": "試算表",
+            "C": "簡報軟體",
+            "D": "瀏覽器"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 2,
+        "question": "瀏覽器主要解析的檔案格式為下列哪一項？",
+        "options": {
+            "A": "HTML檔案",
+            "B": "EXE檔案",
+            "C": "DOC檔案",
+            "D": "RAR檔案"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 3,
+        "question": "目前Microsoft最新的瀏覽器為何？",
+        "options": {
+            "A": "Internet Explorer",
+            "B": "Edge",
+            "C": "Chrome",
+            "D": "Firefox"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 4,
+        "question": "下列哪一個瀏覽器最早出現？",
+        "options": {
+            "A": "Microsoft IE",
+            "B": "Google Chrome",
+            "C": "Mozilla Firefox",
+            "D": "Netscape Navigator"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 5,
+        "question": "關於Microsoft Edge，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "移除包括ActiveX在內的一些過時且較不安全的技術",
+            "B": "最新的Microsoft Edge基於Chromium開發",
+            "C": "僅支援Windows平台",
+            "D": "在電腦及手機上都可以使用"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 6,
+        "question": "關於Google Chrome，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "Chrome相應的開放原始碼計劃名為Chromium",
+            "B": "Google Chrome在2020年1月的全球桌面瀏覽器占有率有30%",
+            "C": "Chrome程式碼是基於其他開放原始碼軟體所撰寫，並開發出稱為「V8」的高效能JavaScript引擎",
+            "D": "支援iOS、Android、Windows、Linux、OS X等作業系統"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 7,
+        "question": "在Mac OS環境中，下列哪一項為預設安裝的瀏覽器？",
+        "options": {
+            "A": "Edge",
+            "B": "Safari",
+            "C": "Chrome",
+            "D": "Firefox"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 8,
+        "question": "下列哪一項瀏覽器使用Gecko架構作為瀏覽器的核心元件？",
+        "options": {
+            "A": "Microsoft Edge",
+            "B": "Apple Safari",
+            "C": "Google Chrome",
+            "D": "Mozilla Firefox"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 9,
+        "question": "Microsoft IE第一次出現的Windows版本為下列哪一項？",
+        "options": {
+            "A": "Windows 7",
+            "B": "Windows 8",
+            "C": "Windows 2000",
+            "D": "Windows 95"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 10,
+        "question": "下列哪一項不是瀏覽器？",
+        "options": {
+            "A": "Lynx",
+            "B": "Edge",
+            "C": "Firefox",
+            "D": "Outlook"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 11,
+        "question": "Internet Explorer 11可以運行在下列哪一項平台上？",
+        "options": {
+            "A": "Windows作業系統",
+            "B": "MacOS作業系統",
+            "C": "Android作業系統",
+            "D": "Linux作業系統"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 12,
+        "question": "在Windows環境下使用Chrome、Firefox、Edge或IE時，按下鍵盤上的[F12]鍵會發生下列哪一項情況？",
+        "options": {
+            "A": "開啟開發人員工具",
+            "B": "開啟並切換至新分頁",
+            "C": "重新載入網頁",
+            "D": "關閉目前的分頁"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 13,
+        "question": "在Windows環境下使用Chrome、Firefox、Edge或IE時，按下鍵盤上的[Alt]+[F4]鍵會發生下列哪一項情況？",
+        "options": {
+            "A": "關閉目前的視窗",
+            "B": "開啟開發人員工具",
+            "C": "開啟新分頁",
+            "D": "進入預設的搜尋引擎搜索，搜尋複製的內容"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 14,
+        "question": "在Windows環境下使用Chrome、Firefox、Edge或IE時，按下鍵盤上的[F5]鍵會發生下列哪一項情況？",
+        "options": {
+            "A": "網頁中的所有內容，均直接向伺服器端發送請求，並重新載入目前所在的網頁",
+            "B": "重新在本機端再載入目前所在的網頁",
+            "C": "關閉目前的視窗",
+            "D": "清除目前瀏覽器的頁面"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 15,
+        "question": "在Windows環境下使用Chrome、Firefox、Edge或IE時，若想要從伺服器端強制重新提取指定的網頁，正確動作為下列哪一項？",
+        "options": {
+            "A": "按下鍵盤上的[F5]鍵",
+            "B": "按下瀏覽器上的「重新整理」按鈕",
+            "C": "按下鍵盤上的[Ctrl]+[F5]鍵",
+            "D": "按下「上一頁」按鈕，再按下「下一頁」按鈕"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 16,
+        "question": "視訊直播是近來興起的社交應用，其常見應用為下列哪些？(複選題)",
+        "options": {
+            "A": "線上即時教學課程",
+            "B": "分享才藝表演",
+            "C": "轉播各類精彩賽事",
+            "D": "分享遊戲過程"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 17,
+        "question": "在Web2.0網路社群，主要的營利方式為下列哪一項？",
+        "options": {
+            "A": "廣告",
+            "B": "會員費",
+            "C": "創作費",
+            "D": "管理費"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 18,
+        "question": "網路社群與即時通訊軟體的主要差異為下列哪些？(複選題)",
+        "options": {
+            "A": "即時通訊軟體較為私密，不知道雙方帳戶較難產生聯繫",
+            "B": "網路社群可以作為電話之外即時的聯絡工具",
+            "C": "網路社群較為公開，只要搜尋到對方資訊，都可以加為朋友",
+            "D": "社群提供粉絲們關注名人的管道"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 19,
+        "question": "下列哪些為即時通訊軟體的特性？(複選題)",
+        "options": {
+            "A": "多工作業",
+            "B": "非同步性",
+            "C": "互動性",
+            "D": "不受時空限制"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 20,
+        "question": "在OSI架構中，即時通訊軟體屬於下列哪一層架構？",
+        "options": {
+            "A": "傳輸層",
+            "B": "網路層",
+            "C": "應用層",
+            "D": "實體層"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 21,
+        "question": "現今即時通訊軟體相當普遍，市面上可使用即時通訊軟體的設備為下列哪些？(複選題)",
+        "options": {
+            "A": "電腦",
+            "B": "手機",
+            "C": "智慧電視",
+            "D": "映像管電視"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 22,
+        "question": "視訊會議是一般即時通訊軟體進階應用，與傳統的即時通訊的差別為下列哪些？(複選題)",
+        "options": {
+            "A": "廣播式的資料傳輸",
+            "B": "著重於多方通話",
+            "C": "更嚴格的品質考驗",
+            "D": "即時的簡報影像傳輸"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 23,
+        "question": "網路社群對人類溝通結構造成很大的衝擊，主要的負面影響為下列哪些？(複選題)",
+        "options": {
+            "A": "更容易感到焦慮和沮喪",
+            "B": "人與人之間的交情越來越粗淺",
+            "C": "人們花費越來越多的時間整理來自網路的垃圾資訊",
+            "D": "網路霸凌更容易發生"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 24,
+        "question": "網際網路的資訊傳輸滲透力及傳播力甚強，下列哪些為使用網路時必須謹慎防範的問題？(複選題)",
+        "options": {
+            "A": "言論問題",
+            "B": "版權問題",
+            "C": "隱私權問題",
+            "D": "著作權問題"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 25,
+        "question": "網際網路的發展迅速，我國法律在網路相關法律規範上有所欠缺，下列哪些項目為未來需要補強的問題？(複選題)",
+        "options": {
+            "A": "言論自由問題",
+            "B": "外來的文化和價值觀念滲透問題",
+            "C": "隱私權問題",
+            "D": "資訊落差問題"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 26,
+        "question": "下列哪一項不屬於網路社群服務？",
+        "options": {
+            "A": "Facebook",
+            "B": "Twitter",
+            "C": "Plurk",
+            "D": "Google Drive"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 27,
+        "question": "多數網路社群服務提供使用者間彼此互動的機制，包含下列哪些功能？(複選題)",
+        "options": {
+            "A": "近況更新",
+            "B": "留言分享",
+            "C": "相片分享",
+            "D": "線上聊天"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 28,
+        "question": "下列哪一項網路社群服務提供使用者針對喜歡的網頁或留言按讚（Like，有手指比讚的圖示）的功能？",
+        "options": {
+            "A": "Facebook",
+            "B": "Twitter",
+            "C": "Plurk",
+            "D": "Instagram"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 29,
+        "question": "下列哪一項網路社群服務限制中文、日文、韓文的發文字數不得超過140個字？",
+        "options": {
+            "A": "Facebook",
+            "B": "Twitter",
+            "C": "Plurk",
+            "D": "Instagram"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 30,
+        "question": "下列哪些網路社群服務又稱為微網誌（Microblog）？(複選題)",
+        "options": {
+            "A": "Twitter",
+            "B": "新浪微博",
+            "C": "Mobile01",
+            "D": "Plurk"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 31,
+        "question": "下列哪一項不屬於線上即時通訊應用？",
+        "options": {
+            "A": "LINE",
+            "B": "Skype",
+            "C": "WhatsApp",
+            "D": "Photoshop"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 32,
+        "question": "下列哪些線上即時通訊軟體或服務有提供視訊通話功能？(複選題)",
+        "options": {
+            "A": "LINE",
+            "B": "Skype",
+            "C": "WhatsApp",
+            "D": "WeChat"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 33,
+        "question": "下列哪些為即時通訊軟體或服務的生活應用？(複選題)",
+        "options": {
+            "A": "視訊會議",
+            "B": "網路電話",
+            "C": "檔案交換",
+            "D": "訊息交流"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 34,
+        "question": "下列哪一項網路社群服務採用實名制，不定時刪除未以真實個人資料註冊使用的使用者？",
+        "options": {
+            "A": "新浪微博",
+            "B": "Twitter",
+            "C": "PTT",
+            "D": "Plurk"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 35,
+        "question": "註冊成為Facebook會員不需要下列哪一項資料？",
+        "options": {
+            "A": "E-mail",
+            "B": "生日",
+            "C": "地址",
+            "D": "姓名"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 36,
+        "question": "下列哪一項不是Facebook提供的功能？",
+        "options": {
+            "A": "直播視訊",
+            "B": "動態消息",
+            "C": "相片分享",
+            "D": "網站書籤（儲存其他網站的網址）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 37,
+        "question": "下列哪一項是Facebook上傳相片後的特有功能？",
+        "options": {
+            "A": "姓名標籤",
+            "B": "去除紅眼",
+            "C": "馬賽克",
+            "D": "筆刷塗鴉"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 38,
+        "question": "下列哪一項符號為使用Twitter推文時，在一個單詞、片語或話題前加上此符號，如果當這個單詞、片語或話題被提及的頻率遠遠高於其他時，就會成為一個熱詞而進入趨勢列表？",
+        "options": {
+            "A": "%",
+            "B": "&",
+            "C": "*",
+            "D": "#"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 39,
+        "question": "Retweet（簡稱RT）在Twitter服務中，代表下列哪一項操作行為？",
+        "options": {
+            "A": "回覆",
+            "B": "轉推",
+            "C": "收藏",
+            "D": "展開"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 40,
+        "question": "即時通訊軟體Skype本身的原始功能中，不具備下列哪一項功能？",
+        "options": {
+            "A": "即時訊息",
+            "B": "視訊通話",
+            "C": "撥打電話",
+            "D": "遊戲"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 41,
+        "question": "下列哪一項社群網站可建立及經營粉絲專頁？",
+        "options": {
+            "A": "Facebook",
+            "B": "Twitter",
+            "C": "Plurk",
+            "D": "Instagram"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 42,
+        "question": "Karma是下列哪一項社群網站的熱度指標？",
+        "options": {
+            "A": "Plurk",
+            "B": "FashionGuide",
+            "C": "Twitter",
+            "D": "Facebook"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 43,
+        "question": "國外知名的圖片分享社群網站Pinterest，其圖片瀏覽的呈現介面稱為下列哪一項？",
+        "options": {
+            "A": "瀑布流",
+            "B": "馬賽克",
+            "C": "蒙太奇",
+            "D": "魚眼"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 44,
+        "question": "下列哪些屬於Facebook所提供的功能？(複選題)",
+        "options": {
+            "A": "Retweet",
+            "B": "打卡",
+            "C": "相片標籤",
+            "D": "讚（Like）"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 45,
+        "question": "下列哪一項社群網站提供API（Application Programming Interface），讓第三方軟體開發者可以開發在該網站執行的應用程式？",
+        "options": {
+            "A": "i-Part",
+            "B": "FashionGuide",
+            "C": "Mobile01",
+            "D": "Facebook"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 46,
+        "question": "在Facebook中啟用帳號保安的安全瀏覽功能後，Facebook會盡可能於瀏覽資訊時使用下列哪一項協定連線？",
+        "options": {
+            "A": "FTP",
+            "B": "HTTPS",
+            "C": "RMI",
+            "D": "SSH"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 47,
+        "question": "使用者可透過下列哪些軟體使用Facebook？(複選題)",
+        "options": {
+            "A": "Microsoft Edge",
+            "B": "Facebook App",
+            "C": "Telnet tool",
+            "D": "Photoshop"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 48,
+        "question": "瀏覽社群網站或使用即時通訊軟體過程中，下列哪一項使用方式可能造成電腦中毒？",
+        "options": {
+            "A": "點擊連結",
+            "B": "分享相片",
+            "C": "打卡",
+            "D": "更新個人資訊"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 49,
+        "question": "許多民眾LINE訊息曾收到詐騙毒訊息，如「免費電影線上看」、「LINE免費貼圖」等分享連結，下列哪些方式可以避免LINE詐騙？(複選題)",
+        "options": {
+            "A": "開啟「隱私設定」中「阻擋訊息」的功能，可避免接收到非好友傳送的訊息",
+            "B": "做好帳號保護，避免多個帳號設定同組密碼",
+            "C": "LINE好友傳訊息時，一定值得信任，訊息中的連結可以直接點擊",
+            "D": "取消「我的帳號」中「允許自其他裝置登入」，避免駭客取得帳密後從電腦登入"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 50,
+        "question": "如附圖所示，為下列哪一項社群網站的代表圖示？",
+        "options": {
+            "A": "Facebook",
+            "B": "Twitter",
+            "C": "Plurk",
+            "D": "新浪微博"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 51,
+        "question": "使用Gmail或Hotmail收發電子郵件，屬於下列哪一項類型雲端服務？",
+        "options": {
+            "A": "SaaS（Software as a Service）",
+            "B": "PaaS（Platform as a Service）",
+            "C": "IaaS（Infrastructure as a Service）",
+            "D": "STaaS（Storage as a Service）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 52,
+        "question": "想要選用雲端服務供應商（Cloud Service Provider, CSP或稱Cloud Service Vendor, CSV）的虛擬主機，建立專屬的應用伺服器主機時，可選擇下列哪些雲端服務？(複選題)",
+        "options": {
+            "A": "Amazon EC2",
+            "B": "Google App Engine",
+            "C": "Microsoft Azure",
+            "D": "Dropbox"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 53,
+        "question": "由於網路的蓬勃發展，出現越來越多種不同型態的終端設備，下列哪一項裝置為本身無需實體儲存空間與應用程式，而是讓雲端伺服器進行所有數據處理，再由用戶端顯示資訊？",
+        "options": {
+            "A": "智慧型手機（Smartphone）",
+            "B": "平板電腦（Tablet PC）",
+            "C": "精簡型用戶端（Thin Client）",
+            "D": "複雜型用戶端（Thick Client）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 54,
+        "question": "下列哪一項不是美國國家標準與技術研究院（NIST）所定義雲端運算的五項基本特性？",
+        "options": {
+            "A": "隨選的自助服務（On-demand Self-service）",
+            "B": "安全的網路存取（Secure Network Access）",
+            "C": "資源池（Resource Pooling）",
+            "D": "迅速重新部署的靈活度（Rapid Elasticity）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 55,
+        "question": "下列哪一項為Amazon EC2（Amazon Elastic Compute Cloud）虛擬服務所使用的技術？",
+        "options": {
+            "A": "VMWare ESXi",
+            "B": "Microsoft Hyper-V",
+            "C": "Xen Hypervisor",
+            "D": "Oracle VirtualBox"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 56,
+        "question": "下列哪些為Microsoft開發Microsoft Azure服務，所提供的虛擬化服務類型？(複選題)",
+        "options": {
+            "A": "SaaS（Software as a Service）",
+            "B": "PaaS（Platform as a Service）",
+            "C": "IaaS（Infrastructure as a Service）",
+            "D": "STaaS（Storage as a Service）"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 57,
+        "question": "著名的網路書店亞馬遜（Amazon）也是虛擬化服務的主要供應商，其Amazon EC2（Amazon Elastic Compute Cloud）提供下列哪一項類型的虛擬化服務？",
+        "options": {
+            "A": "SaaS（Software as a Service）",
+            "B": "PaaS（Platform as a Service）",
+            "C": "IaaS（Infrastructure as a Service）",
+            "D": "STaaS（Storage as a Service）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 58,
+        "question": "在電子郵件傳遞過程中，下列哪一項DNS中的資源紀錄類型的功能是標示郵件伺服器主機？",
+        "options": {
+            "A": "A主機紀錄",
+            "B": "CNAME別名紀錄",
+            "C": "MX郵件交換紀錄",
+            "D": "NAPTR指標紀錄"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 59,
+        "question": "在雲端運算中，任何事物都可以被視為一種服務（Anything as a Service, XaaS或稱Everything as a Service, XaaS）時，最重要的基礎為下列哪一項技術？",
+        "options": {
+            "A": "高可用性",
+            "B": "異地備援",
+            "C": "虛擬化",
+            "D": "資料加密"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 60,
+        "question": "根據美國國家標準與技術研究院（NIST）針對雲端運算定義，提出的四種部署模式中，其下列哪一項模式的運作方式為雲端的基礎建設屬於某個組織，由組織進行雲端服務的販售？",
+        "options": {
+            "A": "公有雲（Public Cloud）",
+            "B": "私有雲（Private Cloud）",
+            "C": "混合雲（Hybrid Cloud）",
+            "D": "社群雲（Community Cloud）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 61,
+        "question": "當使用HTTPS進行網站連線時，可獲得下列哪些好處？(複選題)",
+        "options": {
+            "A": "網站的身分正確性",
+            "B": "流量傳輸的品質",
+            "C": "資料傳輸的安全",
+            "D": "預防電腦病毒"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 62,
+        "question": "下列哪些社群網站有提供網路相本的服務？(複選題)",
+        "options": {
+            "A": "Flickr",
+            "B": "Plurk",
+            "C": "Facebook",
+            "D": "Twitter"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 63,
+        "question": "瀏覽網頁時，所使用的網址為https://tw.yahoo.com/，其又稱為下列哪一項？",
+        "options": {
+            "A": "ARC（Advanced RISC Computing）",
+            "B": "DNS（Domain Name System）",
+            "C": "URL（Uniform Resource Locator）",
+            "D": "UNC（Uniform Naming Convention）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 64,
+        "question": "使用SSL（Secure Sockets Layer）的方式，與網站進行安全性連線時，使用下列哪一項資訊進行網站身分識別？",
+        "options": {
+            "A": "電腦名稱",
+            "B": "IP位址",
+            "C": "使用者帳號",
+            "D": "數位憑證（Digital Certificate）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 65,
+        "question": "下列哪一項網站平台主要服務為提供使用者快速分享照片？",
+        "options": {
+            "A": "Dropbox",
+            "B": "Flickr",
+            "C": "Twitter",
+            "D": "YouTube"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 66,
+        "question": "下列哪些網路技術可用來作為企業內部網路（Intranet）連線使用？(複選題)",
+        "options": {
+            "A": "非對稱數位用戶線路（ADSL）",
+            "B": "纜線數據機（Cable Modem）",
+            "C": "乙太網路（Ethernet）",
+            "D": "租用專線（Leased Line）"
+        },
+        "correct_answer": [
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 67,
+        "question": "下列哪些網路應用類型是Web2.0的代表性服務？(複選題)",
+        "options": {
+            "A": "電子郵件（Email）",
+            "B": "部落格（Blog）",
+            "C": "維基百科（Wikipedia）",
+            "D": "電子布告欄（Bulletin Board System, BBS）"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 68,
+        "question": "下列哪一項標準協定讓電子郵件，可以傳輸圖像及聲音等非文字的訊息？",
+        "options": {
+            "A": "POP3（Post Office Protocol 3）",
+            "B": "IMAP（Internet Message Access Protocol）",
+            "C": "MIME（Multipurpose Internet Mail Extension）",
+            "D": "SMTP（Simple Mail Transfer Protocol）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 69,
+        "question": "透過瀏覽器連線到Gmail收發電子郵件，使用下列哪一項通訊協定進行連線？",
+        "options": {
+            "A": "POP3（Post Office Protocol 3）",
+            "B": "IMAP（Internet Message Access Protocol）",
+            "C": "HTTPS（Hypertext Transfer Protocol Secure）",
+            "D": "SMTP（Simple Mail Transfer Protocol）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 70,
+        "question": "下列哪些通訊協定為用來加密電子郵件？(複選題)",
+        "options": {
+            "A": "SMTP（Simple Mail Transfer Protocol）",
+            "B": "HTTPS（Hypertext Transfer Protocol Secure）",
+            "C": "S/MIME（Secure/Multipurpose Internet Mail Extension）",
+            "D": "PGP（Pretty Good Privacy）"
+        },
+        "correct_answer": [
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 71,
+        "question": "下列哪一項通訊協定主要功能是自動分配IP位址與相關參數？",
+        "options": {
+            "A": "DNS（Domain Name System）",
+            "B": "DHCP（Dynamic Host Configuration Protocol）",
+            "C": "ARP（Address Resolution Protocol）",
+            "D": "SNMP（Simple Network Management Protocol）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 72,
+        "question": "利用DNS的反查服務來確認郵件伺服器是否為合法的主機，此為垃圾郵件（SPAM Mail）的防護機制之一，其使用下列哪一項紀錄類型？",
+        "options": {
+            "A": "A主機紀錄",
+            "B": "CNAME別名紀錄",
+            "C": "MX郵件交換紀錄",
+            "D": "PTR指標紀錄"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 73,
+        "question": "BT（BitTorrent）是目前著名的一種P2P（Peer-to-Peer）檔案傳輸模式，下列哪一項功能是BT的主要特性？",
+        "options": {
+            "A": "快速尋找檔案",
+            "B": "保證檔案的頻寬",
+            "C": "加強檔案傳輸的安全",
+            "D": "透過分享加快檔案傳輸的速度"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 74,
+        "question": "下列哪些檔案傳輸軟體使用P2P（Peer-to-Peer）的傳輸技術？(複選題)",
+        "options": {
+            "A": "FileZilla",
+            "B": "BitTorrent",
+            "C": "eMule",
+            "D": "Dropbox"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 75,
+        "question": "下列哪些雲端硬碟服務，可直接在瀏覽器中進行線上文件編輯的功能？(複選題)",
+        "options": {
+            "A": "iCloud",
+            "B": "Dropbox",
+            "C": "Google Drive",
+            "D": "OneDrive"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 76,
+        "question": "知名的網路語音通訊軟體Skype，使用下列哪一項技術透過網際網路傳遞語音的封包？",
+        "options": {
+            "A": "PPPoE（Point-to-Point Protocol over Ethernet）",
+            "B": "VoIP（Voice over Internet Protocol）",
+            "C": "IPSec（Internet Protocol Security）",
+            "D": "VPN（Virtual Private Network）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 77,
+        "question": "著名的社群網站Facebook屬於下列哪一項雲端服務的部署模式？",
+        "options": {
+            "A": "公有雲（Public Cloud）",
+            "B": "私有雲（Private Cloud）",
+            "C": "混合雲（Hybrid Cloud）",
+            "D": "社群雲（Community Cloud）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 78,
+        "question": "下列哪一項虛擬化的平台屬於開放原始碼的軟體？",
+        "options": {
+            "A": "VMWare ESXi",
+            "B": "Microsoft Hyper-V",
+            "C": "Xen Hypervisor",
+            "D": "Virtual PC"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 79,
+        "question": "影音分享平台YouTube屬於下列哪一項類型的雲端服務？",
+        "options": {
+            "A": "SaaS（Software as a Service）",
+            "B": "PaaS（Platform as a Service）",
+            "C": "IaaS（Infrastructure as a Service）",
+            "D": "STaaS（Storage as a Service）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 80,
+        "question": "下列哪一項服務平台同時提供了社群服務、雲端檔案儲存、日曆、影音分享、電子郵件及部落格等整合服務？",
+        "options": {
+            "A": "Facebook",
+            "B": "Google",
+            "C": "Microsoft",
+            "D": "Yahoo!"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 81,
+        "question": "雲端運算的技術主要包含下列哪些層面？(複選題)",
+        "options": {
+            "A": "硬體層",
+            "B": "雲端布建和管理",
+            "C": "虛擬化環境",
+            "D": "軟體層"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 82,
+        "question": "雲端運算目前的特色不包含下列哪一項？",
+        "options": {
+            "A": "高可擴充性",
+            "B": "高安全性",
+            "C": "隨需服務",
+            "D": "高延展性"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 83,
+        "question": "雲端運算具備下列哪些特徵？(複選題)",
+        "options": {
+            "A": "隨需所選自助式服務",
+            "B": "共用資源池",
+            "C": "服務可測量",
+            "D": "存取方式多樣化"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 84,
+        "question": "雲端運算的應用通常被區分為下列哪些？(複選題)",
+        "options": {
+            "A": "CaaS（Content as a Service）",
+            "B": "SaaS（Software as a Service）",
+            "C": "PaaS（Platform as a Service）",
+            "D": "IaaS（Infrastructure as a Service）"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 85,
+        "question": "下列哪一項比較適合導入雲端運算服務？",
+        "options": {
+            "A": "資料庫",
+            "B": "交易型業務",
+            "C": "促進協作的應用",
+            "D": "ERP"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 86,
+        "question": "下列哪一項為雲端軟體即服務（Software as a Service, SaaS）？",
+        "options": {
+            "A": "Microsoft Azure",
+            "B": "Google App Engine",
+            "C": "iCloud",
+            "D": "Amazon EC2"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 87,
+        "question": "雲端軟體即服務（Software as a Service, SaaS）的計費方式，可能有下列哪幾種？(複選題)",
+        "options": {
+            "A": "以記憶體速度計費",
+            "B": "以使用者或使用量的方式計費",
+            "C": "以計算能力計費",
+            "D": "以儲存空間容量計費"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 88,
+        "question": "下列哪些為雲端平台即服務（Platform as a Service, PaaS）？(複選題)",
+        "options": {
+            "A": "Facebook",
+            "B": "Google App Engine",
+            "C": "Amazon EC2",
+            "D": "Microsoft Azure"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 89,
+        "question": "雲端平台即服務（Platform as a Service, PaaS）的計費方式有許多種可能，若以Google App Engine的標準環境為例，計費方式可能有下列哪幾種？(複選題)",
+        "options": {
+            "A": "以服務的內容計費",
+            "B": "以運算能力、儲存空間的多寡計費",
+            "C": "以使用電量計費",
+            "D": "以執行時間計費"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 90,
+        "question": "下列哪些為雲端基礎設施即服務（Infrastructure as a Service, IaaS）？(複選題)",
+        "options": {
+            "A": "Google App Engine",
+            "B": "Amazon EC2",
+            "C": "HiCloud",
+            "D": "FlexiScale"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 91,
+        "question": "雲端基礎設施即服務（Infrastructure as a Service, IaaS）的計費方式是採取下列哪些？(複選題)",
+        "options": {
+            "A": "以服務的內容計費",
+            "B": "以執行時間計費",
+            "C": "以運算能力、儲存空間的多寡計費",
+            "D": "以使用人數計費"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 92,
+        "question": "雲端運算在技術層面，下列敘述哪些正確？A.晶片和硬體技術的飛速發展、B.虛擬化技術成熟、C.雲端運算可以輕鬆實現不同設備間的資料共享、D.雲端運算使用特定的終端裝置，以保證安全、E.雲端運算不限制使用地點",
+        "options": {
+            "A": "ABCD",
+            "B": "ABDE",
+            "C": "ABCE",
+            "D": "BCDE"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 93,
+        "question": "雲端運算的隱憂包含下列哪些選項？A.資訊安全、B.服務轉移彈性、C.隱私的保全、D.節能減碳、E.系統相容度",
+        "options": {
+            "A": "ABCD",
+            "B": "BCDE",
+            "C": "ABCE",
+            "D": "ABDE"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 94,
+        "question": "SLA（Service Level Agreement）是意旨下列哪一項協定？",
+        "options": {
+            "A": "軟體層級協定",
+            "B": "服務連結協定",
+            "C": "軟體連結協定",
+            "D": "服務層級協定"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 95,
+        "question": "CloudBurst為下列哪一家企業提出的雲端服務？",
+        "options": {
+            "A": "DELL",
+            "B": "HP",
+            "C": "IBM",
+            "D": "SUM"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 96,
+        "question": "Google提供的Google App Engine（GAE）屬於下列哪一項雲端服務？",
+        "options": {
+            "A": "SaaS（Software as a Service）",
+            "B": "IaaS（Infrastructure as a Service）",
+            "C": "CaaS（Content as a Service）",
+            "D": "PaaS（Platform as a Service）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 97,
+        "question": "進行MapReduce運算時，MapReduce程式會將輸入資料分割為多個block，Hadoop 2.x預設的分割block size大小為下列哪一項？",
+        "options": {
+            "A": "16MB",
+            "B": "32MB",
+            "C": "64MB",
+            "D": "128MB"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 98,
+        "question": "Google的MapReduce雲端運算所採用的儲存檔案系統為下列哪一項？",
+        "options": {
+            "A": "GFS",
+            "B": "HDFS",
+            "C": "SQL",
+            "D": "SQLite"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 99,
+        "question": "Yahoo!的MapReduce雲端運算所採用的儲存檔案系統為下列哪一項？",
+        "options": {
+            "A": "GFS",
+            "B": "HDFS",
+            "C": "SQL",
+            "D": "SQLite"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 100,
+        "question": "Microsoft Azure為Microsoft開發的第一個雲端作業系統，其基於下列哪一項軟體開發而成？",
+        "options": {
+            "A": "Windows Server 2005",
+            "B": "Windows Server 2008",
+            "C": "Windows Server 2010",
+            "D": "Windows Server 2012"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 101,
+        "question": "關於網際網路使用的IPv4與IPv6的網路通訊協定，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "IPv4能夠提供的IP位址數目約為2的32次方個",
+            "B": "IPv6能夠提供的IP位址數目約為2的64次方個",
+            "C": "從IPv4轉移到IPv6需要一段時間，所以會有IPv4與IPv6共同存在的情況",
+            "D": "IPv6在服務品質上比IPv4更適合串流技術（Streaming）的應用"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 102,
+        "question": "IPv6是第六版的IP網路協定規範，下列哪一項IP位址的表示法不符合IPv6位址的規定？",
+        "options": {
+            "A": "FE80：403A：A2E8：0130：7879：235E：FFAC：AC16",
+            "B": "403A：EF4：：A23",
+            "C": "403A：：EF4：A23",
+            "D": "FE23：：AC12：2781：：AC16"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 103,
+        "question": "下列哪些軟體屬於點對點（Peer-to-Peer, P2P）的檔案分享應用程式？(複選題)",
+        "options": {
+            "A": "WinRAR",
+            "B": "eMule",
+            "C": "XAMPP",
+            "D": "BitTorrent"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 104,
+        "question": "網際網路早期的發展跟下列哪一項網路有關？",
+        "options": {
+            "A": "TANet",
+            "B": "ARPANET",
+            "C": "BITNET",
+            "D": "USENET"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 105,
+        "question": "網際網路所採用的串流技術（Streaming），主要是讓影音資料的遞送與播放達到下列哪一項效果？",
+        "options": {
+            "A": "影音資料全部傳遞完成之後才開始播放",
+            "B": "影音資料一邊傳遞一邊在用戶端開始播放",
+            "C": "避免遭到駭客攔截竊取影音資料",
+            "D": "讓影音資料的顏色更鮮豔好看"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 106,
+        "question": "以網域名稱的通用規範可判斷，下列哪一項最可能是教育機構使用的網址？",
+        "options": {
+            "A": "www.chinsan.edu",
+            "B": "www.chinsan.gov",
+            "C": "www.chinsan.com",
+            "D": "www.chinsan.org"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 107,
+        "question": "下列哪一項檔案格式不適合用來支援串流技術（Streaming）的視訊檔案格式？",
+        "options": {
+            "A": "Apple公司發展的MOV檔案格式",
+            "B": "Microsoft公司發展的WMV檔案格式",
+            "C": "Microsoft公司發展的AVI檔案格式",
+            "D": "RealNetworks公司發展的RM檔案格式"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 108,
+        "question": "透過網際網路瀏覽視訊檔案往往因檔案過大，造成瀏覽時的等待或網路負載增加，如希望由網際網路進行現場視訊直播（Live Broadcast），最好採用下列哪一項技術？",
+        "options": {
+            "A": "直接下載播放（Downloading）",
+            "B": "視訊串流播放（Video Streaming）",
+            "C": "漸進式的下載播放（Progressive Downloading）",
+            "D": "使用ADSL直接下載播放"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 109,
+        "question": "在多層次的架構（Multi-tier Architecture）中，關於安全性、負載均衡（Load Balancing）與應用程式管理的功能，通常屬於下列哪一項軟硬體系統？",
+        "options": {
+            "A": "列印伺服器（Print Server）",
+            "B": "應用程式伺服器（Application Server）",
+            "C": "網頁伺服器（Web Server）",
+            "D": "檔案伺服器（File Server）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 110,
+        "question": "網際網路發展過程中陸續出現了CSNET、ARPANET、NSFNET、WWW等4種網路或服務，假如將其出現的先後順序由先到後排列，下列哪一項組合順序正確？",
+        "options": {
+            "A": "CSNET→ARPANET→NSFNET→WWW",
+            "B": "ARPANET→CSNET→NSFNET→WWW",
+            "C": "WWW→ARPANET→NSFNET→CSNET",
+            "D": "CSNET→NSFNET→ARPANET→WWW"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 111,
+        "question": "網際網路以IP位址來辨識網路上的節點，一般電腦的網路卡則以一種含有6組16進位數字的實體位址，區分網路區段上的電腦，這種位址的名稱是下列哪一項？",
+        "options": {
+            "A": "MAC位址（Media Access Control Address）",
+            "B": "網路廣播位址",
+            "C": "網路群播位址",
+            "D": "LDAP位址（Lightweight Directory Access Protocol Address）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 112,
+        "question": "全球的網際網路IP位址分配以及網域名稱（Domain Name）的管理工作，目前由下列哪一項機構負責？",
+        "options": {
+            "A": "IEEE",
+            "B": "ISO",
+            "C": "NSF",
+            "D": "ICANN"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 113,
+        "question": "網域名稱（Domain Name）或稱「域名」，比IP位址易懂易記，下列哪一項屬性型的網域名稱是具「第一類電信事業特許執照或網路建（架）設許可證或第二類電信事業許可執照」者才能申請的域名？",
+        "options": {
+            "A": "edu.tw",
+            "B": "game.tw",
+            "C": "net.tw",
+            "D": "org.tw"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 114,
+        "question": "關於「網域名稱轉址（URL Redirection）」技術，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "在使用者瀏覽某個網址時，將其導向另一個網址",
+            "B": "在使用者輸入錯誤的網址時，試著將其導向正確的網址",
+            "C": "讓使用者以更快的速度連上入口網站",
+            "D": "將很長的網址轉成短的網址"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 115,
+        "question": "財團法人台灣網路資訊中心（TWNIC）負責下列哪些辨識資訊的申請與核發？(複選題)",
+        "options": {
+            "A": "伺服器名稱（Server Name）",
+            "B": "IP位址（IPv4格式）",
+            "C": "自治系統號碼（ASN）",
+            "D": "IP位址（IPv6格式）"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 116,
+        "question": "下列哪些類型的網域名稱屬於「泛用型」的網域名稱，依法登記的國內外公司、商號、法人或自然人均可申請？(複選題)",
+        "options": {
+            "A": "阿昌.tw",
+            "B": "阿昌.net.tw",
+            "C": "chinsan.tw",
+            "D": "chinsan.org.tw"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 117,
+        "question": "在網際網路中常以URL（Uniform Resource Locator）來表示網路資源的位址，URL跟IP位址的主要差異為下列哪一項？",
+        "options": {
+            "A": "URL表示一個網際網路節點的唯一位址，IP位址可以更進一步地表示該檔案所在節點上的路徑",
+            "B": "URL表示一個網際網路節點的唯一位址，IP位址可以更進一步地表示該節點上的資源的位址",
+            "C": "IP位址表示一個網際網路檔案的唯一位址，URL可以更進一步地表示該檔案所在節點的位址",
+            "D": "IP位址表示一個網際網路節點的唯一位址，URL可以更進一步地表示該節點上的資源的位址"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 118,
+        "question": "下列哪些技術是目前無線寬頻通訊的主流技術？(複選題)",
+        "options": {
+            "A": "LoRa",
+            "B": "Wi-Fi",
+            "C": "RFID",
+            "D": "LTE-A"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 119,
+        "question": "下列哪一項網路裝置的主要功能在於將資料封包於網際網路中轉送，需要決定封包轉送的路徑，通常可以連接聯外的數據專線，並且能將資料封包傳送到其他網域？",
+        "options": {
+            "A": "集線器（Hub）",
+            "B": "交換器（Switch）",
+            "C": "數據機（Modem）",
+            "D": "路由器（Router）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 120,
+        "question": "一般家裡透過電話線上網使用的無線寬頻分享器就像無線基地台一樣，鄰近的電腦都可透過無線通訊的介面偵測到，下列哪一項能在技術上防止別人透過自己家中的無線寬頻分享器上網？",
+        "options": {
+            "A": "將無線寬頻分享器放在家裡比較不會洩漏電磁波的地方",
+            "B": "調整無線寬頻分享器天線的指向",
+            "C": "將無線寬頻分享器設定成要求提供網路安全性金鑰才能連線",
+            "D": "使用無線寬頻分享器時將門窗關閉"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 121,
+        "question": "網際網路採用的串流技術（Streaming）有下列哪些優點？(複選題)",
+        "options": {
+            "A": "接收串流影音資料比較不會有等待下載資料很久才開始播放的狀況",
+            "B": "影音資料可以即時地在用戶端播放",
+            "C": "用戶端接收到的影音資料的品質比較高",
+            "D": "影音資料在用戶端不必等到完全下載就可以開始一邊下載一邊播放"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 122,
+        "question": "網際網路透過TCP/IP共通協定連接很多實體網路，這些網路在互通時可能需要進行協定的轉換、訊號的轉換、通訊速率的調整及管理工作協議，傳統上這些功能屬於下列哪一項裝置？",
+        "options": {
+            "A": "寬頻分享器",
+            "B": "閘道器（Gateway）",
+            "C": "基地台",
+            "D": "集線器（Hub）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 123,
+        "question": "點對點（Peer-to-Peer, P2P）檔案分享應用程式可讓終端用戶間有效率的分享檔案，不僅容易找到自己需要的檔案資源，並能夠迅速取得，主要原因為下列哪些？(複選題)",
+        "options": {
+            "A": "用戶之間以網路硬碟共享的方式分享檔案",
+            "B": "用戶的數目龐大，共享的檔案眾多",
+            "C": "用戶需要的檔案可以同時從多個擁有該檔案的其他用戶端下載",
+            "D": "用戶透過高效率集中的檔案伺服器進行檔案的分享"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 124,
+        "question": "一般的行動裝置連接網際網路所使用的網路介面跟透過桌上型電腦使用的網路介面，最主要的差異為何？",
+        "options": {
+            "A": "行動裝置的網路介面所提供的速率，高於桌上型電腦的網路介面所提供的速率",
+            "B": "行動裝置的網路介面所提供的通訊品質，優於桌上型電腦的網路介面所提供的通訊品質",
+            "C": "行動裝置通常使用無線的網路介面，桌上型電腦通常使用有線的網路介面",
+            "D": "行動裝置網路介面的通訊費用，遠低於桌上型電腦網路介面的通訊費用"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 125,
+        "question": "行動裝置具有移動性，所連接網際網路時可運用所謂的行動IP（Mobile IP）技術，關於此技術運作原理，下列敘述哪些錯誤？(複選題)",
+        "options": {
+            "A": "在行動IP的技術中行動裝置沒有固定的IP位址",
+            "B": "在行動IP的技術中行動裝置可以有固定的IP位址",
+            "C": "在行動IP的技術中行動裝置可以透過一個固定的IP位址與一個暫時的位址來連接網際網路",
+            "D": "在行動IP的技術中行動裝置只能在同一個ISP的管理範圍內移動"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 126,
+        "question": "家裡有多台電腦需要上網，假如使用ADSL上網方式，可透過下列哪些裝置與方法讓多台電腦都能同時上網？(複選題)",
+        "options": {
+            "A": "在ADSL數據機內部加裝強波器",
+            "B": "以無線寬頻分享器取代ADSL數據機，連接電話的介面，以無線基地台的角色來分享網路連線",
+            "C": "以無線寬頻分享器連接ADSL數據機上提供的網路插孔，以無線基地台的角色來分享網路連線",
+            "D": "以一般的寬頻分享器連接ADSL數據機上提供的網路插孔，以類似集線器（Hub）的角色來分享網路連線"
+        },
+        "correct_answer": [
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 127,
+        "question": "關於網域名稱系統（Domain Name System, DNS），下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "DNS所處理的網域名稱具有階層式的架構",
+            "B": "全球的網際網路節點所使用的DNS伺服器只有一台，所以其效能與穩定性都很高",
+            "C": "DNS伺服器能進行網域名稱與IP位址之間對應的解析",
+            "D": "一台DNS伺服器必須記載全球所有的網域名稱與IP位址之間的對應，才能進行完整的網域名稱解析"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 128,
+        "question": "在無線區域網路IEEE 802.11的標準中，下列哪一個協定標準所支援的資料傳輸速率最高？",
+        "options": {
+            "A": "802.11a/g",
+            "B": "802.11n",
+            "C": "802.11ac",
+            "D": "802.11ax"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 129,
+        "question": "網際網路所使用的IP位址有特定的格式規定，下列哪些表示方式不符合IPv4中IP位址的格式規定？(複選題)",
+        "options": {
+            "A": "192.192.51.2",
+            "B": "169.30.05.36",
+            "C": "192.68.01.25",
+            "D": "203.35.256.7"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 130,
+        "question": "網際網路所使用的IP位址為因應實務上的需求做了分級，以IPv4而言，下列哪一個等級所涵蓋的IP位址數目最多？",
+        "options": {
+            "A": "Class A",
+            "B": "Class B",
+            "C": "Class C",
+            "D": "Class D"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 131,
+        "question": "家裡使用電信公司的ADSL寬頻上網時，來自電話網路的局線、ADSL數據機、電話及電腦的網路線之間的連接方式，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "電話要跟寬頻分享器直接以電話線相連",
+            "B": "來自電腦的網路線要連接到ADSL數據機的網路接孔",
+            "C": "來自電話的電話線要連接到ADSL數據機的電話線接孔",
+            "D": "來自電話網路的局線要連接ADSL數據機"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 132,
+        "question": "關於動態主機設定協定（Dynamic Host Configuration Protocol, DHCP），下列敘述哪一項錯誤？",
+        "options": {
+            "A": "屬於OSI模型中網路層（Network Layer）的協定",
+            "B": "可以讓網路上的電腦自動取得IP位址與相關的參數",
+            "C": "可動態地分配IP位址，減少網路管理人員的工作負擔",
+            "D": "DHCP伺服器能接受網路節點的請求，動態地分配IP位址"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 133,
+        "question": "關於動態主機設定協定（Dynamic Host Configuration Protocol, DHCP）的優點，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "可以讓一組IP位址有彈性地重複分配使用",
+            "B": "可以讓IP位址動態地分配給DHCP用戶端",
+            "C": "可以提昇網路線路的數據傳輸效率",
+            "D": "方便網路IP位址的管理與維護"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 134,
+        "question": "關於網際網路（Internet），下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "是一個廣域的網路",
+            "B": "是一個區域性的網路",
+            "C": "約在西元1920年開始發展",
+            "D": "ARPANET可說是Internet的始祖"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 135,
+        "question": "提供網際網路服務的供應商一般也可稱之為下列哪一項？",
+        "options": {
+            "A": "HiNet",
+            "B": "ISP",
+            "C": "TANet",
+            "D": "ASP"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 136,
+        "question": "關於TANet，下列敘述哪一項正確？",
+        "options": {
+            "A": "政府機關所使用的內部網路",
+            "B": "提供給教育與研究單位使用的學術網路",
+            "C": "民間公司所建立的商業網路",
+            "D": "政府提供給所有人民自由使用的公用網路"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 137,
+        "question": "下列哪些裝置可用來連接網際網路？(複選題)",
+        "options": {
+            "A": "智慧型手機",
+            "B": "平板電腦",
+            "C": "筆記型電腦",
+            "D": "桌上型電腦"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 138,
+        "question": "著名的全球資訊網（World Wide Web, WWW）所採用的主要協定為下列哪一項？",
+        "options": {
+            "A": "FTP（File Transfer Protocol）",
+            "B": "HTTP（Hypertext Transfer Protocol）",
+            "C": "SMTP（Simple Mail Transfer Protocol）",
+            "D": "RTP（Real-time Transport Protocol）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 139,
+        "question": "智慧型手機可以讓我們講電話及連上網際網路，在使用時如要降低手機電磁波可能產生的生物效應，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "不要讓耳朵或頭部太靠近手機",
+            "B": "選擇使用電磁波能量比吸收率（Specific Absorption Rate, SAR）的值比較低的手機",
+            "C": "調低手機的音量",
+            "D": "選擇使用體積比較小的手機"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 140,
+        "question": "關於網域名稱系統（Domain Name System, DNS），下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "DNS伺服器可以透過網域名稱的解析得到對應的MAC位址",
+            "B": "每一台DNS伺服器都記錄了網際網路上所有主機名稱與IP位址之間的對應",
+            "C": "假如世界上所有的DNS伺服器都當機，則網際網路的運作將完全癱瘓",
+            "D": "DNS採用分散式以及階層式的網域名稱管理架構，DNS伺服器查不到的主機IP資訊可向其上層的DNS伺服器請求查詢"
+        },
+        "correct_answer": [
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 141,
+        "question": "租用數據專線可讓企業有專屬的通暢管道連上網際網路，下列哪一項數據專線的資料傳輸速率最高？",
+        "options": {
+            "A": "STM-1",
+            "B": "STM-4",
+            "C": "T1",
+            "D": "T3"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 142,
+        "question": "關於網域名稱「www.tku.edu.tw」，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "www.tku.edu.tw中的「tw」代表頂級網域名稱",
+            "B": "www.tku.edu.tw中的「www」代表連線使用的協定名稱",
+            "C": "www.tku.edu.tw中的「edu」代表該網址屬於教育機構",
+            "D": "www.tku.edu.tw中的「tku」代表網域所在地理區域的名稱"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 143,
+        "question": "168.1.1屬於下列哪一項等級的IP位址？",
+        "options": {
+            "A": "Class A",
+            "B": "Class B",
+            "C": "Class C",
+            "D": "Class D"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 144,
+        "question": "關於IP位址，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "現行的IPv4中每一組IP以四組用英文句點分開的數字表示",
+            "B": "沒有IP位址的電腦無法連上網際網路",
+            "C": "如果自行任意指定電腦的IP位址，可能造成無法正常上網",
+            "D": "IP位址中每一組數字的範圍是由0至256"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 145,
+        "question": "URL可用來表示網際網路中資源所在之處，當輸入「ftp://192.168.3.253:7」的URL資訊時，其中指定的連結埠號（Port）為下列哪一項？",
+        "options": {
+            "A": "192",
+            "B": "3",
+            "C": "253",
+            "D": "7"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 146,
+        "question": "下列哪一項技術或工具不支援動態網頁的功能？",
+        "options": {
+            "A": "HTML5",
+            "B": "HTML3",
+            "C": "Java",
+            "D": "Flash"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 147,
+        "question": "關於Google Chrome中「書籤」的主要功能，為下列哪一項？",
+        "options": {
+            "A": "搜尋網路上的資料",
+            "B": "快速移到常去的網站",
+            "C": "執行網頁應用程式",
+            "D": "執行伺服器應用程式"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 148,
+        "question": "關於Microsoft Edge中「我的最愛」，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "在Google Chrome或Mozilla Firefox中稱之為「書籤」",
+            "B": "可以是單一網頁，也可用資料夾方式整理",
+            "C": "某一網頁的網址中如果有變數，無法存入「我的最愛」",
+            "D": "大部分的主流瀏覽器都可備份回復「我的最愛」"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 149,
+        "question": "下列哪一項不是網頁中執行的應用程式？",
+        "options": {
+            "A": "ActiveX",
+            "B": "JavaScript",
+            "C": "Java",
+            "D": "Servlet"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 150,
+        "question": "關於Microsoft Edge，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "可以匯入其它瀏覽器的書籤",
+            "B": "支援私密瀏覽模式",
+            "C": "僅支援Microsoft Windows作業系統",
+            "D": "無法開啟其它瀏覽器專用的附加元件"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 151,
+        "question": "若想檢視網頁的HTML檔案，在Google Chrome中，下列哪一項方法無效？",
+        "options": {
+            "A": "[Ctrl]+[U]鍵",
+            "B": "在頁面上按右鍵，選擇「檢視網頁原始碼」",
+            "C": "[F12]鍵",
+            "D": "將網址直接拖曳至記事本"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 152,
+        "question": "想在網頁瀏覽器正確顯示不同國家的文字，最好選擇下列哪一項編碼？",
+        "options": {
+            "A": "Big5",
+            "B": "ASCII",
+            "C": "GBK",
+            "D": "Unicode（UTF-8）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 153,
+        "question": "關於Google Chrome搜尋瀏覽網頁中的文字，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "按下鍵盤上的[Ctrl]+[F]鍵，可直接尋找",
+            "B": "按下右上角的功能鈕，選擇「尋找」",
+            "C": "使用Google搜尋引擎",
+            "D": "搜索到的資料會以黃色標記，並顯示找到的數量"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 154,
+        "question": "Windows 10的作業系統預設的瀏覽器為何？",
+        "options": {
+            "A": "Internet Explorer",
+            "B": "Edge",
+            "C": "Firefox",
+            "D": "Chrome"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 155,
+        "question": "下列哪一項瀏覽器不支援私密瀏覽（Private Browsing）功能？",
+        "options": {
+            "A": "Microsoft Edge",
+            "B": "Google Chrome",
+            "C": "Mozilla Firefox",
+            "D": "目前主流瀏覽器均支援"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 156,
+        "question": "關於MHTML的敘述何者錯誤？",
+        "options": {
+            "A": "為MIME HTML的縮寫，又稱單一檔案網頁或網頁封存檔案",
+            "B": "可以將一個多附件的網頁儲存為單一檔案",
+            "C": "所有網頁瀏覽器都可以在不安裝第三方的擴展下讀取或儲存MHTML檔案",
+            "D": "MHTML文件的基礎是HTML"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 157,
+        "question": "在Microsoft Edge中，下列哪一項私密瀏覽（Private Browsing）模式可讓使用者的資料（如cookie、密碼或信用卡資料等）不留存在本機端？",
+        "options": {
+            "A": "InPrivate瀏覽",
+            "B": "無痕瀏覽",
+            "C": "隱私瀏覽",
+            "D": "祕密瀏覽"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 158,
+        "question": "下列哪些瀏覽器可以透過帳號登入的方式，在其他電腦上同步顯示原電腦上設定的「書籤」或「我的最愛」？(複選題)",
+        "options": {
+            "A": "Microsoft IE",
+            "B": "Mozilla Firefox",
+            "C": "Apple Safari",
+            "D": "Opera"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 159,
+        "question": "下列哪一項技術讓瀏覽器的使用操作，更接近桌面的使用操作，如放大縮小及拖曳？",
+        "options": {
+            "A": "Java",
+            "B": "CSS",
+            "C": "PHP",
+            "D": "JavaScript + AJAX"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 160,
+        "question": "在瀏覽器中，最常見決定頁面樣式的檔案格式為下列哪一項？",
+        "options": {
+            "A": "HTML",
+            "B": "XML",
+            "C": "CSS",
+            "D": "Java"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 161,
+        "question": "假如某ISP業者聲稱所提供的上網速率可達到「下行1G/上行600M」，則使用時真正得到實際的速率最有可能為下列哪一項？",
+        "options": {
+            "A": "下行800M/上行800M",
+            "B": "下行800M/上行300M",
+            "C": "下行1.2G/上行300M",
+            "D": "下行1.2G/上行800M"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 162,
+        "question": "關於公共區域免費無線上網，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "僅限於使用智慧型手機，筆記型電腦不適用",
+            "B": "提供這類服務的公共區域必須裝設無線通訊熱點",
+            "C": "必須使用4G蜂巢網路技術",
+            "D": "經由公共區域免費無線上網可以連上網際網路"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 163,
+        "question": "下列哪一項網路協定的主要功能是進行IP位址與MAC位址的轉換，可將IP位址轉換成網路節點的實體位址（Physical Address）？",
+        "options": {
+            "A": "TCP（Transmission Control Protocol）",
+            "B": "ARP（Address Resolution Protocol）",
+            "C": "UDP（User Datagram Protocol）",
+            "D": "DHCP（Dynamic Host Configuration Protocol）"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 164,
+        "question": "關於點對點（Peer-to-Peer, P2P）檔案分享與網路架構，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "參與P2P檔案分享的用戶端需要安裝P2P檔案分享軟體",
+            "B": "分享的檔案經由一個中央伺服器轉送到需要檔案的用戶端",
+            "C": "常見的P2P檔案分享軟體都直接使用Telnet程式為用戶的使用介面",
+            "D": "P2P檔案分享是透過網際網路來傳送與分享檔案資源"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 165,
+        "question": "下列哪一項行動無線通訊上網的資料傳輸速率最高？",
+        "options": {
+            "A": "2G",
+            "B": "3G",
+            "C": "4G",
+            "D": "5G"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 166,
+        "question": "某公司想要進行雲端化，下列哪一項動作不見得是必要的？",
+        "options": {
+            "A": "考慮將公司的服務放到提供IaaS的運行商平台上",
+            "B": "將原有伺服器的CPU升級",
+            "C": "將資料庫放至PaaS的供應商",
+            "D": "使用Gmail企業版取代自行架設Exchange伺服器"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 167,
+        "question": "當程式設計師將原來本機的資料庫換成平台即服務（Platform as a Service, PaaS）的資料庫時，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "只需將連接資料庫的程式碼換成PaaS的位置，不需太多更動",
+            "B": "大部分的程式碼皆不需要修改",
+            "C": "如果是指令稿式（Script）的程式，程式必須重新編譯",
+            "D": "目前大部分平台都提供了眾多應用程式介面（API）幫助使用者移植程式"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 168,
+        "question": "下列哪一項不是雲端運算的種類之一？",
+        "options": {
+            "A": "公有雲，如Amazon EC2",
+            "B": "私有雲，如公司內部架設的雲端",
+            "C": "混合雲，將公有雲和私有雲混合的雲端",
+            "D": "個人雲，個人電腦中的雲端運算"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 169,
+        "question": "關於基礎設施即服務（Infrastructure as a Service, IaaS），下列敘述哪一項錯誤？",
+        "options": {
+            "A": "將運算資源和運算設備分離",
+            "B": "大部分使用虛擬化完成",
+            "C": "Amazon EC2就是IaaS的一種應用",
+            "D": "使用垂直擴充（Scale Up）代替水平擴充（Scale Out）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 170,
+        "question": "目前大部分的網際網路資料中心（Internet Data Center, IDC）都提供了下列哪一項雲端運算服務？",
+        "options": {
+            "A": "基礎設施即服務（Infrastructure as a Service, IaaS）",
+            "B": "平台即服務（Platform as a Service, PaaS）",
+            "C": "軟體即服務（Software as a Service, SaaS）",
+            "D": "資料即服務（Data as a Service, DaaS）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 171,
+        "question": "下列哪一項雲端運算的服務出現的時間最早？",
+        "options": {
+            "A": "基礎設施即服務（Infrastructure as a Service, IaaS）",
+            "B": "平台即服務（Platform as a Service, PaaS）",
+            "C": "軟體即服務（Software as a Service, SaaS）",
+            "D": "都於2010年後才出現"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 172,
+        "question": "下列哪一項功能無法以基礎設施即服務（Infrastructure as a Service, IaaS）達成？",
+        "options": {
+            "A": "在Linux中線上擴充伺服器數量",
+            "B": "在 Windows 10 中線上增加CPU數量",
+            "C": "在Windows Server 2008 Enterprise x64中線上增加記憶體數量",
+            "D": "在Windows 10中線上增加硬碟容量"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 173,
+        "question": "在雲端運算中，將伺服器硬體資源用服務發布成基礎設施即服務（Infrastructure as a Service, IaaS）的，最有名的技術為下列哪一項？",
+        "options": {
+            "A": "物件化",
+            "B": "實體化",
+            "C": "虛擬化",
+            "D": "抽象化"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 174,
+        "question": "常用的虛擬化主要針對的對象為下列哪一項？",
+        "options": {
+            "A": "作業系統",
+            "B": "硬體資源",
+            "C": "應用程式",
+            "D": "使用者介面"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 175,
+        "question": "關於虛擬化，下列敘述哪一項正確？",
+        "options": {
+            "A": "虛擬化可在任何硬體上執行",
+            "B": "虛擬化能減少中央處理器（Central Processing Unit, CPU）的使用",
+            "C": "虛擬化可同時讓實體硬碟有多個虛擬硬碟",
+            "D": "虛擬化可加快應用程式的執行速度"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 176,
+        "question": "下列哪一項不是虛擬化中的主要技術？",
+        "options": {
+            "A": "網路",
+            "B": "管理介面",
+            "C": "伺服器",
+            "D": "儲存設備"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 177,
+        "question": "虛擬化分為兩大類，企業應用較偏好的類別為下列哪一項？",
+        "options": {
+            "A": "原生架構（Native）",
+            "B": "寄居架構（Hosted）",
+            "C": "混合架構",
+            "D": "共生架構"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 178,
+        "question": "虛擬化分為兩大類，最方便架設的類別為下列哪一項？",
+        "options": {
+            "A": "原生架構（Native）",
+            "B": "寄居架構（Hosted）",
+            "C": "混合架構",
+            "D": "共生架構"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 179,
+        "question": "下列哪一項不是虛擬化技術中原生架構（Native）的最大特色？",
+        "options": {
+            "A": "支援硬體種類較少",
+            "B": "Hypervisor消耗的資源（Overhead）較少",
+            "C": "支援的企業功能較少",
+            "D": "全球的裝機量較少"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 180,
+        "question": "寄居架構（Hosted）裝機量最大的產品為下列哪一項？",
+        "options": {
+            "A": "VMware Workstation",
+            "B": "VMware vSphere",
+            "C": "Xen",
+            "D": "KVM"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 181,
+        "question": "寄居架構（Hosted）需要一個作業系統作為底層，其底層稱之為下列哪一項？",
+        "options": {
+            "A": "主機作業系統（Host OS）",
+            "B": "虛擬機作業系統（Guest OS）",
+            "C": "虛擬機監視器（Hypervisor）",
+            "D": "虛擬機（Virtual Machine, VM）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 182,
+        "question": "不論是寄居架構（Hosted）或原生架構（Native），所有虛擬化產品都需要下列哪一項功能而達成虛擬化？",
+        "options": {
+            "A": "主機作業系統（Host OS）",
+            "B": "虛擬機作業系統（Guest OS）",
+            "C": "虛擬機監視器（Hypervisor）",
+            "D": "虛擬機（Virtual Machine, VM）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 183,
+        "question": "下列哪一項不是Hypervisor的功能？",
+        "options": {
+            "A": "接管實體硬體，模擬虛擬硬體",
+            "B": "在虛擬機（Virtual Machine, VM）之間分配實體硬體資源",
+            "C": "提供一個管理介面給使用者",
+            "D": "提供作業系統的桌面"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 184,
+        "question": "當寄居架構的主機作業系統（Host OS）當機時，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "Hypervisor一定無法繼續運作",
+            "B": "虛擬機（Virtual Machine, VM）一定無法繼續運作",
+            "C": "虛擬機作業系統（Guest OS）一定無法運作",
+            "D": "實體硬體一定無法運作"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 185,
+        "question": "一個執行虛擬化環境的硬體伺服器，可同時執行多少個開機狀態的作業系統（Operating System, OS），下列敘述哪一項正確？",
+        "options": {
+            "A": "無限多個",
+            "B": "視硬體容量而定",
+            "C": "視中央處理器（Central Processing Unit, CPU）、虛擬機作業系統（Guest OS）的負載及記憶體的容量而定",
+            "D": "視網路卡頻寬而定"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 186,
+        "question": "下列哪一項不是虛擬化最大的好處之一？",
+        "options": {
+            "A": "可增加中央處理器（Central Processing Unit, CPU）的使用率",
+            "B": "可快速、彈性、自動生成作業系統",
+            "C": "可合理分配硬體資源",
+            "D": "可降低記憶體的使用量"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 187,
+        "question": "關於虛擬化，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "就是一台硬體上交換啟動多個作業系統（Operating System, OS）",
+            "B": "可同時間在一台硬體上執行多個OS",
+            "C": "可同時間讓多個OS之間用實體機（如：網路連接）的方式連接",
+            "D": "可同時讓實體硬碟有多個虛擬硬碟"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 188,
+        "question": "虛擬化上的虛擬機作業系統（Guest OS）以及虛擬硬體合稱為一個虛擬機（Virtual Machine, VM），關於VM，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "VM的硬體是由實體硬體分配出來的",
+            "B": "VM在建立時就開始使用實體硬體",
+            "C": "VM可使用實體網路卡",
+            "D": "VM可使用實體硬碟"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 189,
+        "question": "關於虛擬化的技術，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "虛擬機（Virtual Machine, VM）是由檔案所組成",
+            "B": "VM可複製到其它的實體機開機",
+            "C": "VM在複製到其它同硬體設備的實體機時，虛擬機作業系統（Guest OS）需要重新安裝驅動程式",
+            "D": "VM在其它實體機啟動時，行為和原來的實體機一樣"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 190,
+        "question": "關於虛擬化技術，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "新一代的虛擬化技術為純軟體技術",
+            "B": "不同硬體上安裝的相同Hypervisor會因為硬體種類而產生相容性問題",
+            "C": "各大硬體廠商已推出專門針對虛擬化技術的產品",
+            "D": "不同硬體上能執行虛擬化的技術不同"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 191,
+        "question": "Hadoop雲端運算由下列哪一項團隊開發？",
+        "options": {
+            "A": "Google",
+            "B": "Yahoo!",
+            "C": "Apache",
+            "D": "Facebook"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 192,
+        "question": "Hadoop在Apache基金會網站中有其他的開放原始碼套件，組成一個Hadoop生態體系（Hadoop Ecosystem），其具備下列哪些能力？(複選題)",
+        "options": {
+            "A": "HBase",
+            "B": "Hive",
+            "C": "Pig",
+            "D": "Mahout"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 193,
+        "question": "Hadoop雲端運算檔案系統為下列哪一項？",
+        "options": {
+            "A": "GFS",
+            "B": "HDFS",
+            "C": "HBase",
+            "D": "BigTable"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 194,
+        "question": "如果想要讓Windows 7和Windows 10共存並交換資料，最省成本的方案為下列哪一項？",
+        "options": {
+            "A": "雙重啟動Windows 7和Windows 10",
+            "B": "找兩台電腦各安裝一套系統",
+            "C": "使用VMware Workstation建立兩個虛擬機（Virtual Machine, VM）",
+            "D": "使用Windows 10為主機作業系統（Host OS），並使用內建的Windows Virtual PC安裝一個Windows 7的VM"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 195,
+        "question": "影響一個虛擬化平台執行效率的最顯著原因為下列哪一項？",
+        "options": {
+            "A": "中央處理器（Central Processing Unit, CPU）的數量或頻率",
+            "B": "記憶體的數量",
+            "C": "硬碟的速度",
+            "D": "網路的速度"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 196,
+        "question": "關於單一伺服器，目前常見企業虛擬化效能提昇方案為下列哪一項？",
+        "options": {
+            "A": "使用多插槽的中央處理器（Central Processing Unit, CPU）",
+            "B": "使用高速記憶體",
+            "C": "使用固態硬碟（Solid State Disk, SSD）取代傳統轉盤硬碟",
+            "D": "使用多片網路卡"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 197,
+        "question": "目前虛擬化解決方案提供商，其產品最完整的提供商為下列哪一項？",
+        "options": {
+            "A": "VMware",
+            "B": "Microsoft",
+            "C": "Oracle",
+            "D": "IBM"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 198,
+        "question": "下列哪一項不是VMware寄居架構產品？",
+        "options": {
+            "A": "VMware Workstation",
+            "B": "VMware Fusion",
+            "C": "VMware Player",
+            "D": "VMware vSphere"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 199,
+        "question": "下列哪一項不是原生架構（Native）產品？",
+        "options": {
+            "A": "Microsoft Hyper-V",
+            "B": "VMware vSphere",
+            "C": "KVM",
+            "D": "Oracle VirtualBox"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 200,
+        "question": "VMware下的虛擬硬碟格式為下列哪一項？",
+        "options": {
+            "A": "VMDK",
+            "B": "VMX",
+            "C": "VHD",
+            "D": "VMEM"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 201,
+        "question": "電腦程式著作之著作財產權，存續於著作人之生存期間及其死亡後幾年？",
+        "options": {
+            "A": "20年",
+            "B": "30年",
+            "C": "50年",
+            "D": "100年"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 202,
+        "question": "無故取得、刪除或變更他人電腦或其相關設備之電磁紀錄，致生損害於公眾或他人者，處幾年以下有期徒刑？",
+        "options": {
+            "A": "1年",
+            "B": "3年",
+            "C": "5年",
+            "D": "7年"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 203,
+        "question": "小明開設色情貼圖網站，以招募會員的方式，對付費的會員提供色情圖片供其觀賞、拷貝。相關法律問題，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "小明觸犯了刑法第235條",
+            "B": "小明可能處三年以下有期徒刑",
+            "C": "色情貼圖中如含有未滿二十歲以下之人為姦淫或猥褻行為之圖畫，則小明同時觸犯了兒童及少年性交易防制條例第28條",
+            "D": "小華到小明開設的色情貼圖網站下載了圖片自行觀賞，並未構成刑法第235條之罪"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 204,
+        "question": "小明在購物網站購買電視，使用後發現不滿意想要退貨，下列敘述哪一項正確？",
+        "options": {
+            "A": "無論何時皆可退貨",
+            "B": "退貨僅能取回一半價錢",
+            "C": "七天內是可以退貨的",
+            "D": "無論何時都不能夠退貨"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 205,
+        "question": "小英從網路上引用了一篇具有創用CC授權標註的文章，下列敘述哪一項正確？",
+        "options": {
+            "A": "使用時必須按照著作人或授權人所指定的方式，表彰其姓名",
+            "B": "可以使用這篇文章於商業目的之用途",
+            "C": "可以修改這篇文章的內容",
+            "D": "不須標註這篇文章的原始出處"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 206,
+        "question": "下列哪一項為非創用CC授權之四個要素之一？",
+        "options": {
+            "A": "姓名標示",
+            "B": "相同方式分享",
+            "C": "禁止改作",
+            "D": "商業性"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 207,
+        "question": "在網站收集他人撰寫的文章，若未取得作者同意，可能會侵犯作者的下列哪一項權利？",
+        "options": {
+            "A": "著作權",
+            "B": "專利權",
+            "C": "肖像權",
+            "D": "隱私權"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 208,
+        "question": "小華破解了他人的帳號密碼並侵入其電腦中。相關法律問題，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "小華觸犯了刑法第358條",
+            "B": "小華將被處以三年以下有期徒刑",
+            "C": "小華所犯之罪為非告訴乃論",
+            "D": "小華在入侵後又在電腦內植入電腦病毒，則觸犯了刑法第361條"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 209,
+        "question": "在我國於網路上搶先佔用網域名稱的行為，可能觸犯下列哪一項法律？",
+        "options": {
+            "A": "專利法",
+            "B": "著作權法",
+            "C": "商標法",
+            "D": "公平交易法"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 210,
+        "question": "下列哪一項為智慧財產權所保護的內容？",
+        "options": {
+            "A": "一般人知的權利",
+            "B": "人類腦力辛勤創作的結晶",
+            "C": "國家尊嚴",
+            "D": "消費者消費的樂趣"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 211,
+        "question": "下列哪些不是在網路上發表文章時應有的態度？(複選題)",
+        "options": {
+            "A": "就事論事，避免人身攻擊",
+            "B": "雖然是未經證實的消息，也要先讓大家知道",
+            "C": "可以全盤引用別人的文章，自己意見加不加無所謂",
+            "D": "轉載別人的文章時，註明出處"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 212,
+        "question": "下列哪一項為著作權的合理應用？",
+        "options": {
+            "A": "整理網路文章集結出版",
+            "B": "未取得同意轉寄他人文章給朋友",
+            "C": "將網路文章自行收藏供自己閱讀",
+            "D": "將網路文章轉貼到自己的部落格而未註明出處"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 213,
+        "question": "下列哪一項行為是違反法律的？",
+        "options": {
+            "A": "在自己的隨身碟上儲存一張自拍的裸照",
+            "B": "在網路留言板上辱罵老師",
+            "C": "在家用電腦連上色情網站",
+            "D": "在傳給好朋友的電子郵件中抱怨知名牛肉麵店的麵食不乾淨"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 214,
+        "question": "在西元1998年撰寫CIH病毒的台灣學生沒有受到法律制裁，主要因素為下列哪些？(複選題)",
+        "options": {
+            "A": "沒有造成損害",
+            "B": "當時的法律沒有明確的規定與法條",
+            "C": "沒有人檢舉",
+            "D": "該學生沒有犯意或故意散播病毒"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 215,
+        "question": "小明寫了一個病毒程式，其行為是否違反法律，下列敘述哪一項正確？",
+        "options": {
+            "A": "若自己沒有散佈就沒有違法",
+            "B": "屬於個人創作的自由，沒有違法",
+            "C": "若造成公眾的損害就違法",
+            "D": "造成的損害超過法定的規定才算違法"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 216,
+        "question": "假如在網路上發現被人公然貼文誹謗，最好先採取下列哪一項處理措施？",
+        "options": {
+            "A": "直接到法院控告貼文者",
+            "B": "先進行了解並保留有效的證據",
+            "C": "對網站的負責人提出告訴",
+            "D": "請貼文誹謗的人道歉"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 217,
+        "question": "下列哪一項行為是明顯違反法律的？",
+        "options": {
+            "A": "在網站的個人相片簿上放自己的私密裸照",
+            "B": "在KTV包廂用手機拍下不雅裸照並上傳到臉書分享",
+            "C": "把網頁上的圖片下載儲存到自己的電腦硬碟上",
+            "D": "跟好朋友透過電子郵件閒聊知名女星的私生活"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 218,
+        "question": "阿德在瀏覽網頁的時候，將網頁儲存到自己的電腦上，其行為是否違法，下列敘述哪一項正確？",
+        "options": {
+            "A": "要看離線瀏覽時，對於網頁資料的使用行為是否在合理使用的範圍內才能判定",
+            "B": "是一種違法的重製行為",
+            "C": "是合法的行為，因為是儲存在自己的電腦上",
+            "D": "假如是完整的網頁儲存則屬於違法的行為"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 219,
+        "question": "小明將台北市各著名小吃店的相關內容整理放在自己的網站上，他能否主張著作權，下列敘述哪一項正確？",
+        "options": {
+            "A": "可以的，別人不能隨意使用，要遵循著作權法的規範",
+            "B": "必須被認定為具有創作性質的編輯著作方能主張著作權",
+            "C": "不能主張著作權，因為台北著名小吃眾人皆知，不算創作",
+            "D": "若取得店家同意則可主張著作權"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 220,
+        "question": "共享軟體（Shareware）或免費軟體（Freeware）在下列哪一項情況下仍受著作權法保護？",
+        "options": {
+            "A": "作者死亡超過五十年",
+            "B": "作者放在網路上供人下載使用",
+            "C": "作者宣稱放棄著作權",
+            "D": "原創作者已不可考"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 221,
+        "question": "關於自由軟體是否受著作權法的保護，下列敘述哪一項正確？",
+        "options": {
+            "A": "自由軟體完全公開程式碼，已經沒有保護的必要",
+            "B": "仍受著作權法的保護以及自由軟體契約的約束",
+            "C": "不論在什麼狀況下都不得修改後從事營利的用途",
+            "D": "可自由下載使用，但不能再複製儲存另外一份"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 222,
+        "question": "小鐘在沒有取得對方同意的情況下於自己的網頁上建立了一個連往歷史博物館的超連結（Hyperlink），其行為是否違法，下列敘述哪一項正確？",
+        "options": {
+            "A": "要看該超連結內容是否侵權來判定是否違法",
+            "B": "其行為是違法的",
+            "C": "其行為不違法，因為沒有複製其內容",
+            "D": "要看網頁中引用內容的比例有多少來判定是否違法"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 223,
+        "question": "網際網路上的紛爭經常跨越國界的範圍，法院對網際網路上的跨國紛爭在裁判上主要會先考量下列哪些問題？(複選題)",
+        "options": {
+            "A": "本國法院對該案件是否有審理裁判之權",
+            "B": "紛爭本身所牽涉的損失或賠償金額是否很龐大",
+            "C": "該案件應適用何國法律及如何適用法律",
+            "D": "該案件所牽連的人數多寡以及居住的地點"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 224,
+        "question": "下列哪一項資料不在國內個人資料保護法所規範的項目中？",
+        "options": {
+            "A": "網路暱稱",
+            "B": "護照號碼",
+            "C": "婚姻狀況",
+            "D": "職業"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 225,
+        "question": "下列哪些情況很可能是網路詐騙或網路釣魚？(複選題)",
+        "options": {
+            "A": "接到學校電算中心的電子郵件通知請求重新設定密碼",
+            "B": "不明店家的網路購物商品低於市價3折，且須馬上付款再出貨",
+            "C": "網路賣家要出國，請求提早匯款，返國後再交貨",
+            "D": "收到不明來源的電子郵件請求提供使用者帳號密碼，以利管理人員確認身分"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 226,
+        "question": "在網路上購物時，應該注意下列哪些事項？(複選題)",
+        "options": {
+            "A": "安全便利的付費方式",
+            "B": "便捷可靠的配送管道",
+            "C": "網站設計是否美觀",
+            "D": "個人資料的保密"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 227,
+        "question": "關於網路著作的保護，下列敘述哪一項正確？",
+        "options": {
+            "A": "發表文章在報章雜誌上，因屬公開，已喪失著作權保護",
+            "B": "著作在發表到網路上時，即受到著作權保護",
+            "C": "若非營利性質，可隨意使用網路上的著作",
+            "D": "轉載文章可隨意修改內容以符合實際需要"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 228,
+        "question": "在網路上盜取線上遊戲貨幣，其行為是否已觸犯法律，下列敘述哪一項正確？",
+        "options": {
+            "A": "否，網路上的貨幣是虛假的",
+            "B": "是，已觸犯妨害電腦使用罪",
+            "C": "否，只要沒有轉換成現金",
+            "D": "是，已構成妨害隱私權"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 229,
+        "question": "轉貼他人文章，應該注意下列哪些事項？(複選題)",
+        "options": {
+            "A": "需註明出處與作者",
+            "B": "為配合自己的文章內容，可任意修改原文",
+            "C": "需先取得文章作者同意",
+            "D": "需要在轉貼文章後寫上自己的心得"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 230,
+        "question": "小珍是小明的女友，小珍因故得知小明Gmail電子信箱之帳號及密碼，未經小明同意，小珍無故登入小明個人電子信箱，窺視小明與他人的信件，其行為是否已觸犯法律，下列敘述哪一項正確？",
+        "options": {
+            "A": "否，小明自願提供帳號密碼",
+            "B": "是，已觸犯妨害電腦使用罪",
+            "C": "否，男女朋友屬親密關係",
+            "D": "是，已觸犯著作權"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 231,
+        "question": "下列哪些行為已經侵犯了個人的網路隱私權？(複選題)",
+        "options": {
+            "A": "在房客臥室安裝攝影機並且連上網路監看",
+            "B": "在朋友家裡一起觀賞電腦上儲存的出國遊覽的影片",
+            "C": "偷偷使用同學的電子郵件帳號密碼查看其私人郵件內容",
+            "D": "在朋友的委託下使用其自然人憑證代為操作網路報稅"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 232,
+        "question": "在網頁瀏覽程式中，下列哪一項功能的運用有可能對使用者的網路隱私權造成威脅？",
+        "options": {
+            "A": "刪除瀏覽紀錄",
+            "B": "以Cookie來紀錄與使用者相關的上網動作與資訊",
+            "C": "下載播放串流視訊",
+            "D": "使用HTTPS的協定"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 233,
+        "question": "國內與資訊及電子商務相關的法律中，下列哪一項與保護個人網路隱私權的關係最為密切？",
+        "options": {
+            "A": "著作權法",
+            "B": "電子簽章法",
+            "C": "公平交易法",
+            "D": "個人資料保護法"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 234,
+        "question": "關於個人資料保護法的規定，當事人就其個人資料有下列哪些權利？(複選題)",
+        "options": {
+            "A": "請求刪除",
+            "B": "查詢或請求閱覽",
+            "C": "請求以網路傳遞給第三者",
+            "D": "請求停止蒐集、處理或利用"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 235,
+        "question": "對於公務機關蒐集個人資料而言，下列哪些情況下，公務機關可拒絕當事人就其保有之個人資料提出提供閱覽或複製本的請求？(複選題)",
+        "options": {
+            "A": "妨害公務機關執行法定職務",
+            "B": "因公務機關電腦設備故障無法提供",
+            "C": "妨害國家重大利益",
+            "D": "妨害第三人之重大利益"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 236,
+        "question": "網路上搶先佔用網域名稱的行為，通常會以下列哪一項稱之？",
+        "options": {
+            "A": "網路駭客",
+            "B": "網路流氓",
+            "C": "網路攤販",
+            "D": "網路蟑螂"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 237,
+        "question": "下列哪一項是屬於尊重智慧財產權的行為？",
+        "options": {
+            "A": "複製多份時，應保密且勿於公開場合中進行",
+            "B": "購買合法版權的軟體",
+            "C": "同一辦公室內之同仁可自行複製多份軟體，以方便內部使用，但不可攜出",
+            "D": "使用複製軟體的客戶需付版權費給購買原版軟體者"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 238,
+        "question": "下列哪些是屬於違法的行為？(複選題)",
+        "options": {
+            "A": "學生為了求學便利，可任意的複製軟體使用",
+            "B": "為了上課影印課本",
+            "C": "購買了版權軟體時，為了保存可以自己複製一份",
+            "D": "使用無授權的軟體工作，並在完成工作後將無授權的軟體刪除"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 239,
+        "question": "關於著作權，下列敘述哪一項正確？",
+        "options": {
+            "A": "在不知情的情形下，代為重製未經授權的他人著作物，不屬於違法的行為",
+            "B": "在知情的情形下，代為重製未經授權的他人著作物，不屬於違法的行為",
+            "C": "在不知情的情形下，代為重製未經授權的他人著作物，無法判定是否有違法的行為",
+            "D": "在不知情的情形下，代為重製未經授權的他人著作物，是屬於違法的行為"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 240,
+        "question": "電腦高手阿強買回一套大富翁遊戲軟體，因為覺得非常好玩，於是從事了下列選項中的行為，下列哪些為合法的行為？(複選題)",
+        "options": {
+            "A": "重製一份作為備份之用",
+            "B": "將備份的大富翁光碟借給同學玩",
+            "C": "重製多片光碟，以低價賣給同學",
+            "D": "為配合家中奇特的電腦環境，阿強修改作業系統設定，讓大富翁能執行順暢"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 241,
+        "question": "關於在電子郵件中，相關的規則及禮節，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "英文書信最好全部用大寫",
+            "B": "引用來函應力求精簡，且需註明哪些是引用的部分",
+            "C": "引用他人文章或網頁內容最好標明出處或網頁連結",
+            "D": "為力求精簡，在表示請求的書信中，當敘述完自己的目的後，即可結束"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 242,
+        "question": "關於MP3的使用，下列敘述哪一項是合法的行為？",
+        "options": {
+            "A": "將自己購買的CD轉換成MP3放在自己網站上供人下載",
+            "B": "將自己購買的CD轉換成MP3放在自己的電腦裡聆聽",
+            "C": "收到朋友寄來的MP3歌曲，再轉寄給別人",
+            "D": "將MP3集結成光碟販售"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 243,
+        "question": "小明因為考試成績不好，在公開討論區上以影射的方式辱罵老師，下列敘述哪一項正確？",
+        "options": {
+            "A": "有言論自由，不會有事",
+            "B": "網路言論不具法律效力，不會有事",
+            "C": "因為沒有指名道姓，並未違法",
+            "D": "已能明顯看出所指何人，可控告公然侮辱"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 244,
+        "question": "轉貼他人文章，應該要指明下列哪些項目？(複選題)",
+        "options": {
+            "A": "原作來源",
+            "B": "作者",
+            "C": "原作發表時間",
+            "D": "自己的姓名"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 245,
+        "question": "自己開設網路電台當DJ，播放流行音樂供大家聆聽，會產生下列哪一項違法行為？",
+        "options": {
+            "A": "複製",
+            "B": "公開傳輸",
+            "C": "重製",
+            "D": "修改"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 246,
+        "question": "創用CC授權條款中，標誌代表的意思，是下列何者？",
+        "options": {
+            "A": "姓名標示（Attribution, BY）",
+            "B": "相同方式分享（Share Alike, SA）",
+            "C": "非商業性（NonCommercial, NC）",
+            "D": "禁止改作（No Derivatives, ND）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 247,
+        "question": "偷看不屬於自己的電子郵件，其行為是否已觸犯法律，下列敘述哪些錯誤？(複選題)",
+        "options": {
+            "A": "是，已觸犯著作權法",
+            "B": "否，因為並沒有將電子郵件轉寄散發",
+            "C": "否，因為電子郵件只能算是電磁記錄",
+            "D": "是，已觸刑法的妨害書信罪"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 248,
+        "question": "在網路上發表文章時，下列哪些行為是不適當的？(複選題)",
+        "options": {
+            "A": "使用大量的注音符號，讓文章更生動",
+            "B": "理性討論，避免謾罵",
+            "C": "轉載文章註明作者出處",
+            "D": "公布軟體註冊破解碼供大家一同分享"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 249,
+        "question": "下列哪些情況是違法的？(複選題)",
+        "options": {
+            "A": "使用信用卡號進行網路購物",
+            "B": "幫討厭的朋友徵網路援交",
+            "C": "把歌手的MP3下載回自己電腦再燒錄分送好友",
+            "D": "把版權軟體放上網路與朋友分享"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 250,
+        "question": "下列哪些情況是違法的？(複選題)",
+        "options": {
+            "A": "設立色情網站",
+            "B": "在網路上販賣從日本帶回來的藥品",
+            "C": "散佈自己拍攝的照片",
+            "D": "將木馬程式植入網站，竊取別人電腦中的資料"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 251,
+        "question": "常見的網路攻擊型態主要有下列哪些？(複選題)",
+        "options": {
+            "A": "修改IP封包，以假造的IP位址來扮演其他使用者",
+            "B": "利用猜密碼程式破解帳號密碼",
+            "C": "從網路上竊取IP封包，讀取通訊內容",
+            "D": "切斷伺服器的網路連線"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 252,
+        "question": "關於加密法，下列敘述哪些錯誤？(複選題)",
+        "options": {
+            "A": "數位簽章使用對稱式加密演算法來運作",
+            "B": "一般使用對稱式加密演算法來傳遞非對稱式加密演算法的金鑰",
+            "C": "一般來說對稱式加密演算法較非對稱式加密演算法之加密速度快",
+            "D": "對稱式加密演算法中加密者與解密者是使用不一樣的金鑰"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 253,
+        "question": "關於非對稱式加密演算法，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "具有一把公鑰以及一把私鑰",
+            "B": "SHA-1為非對稱式加密演算法的代表",
+            "C": "加解密速度極快，很適合大量資料",
+            "D": "加解密都使用同一對金鑰"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 254,
+        "question": "關於傳遞加密文件，下列敘述哪些錯誤？(複選題)",
+        "options": {
+            "A": "為了安全，每次傳遞文件主體前都會產生一組對稱式交談金鑰（Session Key），僅供該次傳遞資料使用",
+            "B": "在傳遞資料主體前，先使用交談金鑰將文件主體進行加密",
+            "C": "寄件者利用自己的公開金鑰（Public Key），將交談金鑰加密後送給收件者",
+            "D": "收件者收到加密文件後，使用自己的私密金鑰（Private Key）將文件主體解密閱讀"
+        },
+        "correct_answer": [
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 255,
+        "question": "關於數位簽章，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "數位簽章就是把自己的簽名或印章掃描成圖檔，附在電子文件上",
+            "B": "經過數位簽章的文件是容易被驗證的",
+            "C": "數位簽章具有不可否認性",
+            "D": "數位簽章就是利用筆式輸入系統在電子文件上簽名"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 256,
+        "question": "關於數位簽章，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "用來在電腦上辨識身分",
+            "B": "就如同一個人的身分證號碼，一人只能有一個",
+            "C": "公司團體可用數位簽章來辨識該公司部門或職位等資料",
+            "D": "可信度高"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 257,
+        "question": "在訊息傳遞過程中，若A需要將加密訊息傳遞給B，則需要使用下列哪一項金鑰來進行加密動作？",
+        "options": {
+            "A": "A的公鑰",
+            "B": "A的私鑰",
+            "C": "B的公鑰",
+            "D": "B的私鑰"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 258,
+        "question": "在數位簽章過程中，若A需要將訊息簽章後傳遞給B，則需要使用下列哪一項金鑰來進行簽章動作？",
+        "options": {
+            "A": "A的公鑰",
+            "B": "A的私鑰",
+            "C": "B的公鑰",
+            "D": "B的私鑰"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 259,
+        "question": "關於自然人憑證，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "包含了數位簽章與公開金鑰",
+            "B": "私密金鑰存在IC卡中",
+            "C": "由內政部憑證管理中心所簽發",
+            "D": "自然人憑證並無有效期限的限制"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 260,
+        "question": "關於SSL（Secure Sockets Layer），下列敘述哪一項錯誤？",
+        "options": {
+            "A": "SSL是一種安全通訊協定",
+            "B": "網址如果是https://開頭，表示受到SSL/TLS保護",
+            "C": "目前SSL仍是安全的保密協定",
+            "D": "可以防止資料在傳輸過程中被第三者竊取而了解內容"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 261,
+        "question": "在網路的線上交易環境中，目前常被應用的安全機制為下列哪一項？",
+        "options": {
+            "A": "CSS",
+            "B": "XML",
+            "C": "GFS",
+            "D": "SET"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 262,
+        "question": "關於IPSec，下列敘述哪一項正確？",
+        "options": {
+            "A": "IPSec不具有認證功能",
+            "B": "建立區域網路內部的安全通訊並非IPSec的功能之一",
+            "C": "IPSec僅能運作於IPv6環境下",
+            "D": "IPSec具有保密功能"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 263,
+        "question": "在密碼學中，替代（Substitution）是基本的加密技術，最簡單的凱撒加密法是將明文中的所有字母都在字母表上向後或向前按照一個固定數目進行偏移後被替換成密文，假設以凱撒加密法來加密明文「APPLE」，下列哪一項不是凱撒加密法加密後的密文？",
+        "options": {
+            "A": "BQQMF",
+            "B": "LEAPP",
+            "C": "DSSOH",
+            "D": "HWWSL"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 264,
+        "question": "IPSec使用的協定包含下列哪些協定？(複選題)",
+        "options": {
+            "A": "安全關聯（Security Association, SA）",
+            "B": "單向資料緩衝協定（Single End Payload Buffer, SEPB）",
+            "C": "認證表頭（Authentication Header, AH）",
+            "D": "封裝安全承載（Encapsulating Security Payload, ESP）"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 265,
+        "question": "RSA加密演算法是相當常用的非對稱式加密演算法，關於非對稱式加密的敘述，下列哪一項錯誤？",
+        "options": {
+            "A": "接收者先產生一對公鑰與私鑰，並將公鑰傳送給傳送者",
+            "B": "傳送者利用接收者的公鑰，將訊息加密後傳送給接收者",
+            "C": "接收者利用傳送者的公鑰對訊息解密",
+            "D": "接收者利用自己的私鑰對訊息解密"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 266,
+        "question": "網路中有許多可能暴露個人隱私的資料，下列哪一項並非其中之一？",
+        "options": {
+            "A": "瀏覽器的Cookie",
+            "B": "個人數位憑證",
+            "C": "網站伺服器上的紀錄",
+            "D": "瀏覽器的瀏覽紀錄"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 267,
+        "question": "關於瀏覽器Cookie的敘述，哪些正確？(複選題)",
+        "options": {
+            "A": "Cookie可用於儲存各種資訊，包含個人識別資訊",
+            "B": "瀏覽器關閉後，Cookie會自動清除",
+            "C": "Cookie可能會洩漏用戶的隱私資料",
+            "D": "Cookie屬於瀏覽器重要功能，沒有辦法關閉"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 268,
+        "question": "防火牆（Firewall）不具有下列哪一項功能？",
+        "options": {
+            "A": "阻擋由內部向外部網路的連線",
+            "B": "阻擋由外部向內部網路的連線",
+            "C": "封鎖某一個連接埠",
+            "D": "網路頻寬管理"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 269,
+        "question": "關於防火牆（Firewall）在網路安全上的應用，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "從內部網路向網際網路的連線，都需經過防火牆",
+            "B": "從網際網路向內部網路的連線，都需經過防火牆",
+            "C": "符合防火牆政策的連線才可以通過防火牆",
+            "D": "伺服器需要大量資料傳輸時，可放置在防火牆外面靠網際網路這一側，並區分內外部資源，以降低防火牆負荷"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 270,
+        "question": "下列哪些是防火牆做不到，而防毒軟體可以做到的？(複選題)",
+        "options": {
+            "A": "偵測木馬程式",
+            "B": "偵測巨集病毒",
+            "C": "阻止通訊埠掃描",
+            "D": "攔截夾有電腦病毒檔案的郵件"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 271,
+        "question": "為保護使用瀏覽器上網時所使用的個人資料，可採用下列哪一項方法以降低隱私外洩的風險？",
+        "options": {
+            "A": "每次瀏覽一個網站之後，立即將電腦重新開機",
+            "B": "安裝防毒軟體",
+            "C": "在瀏覽網頁之後，清除瀏覽資料",
+            "D": "定期重新安裝瀏覽器"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 272,
+        "question": "關於密碼的設定，下列敘述哪些錯誤？(複選題)",
+        "options": {
+            "A": "密碼長度設定的短一點，只有4位數是很安全的",
+            "B": "密碼設定的跟帳號一樣即可",
+            "C": "使用越長的密碼越好",
+            "D": "利用自己的生日作為密碼"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 273,
+        "question": "關於網路釣魚（Phishing），下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "網路釣魚（Phishing）是種誘騙使用者透過電子郵件或網頁提供個人資訊的手段",
+            "B": "網路釣魚（Phishing）信件看來就像真的通知信一樣，誘引使用者到不正確的詐騙網站上",
+            "C": "Phishing一詞，是Fishing和Phone的綜合體，由於駭客始祖起初是以電話作案，所以用Ph來取代F，創造了Phishing",
+            "D": "在網路釣魚（Phishing）的詐騙網站中，通常會要求使用者提供帳號密碼以便進行下一步的盜用"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 274,
+        "question": "關於曾經衝擊全球的「Melissa」及「ILOVEYOU」病毒，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "藉由Email主動散播",
+            "B": "透過微軟的電子郵件軟體Outlook散播",
+            "C": "透過社交工程誘使使用者開啟附件",
+            "D": "會摧毀電子郵件的內容"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 275,
+        "question": "流傳廣泛的KAVO、TAVO等病毒主要以下列哪一項方式傳遞？",
+        "options": {
+            "A": "電子郵件",
+            "B": "安裝檔案",
+            "C": "外接儲存裝置",
+            "D": "即時通訊軟體"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 276,
+        "question": "下列哪些行為可能會讓電腦感染電腦病毒？(複選題)",
+        "options": {
+            "A": "閱讀來歷不明的電子郵件",
+            "B": "使用隨身碟等外接儲存裝置",
+            "C": "隨意下載網路上的檔案",
+            "D": "安裝盜版軟體"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 277,
+        "question": "近年來勒索病毒已成為全球關注的網路安全焦點之一，關於勒索病毒的敘述，哪些正確？(複選題)",
+        "options": {
+            "A": "勒索病毒可能透過鎖住電腦或將資料加密，要求受害者繳交贖金",
+            "B": "攻擊目標僅有在個人電腦上",
+            "C": "大部分的勒索病毒感染途徑是釣魚電子郵件",
+            "D": "瀏覽網頁不會感染勒索病毒"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 278,
+        "question": "下列哪些操作方式是正確的防毒概念？(複選題)",
+        "options": {
+            "A": "遠離來路不明的軟體、檔案、磁片及光碟",
+            "B": "安裝正版的防毒軟體並定期更新程式及病毒碼",
+            "C": "使用隨身碟前，先用防毒軟體掃描，並且關閉自動執行功能",
+            "D": "開啟Email附件前，要先用防毒軟體檢查過，才可開啟"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 279,
+        "question": "關於防止與阻擋後門程式（Backdoor），下列敘述哪一項錯誤？",
+        "options": {
+            "A": "利用防火牆阻擋外部網路對內部電腦的不正常連線",
+            "B": "安裝防毒軟體",
+            "C": "阻止程式主動對外部網路連線",
+            "D": "關閉電腦的自動執行（AutoRun）功能"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 280,
+        "question": "下列敘述哪一項錯誤？",
+        "options": {
+            "A": "Category 6 cable（CAT-6）雙絞線傳輸線材的傳輸速度可達到10Gbps",
+            "B": "Ethernet 10/100/1000網路卡表示支援每秒10/100/1000MBps（Million Bytes per second）的傳輸速度",
+            "C": "光纖相較於同軸電纜與非屏蔽雙絞線有更佳的抗干擾能力，且對串音亦具有先天免疫性，因此更適合用於傳送機密通訊",
+            "D": "RJ-45接頭通常用於雙絞線，比日常使用的電話接頭體積稍大，具有8根銅腳"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 281,
+        "question": "關於Google Chrome，下列敘述哪一項正確？",
+        "options": {
+            "A": "沒有Mac OS版本",
+            "B": "沒有iOS版本",
+            "C": "沒有Android版本",
+            "D": "沒有Palm OS版本"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 282,
+        "question": "下列哪一項不是動態執行的瀏覽器可執行的元件？",
+        "options": {
+            "A": "Java",
+            "B": "JavaScript",
+            "C": "ActionScript",
+            "D": "HTML"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 283,
+        "question": "將網頁資料暫時放在使用者的電腦上，通常是使用下列哪一項技術？",
+        "options": {
+            "A": "Cookie",
+            "B": "Visual Basic",
+            "C": "C++",
+            "D": "Media Player"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 284,
+        "question": "為了提高瀏覽器瀏覽網頁時的安全性，許多瀏覽器開發商皆加強了產品的防追蹤功能，關於防追蹤功能敘述，何者有誤？",
+        "options": {
+            "A": "Microsoft Edge的追蹤保護功能稱為Tracking Prevention",
+            "B": "為了防止網站追蹤器收集使用者的瀏覽資料",
+            "C": "Google Chrome、Mozilla Firefox皆有反追蹤保護功能",
+            "D": "啟用反追蹤功能瀏覽網頁時不會有任何影響"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 285,
+        "question": "Microsoft Edge可以選擇的防追蹤等級有哪些？(複選題)",
+        "options": {
+            "A": "基本",
+            "B": "平衡",
+            "C": "嚴格",
+            "D": "全鎖"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 286,
+        "question": "目前全球市佔率最大的搜尋引擎為下列哪一項？",
+        "options": {
+            "A": "Google",
+            "B": "Yahoo!",
+            "C": "Bing",
+            "D": "Ask.com"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 287,
+        "question": "目前全球最受歡迎的網站，依每月訪問次數來統計，為下列哪一項？",
+        "options": {
+            "A": "Google.com",
+            "B": "Facebook.com",
+            "C": "Yahoo.com",
+            "D": "Qq.com"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 288,
+        "question": "雲端運算的客戶端軟體介面通常為下列哪一項？",
+        "options": {
+            "A": "手持裝置",
+            "B": "專用的程式",
+            "C": "任何裝置的瀏覽器",
+            "D": "個人電腦"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 289,
+        "question": "Mozilla Firefox中不保留歷史紀錄時，同等於下列哪一項模式？",
+        "options": {
+            "A": "開放模式",
+            "B": "無寫入模式",
+            "C": "隱私瀏覽模式",
+            "D": "正常模式"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 290,
+        "question": "在電腦點選HTML格式檔案時，預設會以下列哪一項應用程式開啟？",
+        "options": {
+            "A": "Microsoft Edge",
+            "B": "Google Chrome",
+            "C": "Mozilla Firefox",
+            "D": "預設的瀏覽器"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 291,
+        "question": "安全加密的瀏覽通訊協定為下列哪一項？",
+        "options": {
+            "A": "FTP",
+            "B": "HTTP",
+            "C": "SSH",
+            "D": "HTTPS"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 292,
+        "question": "安全加密的瀏覽所使用的安全協定為下列哪一項？",
+        "options": {
+            "A": "ADSL",
+            "B": "XML",
+            "C": "SSL",
+            "D": "UML"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 293,
+        "question": "關於瀏覽器針對「釣魚網站」的防範方式，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "安裝防毒軟體有助於防範",
+            "B": "瀏覽器在偵測到釣魚網站時會發出警告",
+            "C": "釣魚網站通常會在各大搜尋引擎的黑名單中",
+            "D": "進入無警告的網站時，其網站並不會存在釣魚網站"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 294,
+        "question": "下列哪一項瀏覽器的網址列等同於搜尋列？",
+        "options": {
+            "A": "Google Chrome",
+            "B": "Mozilla Firefox",
+            "C": "Apple Safari",
+            "D": "所有主流瀏覽器都可以"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 295,
+        "question": "下列哪一項新興技術也支援網頁內容的動畫顯示（如Flash）？",
+        "options": {
+            "A": "XML + C#",
+            "B": "UML + Java",
+            "C": "HTML5 + CSS3",
+            "D": "CGI"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 296,
+        "question": "勒索軟體可使用下列哪些方式來防範？(複選題)",
+        "options": {
+            "A": "定期資料備份",
+            "B": "使用隱私模式瀏覽網頁",
+            "C": "安裝防毒軟體",
+            "D": "安裝防火牆"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 297,
+        "question": "關於IP（網際網路協定），下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "IPv4表頭長度固定為24byte",
+            "B": "IP封包包含表頭與資料兩個部分",
+            "C": "IPv4表頭包含IP版本、封包總長、識別碼、存活時間、協定、來源與目的地位址等資訊",
+            "D": "IPv4版本使用32-bit的位址，IPv6版本使用128-bit的位址"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 298,
+        "question": "下列哪些常用的服務其預設通訊埠口（Well-Known Port）對應正確？(複選題)",
+        "options": {
+            "A": "Port 21：FTP服務",
+            "B": "Port 22：HTTP服務",
+            "C": "Port 23：TELNET服務",
+            "D": "Port 443：HTTPS服務"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 299,
+        "question": "關於密碼設定方式，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "避免使用帳號、生日及名字等相關資訊來建立密碼",
+            "B": "使用帳號倒敘或生日來建立密碼，容易記憶，亦可避免被猜到",
+            "C": "結合多個字詞來建立超過15個字的長密碼",
+            "D": "避免使用現成的單一字詞來建立密碼"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 300,
+        "question": "關於防火牆的應用，下列敘述哪一項正確？",
+        "options": {
+            "A": "使用過濾性防火牆（Filter）將內部與外部網路完全區隔開來，比使用代理性防火牆（Proxy）更加安全",
+            "B": "使用過濾性防火牆（Filter）能夠提高網路的存取速度，因為它將資料儲存在快取區（Cache）裡，在需要相同資料的情況下，無需從外部網路重複傳遞",
+            "C": "使用防火牆管理封包是否放行，同時也將通過的封包送至指定的目的地位址",
+            "D": "防火牆依照封包的來源、目的地位址、協定及通訊埠口（Port）等因素進行判斷並透過一系列的規則來決定封包的處理方式"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 301,
+        "question": "下列哪些為非軍事區（Demilitarized Zone, DMZ）裡，外部網路與內部網路間的訪問策略？(複選題)",
+        "options": {
+            "A": "DMZ可以訪問內部網路",
+            "B": "內部網路可以訪問DMZ的主機",
+            "C": "外部網路可以訪問DMZ的主機",
+            "D": "外部網路不可以訪問內部網路"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 302,
+        "question": "下列哪些為使用防火牆的缺點？(複選題)",
+        "options": {
+            "A": "可能造成網路交通的瓶頸",
+            "B": "無法針對服務類型（如WWW或FTP）進行過濾",
+            "C": "無法防範電腦蠕蟲或木馬程式的快速蔓延",
+            "D": "無法排除來自內部的攻擊"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 303,
+        "question": "常見的無線網路犯罪及攻擊方法為下列哪些？(複選題)",
+        "options": {
+            "A": "利用不需經過認證的無線網路進行違法行為，造成架設者背黑鍋",
+            "B": "偽裝需要認證之無線網路識別碼（Service Set Identifier, SSID）騙取被害者的帳號密碼",
+            "C": "對通訊內容進行監控，利用竊聽內容來獲取帳號及密碼",
+            "D": "利用阻斷服務攻擊（Denial of Service, DoS）造成使用者與管理者無法取得系統資源及服務"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 304,
+        "question": "下列哪些設定方式可增加無線基地台的安全性？(複選題)",
+        "options": {
+            "A": "不允許無線網路基地台的名稱或無線網路識別碼（Service Set Identifier, SSID）被廣播",
+            "B": "使用WEP（Wired Equivalent Privacy）而不使用WPA（Wi-Fi Protected Access）加密",
+            "C": "關閉DHCP（Dynamic Host Configuration Protocol）功能",
+            "D": "建立MAC位址清單將已知的裝置列入，以進行過濾"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 305,
+        "question": "下列哪些方式可減少資料洩漏？(複選題)",
+        "options": {
+            "A": "將文件進行加密",
+            "B": "限制各類型I/O裝置的存取",
+            "C": "定期進行作業系統的安全更新",
+            "D": "控管網路並記錄"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 306,
+        "question": "雲端安全聯盟（Cloud Security Alliance, CSA）所發表的雲端運算關鍵領域安全指南v4.0，將雲端安全分為兩大領域，分別為治理（Governance）與維運（Operation），下列哪些屬於治理的範疇？(複選題)",
+        "options": {
+            "A": "治理與企業風險管理（Governance and Enterprise Risk Management）",
+            "B": "法律議題，合約和電子舉證（Legal Issues: Contracts and Electronic Discovery）",
+            "C": "資訊治理（Information Governance）",
+            "D": "應用安全（Application Security）"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 307,
+        "question": "雲端安全聯盟（Cloud Security Alliance, CSA）所發表的雲端運算關鍵領域安全指南v4.0，將雲端安全分為兩大領域，分別為治理（Governance）與維運（Operation），下列哪些屬於維運的範疇？(複選題)",
+        "options": {
+            "A": "基礎設施安全（Infrastructure Security）",
+            "B": "法規遵循和稽核管理（Compliance and Audit）",
+            "C": "虛擬化及容器技術（Virtualization and Containers）",
+            "D": "識別、權限與存取管理（Identity, Entitlement, and Access Management）"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 308,
+        "question": "關於雲端服務可能對隱私造成的影響為下列哪些？(複選題)",
+        "options": {
+            "A": "雲端服務能蒐集龐大的資料",
+            "B": "雲端資料中心仍有可能因被攻擊或侵入而造成資料外洩",
+            "C": "就如我們安心把錢放在銀行一樣，個人隱私資料一樣可以安心放在雲端",
+            "D": "使企業在短時間內即可提供服務，不需增加固定硬體設備與資訊人員"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 309,
+        "question": "關於雲端安全技術的處理流程，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "透過網路進行大量且即時的樣本收集，並將樣本資料送到後端資料中心",
+            "B": "將樣本資料進行關聯性分析",
+            "C": "將樣本資料進行各種分析掃描",
+            "D": "將樣本資料直接傳回給使用者作為判斷的依據"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 310,
+        "question": "雲端安全聯盟（Cloud Security Alliance, CSA）所發表的「The Treacherous 12–Cloud Computing Top Threats」的報告中，列出12類雲端核心威脅，包含下列哪些？(複選題)",
+        "options": {
+            "A": "資料外洩",
+            "B": "強大的運算資源",
+            "C": "動態調整擴充所需資源",
+            "D": "惡意的內部人員"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 311,
+        "question": "下列哪些為使用者所面對的雲端安全問題？(複選題)",
+        "options": {
+            "A": "退租後，雲端資料是否確實刪除",
+            "B": "確認使用雲端服務的電腦是否安全",
+            "C": "與其他人共享資源，私人的資源是否會被共享",
+            "D": "是否有存取記錄可供查閱與管控"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 312,
+        "question": "下列哪一項不是虛擬化雲端環境興起後造成更多的安全問題？",
+        "options": {
+            "A": "更多系統漏洞",
+            "B": "更容易利用相同環境來測試並找出平台弱點",
+            "C": "更多的垃圾郵件及惡意程式",
+            "D": "更多來自殭屍網路（Botnet）的攻擊與密碼破解"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 313,
+        "question": "關於遠端管理的安全，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "協定（Protocol）的設計缺陷造成安全風險",
+            "B": "缺乏強健的憑證是主要的威脅",
+            "C": "遠端桌面協定（RDP）最大加密強度為128位元",
+            "D": "使用Telnet相較於SSH來得安全"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 314,
+        "question": "下列哪些可降低雲端的安全威脅？(複選題)",
+        "options": {
+            "A": "使用Two-factor認證，或是動態共用密鑰來降低認證威脅",
+            "B": "透過瀏覽器使用雲端服務時，選擇SSL 3.0，之後才是TLS 1.3",
+            "C": "微軟的遠程桌面工具使用高強度加密方式，並要求伺服器認證；使用VNC時，在SSH或TLS tunnel上使用",
+            "D": "SSH工具使用RSA密鑰進行認證"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 315,
+        "question": "下列哪些為雲端安全聯盟（Cloud Security Alliance, CSA）所指出雲端運算可能遭遇的安全威脅？(複選題)",
+        "options": {
+            "A": "使用者隱私無法保障",
+            "B": "濫用和惡意使用雲端服務",
+            "C": "不安全的介面與應用程式介面（APIs）",
+            "D": "資料外洩"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 316,
+        "question": "關於雲端運算的認知，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "雲端運算是資訊科技數十年的發展演化而成的",
+            "B": "雲端運算是高空作業的簡稱",
+            "C": "雲端運算已普遍用在網路應用",
+            "D": "雲端運算已成為電腦技術的主流"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 317,
+        "question": "關於雲端運算，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "使用者需要了解雲端專業知識才能使用",
+            "B": "Gmail跟Google Maps都是雲端運算的應用",
+            "C": "又稱「雲計算」",
+            "D": "智慧型手機也可以使用這個技術"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 318,
+        "question": "下列哪一項不是廣義的雲端運算應用？",
+        "options": {
+            "A": "捷運",
+            "B": "餐廳",
+            "C": "旅館",
+            "D": "沒有上網的個人電腦"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 319,
+        "question": "下列哪一項不是雲端運算的必要基礎？",
+        "options": {
+            "A": "網路",
+            "B": "儲存",
+            "C": "運算資源",
+            "D": "終端設備"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 320,
+        "question": "下列哪一項不是雲端運算的基礎技術？",
+        "options": {
+            "A": "網格運算（Grid Computing）",
+            "B": "公用運算（Utility Computing）",
+            "C": "集中式運算（Centralized Computing）",
+            "D": "分散式運算（Distributed Computing）"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 321,
+        "question": "雲端運算首次出現在商業應用，是下列哪一項產品？",
+        "options": {
+            "A": "VMware vSphere",
+            "B": "Microsoft Azure",
+            "C": "Oracle VirtualBox",
+            "D": "Amazon EC2"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 322,
+        "question": "下列哪一項不是雲端運算的服務概念？",
+        "options": {
+            "A": "電力公司根據使用者用電的度數收取電費",
+            "B": "自來水公司根據用水的公升數收取水費",
+            "C": "電信公司包月制的手機話費",
+            "D": "自己在陽台上種植水果食用"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 323,
+        "question": "下列哪一項不是雲端運算的重要概念？",
+        "options": {
+            "A": "已量化後的多個運算資源",
+            "B": "透過網路為媒介傳送至特定介面上的使用者",
+            "C": "以服務的方式，依需求的不同付費",
+            "D": "軟體與資料都儲存在使用者終端裝置上"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 324,
+        "question": "下列哪一項為雲端運算用「雲」這個字的目的？",
+        "options": {
+            "A": "表示此技術深不可測",
+            "B": "表示此技術非常高級",
+            "C": "表示此技術使用者不需要了解內容，只要會使用即可",
+            "D": "表示此技術非常不穩定"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 325,
+        "question": "下列哪一項為雲端運算在電腦技術上，最大的目的？",
+        "options": {
+            "A": "將資料集中方便管理",
+            "B": "強化某一台主機的運算能力",
+            "C": "打破電腦技術中每一個層次的相依性，用網路邏輯上互連",
+            "D": "讓介面、資料及邏輯都包裝在同一個應用中"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 326,
+        "question": "將運算資源以服務的方式發佈，下列哪一項不是雲端運算的定義？",
+        "options": {
+            "A": "基礎設施即服務（Infrastructure as a Service, IaaS）",
+            "B": "平台即服務（Platform as a Service, PaaS）",
+            "C": "軟體即服務（Software as a Service, SaaS）",
+            "D": "維護即服務（Maintenance as a Service, MaaS）"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 327,
+        "question": "下列哪一項不是軟體即服務（Software as a Service, SaaS）的優點？",
+        "options": {
+            "A": "不再有軟體版本的困擾",
+            "B": "使用者可依需求購買軟體的功能而非全部買單",
+            "C": "不需要部署即可使用",
+            "D": "可利用USB安裝，不再需要光碟"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 328,
+        "question": "雲端運算中，資料不會儲存在下列哪一項設備中？",
+        "options": {
+            "A": "網路硬碟",
+            "B": "雲端伺服器",
+            "C": "本機設備",
+            "D": "伺服器所在區域網路之儲存設備"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 329,
+        "question": "下列哪一項應用不是平台即服務（Platform as a Service, PaaS）的範圍？",
+        "options": {
+            "A": "資料庫（Database）伺服器",
+            "B": "網頁（Web）伺服器",
+            "C": "實體（Physical）伺服器",
+            "D": "應用程式（Application）伺服器"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 330,
+        "question": "下列哪一個廠商因為提供IaaS（Infrastructure as a Service）成為該領域的霸主？",
+        "options": {
+            "A": "Oracle",
+            "B": "Microsoft",
+            "C": "Google",
+            "D": "Amazon"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 331,
+        "question": "把圖片檔案拖曳到「Google圖片」的「以圖搜尋方框」內時，會啟動下列哪一項動作？",
+        "options": {
+            "A": "僅上傳圖片",
+            "B": "僅顯示圖片",
+            "C": "僅下載圖片",
+            "D": "搜尋網路上和該圖片類似或相同的其它圖片"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 332,
+        "question": "在Mozilla Firefox中的擴充功能等同於下列哪一項？",
+        "options": {
+            "A": "EXE可執行檔",
+            "B": "特殊格式的執行檔",
+            "C": "Java執行檔",
+            "D": "JavaScript"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 333,
+        "question": "下列哪一項瀏覽器以載入速度較快而聞名？",
+        "options": {
+            "A": "Microsoft IE",
+            "B": "Google Chrome",
+            "C": "Mozilla Firefox",
+            "D": "Apple Safari"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 334,
+        "question": "下列哪一項瀏覽器在不使用附加元件或擴充功能之下，可以直接檢視頁面中各種原始資料（如HTML或JavaScript）？",
+        "options": {
+            "A": "Microsoft IE",
+            "B": "Google Chrome",
+            "C": "Mozilla Firefox",
+            "D": "所有主流瀏覽器都可以"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 335,
+        "question": "下列哪些不是網頁使用CSS的主要目的？(複選題)",
+        "options": {
+            "A": "套用樣式",
+            "B": "相容於各種瀏覽裝置",
+            "C": "可快速變更頁面外觀",
+            "D": "加快網頁載入速度"
+        },
+        "correct_answer": [
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 336,
+        "question": "下列哪些為Google日曆首頁的網址？(複選題)",
+        "options": {
+            "A": "http://www.google.com/calendar",
+            "B": "http://calendar.google.com",
+            "C": "http://www.google.com/date",
+            "D": "http://www.google.com/schedule"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 337,
+        "question": "在Google日曆的使用經驗裡，在一大堆工作約會中，如何快速判斷哪些活動是「重要的」、「不重要的」，可應用下列哪一項功能？",
+        "options": {
+            "A": "活動顏色",
+            "B": "提醒",
+            "C": "標籤",
+            "D": "說明"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 338,
+        "question": "關於Google日曆的敘述，何者錯誤？",
+        "options": {
+            "A": "在目前大多數主流的瀏覽器中都可以使用",
+            "B": "可以同時使用多個日曆來管理自己的行程和活動",
+            "C": "日曆無法與其他人共用",
+            "D": "在手機上也可以使用Google日曆"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 339,
+        "question": "Google日曆中允許使用者可有多個不同的日曆，如學校社團、家庭、藝文活動等，可透過下列哪一項功能建立日曆的分類？",
+        "options": {
+            "A": "建立新日曆",
+            "B": "建立新活動",
+            "C": "建立新工作",
+            "D": "建立新事件"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 340,
+        "question": "使用者可透過下列哪些應用程式，操作Google雲端服務（如Google日曆、Gmail等）？(複選題)",
+        "options": {
+            "A": "Google Chrome",
+            "B": "Mozilla Firefox",
+            "C": "Microsoft Internet Explorer",
+            "D": "Apple Safari"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 341,
+        "question": "瀏覽Google日曆上所登錄的活動時，提供了下列哪些設定，來檢視日曆資訊？(複選題)",
+        "options": {
+            "A": "天",
+            "B": "週",
+            "C": "月",
+            "D": "季"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 342,
+        "question": "在Google日曆上建立新活動時，提供下列哪些活動提醒方式？(複選題)",
+        "options": {
+            "A": "電子郵件",
+            "B": "彈出式視窗",
+            "C": "手機簡訊（SMS）",
+            "D": "LINE訊息"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 343,
+        "question": "撰寫生活日記時，通常會紀錄日期、地點、說明或甚至附件等欄位，下列哪一項Google雲端服務的性質適合應用當作個人的日記簿？",
+        "options": {
+            "A": "Google Calendar",
+            "B": "Google Document",
+            "C": "Gmail",
+            "D": "Google Maps"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 344,
+        "question": "小谷的時區為「台灣」，現在他要登錄一項起訖時間為日本時區「上午8:00」到「上午10:00」的體育賽事於Google日曆上，下列哪一項做法可有效解決時差換算問題（台灣比日本慢1小時）？",
+        "options": {
+            "A": "於「編輯活動」介面輸入起訖時間「上午8:00」、「上午10:00」後，設定時區為「日本」",
+            "B": "於「編輯活動」介面輸入起訖時間「上午8:00」、「上午10:00」",
+            "C": "於「編輯活動」介面輸入起訖時間「上午9:00」、「上午11:00」後，設定時區為「日本」",
+            "D": "先於「日曆設定」介面變更「時區」為「東京」後，再於「編輯活動」介面輸入起訖時間「上午9:00」、「上午11:00」"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 345,
+        "question": "下列哪一項功能在Google日曆中是專供建立待辦事項清單，方便您隨時掌握大小事項，並追蹤待辦事項是否完成的？",
+        "options": {
+            "A": "建立活動",
+            "B": "建立工作",
+            "C": "建立日曆",
+            "D": "建立計劃"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 346,
+        "question": "Google日曆可將活動資訊以下列哪些格式匯入？(複選題)",
+        "options": {
+            "A": "iCal",
+            "B": "CSV",
+            "C": "XML",
+            "D": "RDF"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 347,
+        "question": "Google日曆可將活動資訊以下列哪一項格式匯出？",
+        "options": {
+            "A": "iCal",
+            "B": "CSV",
+            "C": "XML",
+            "D": "TXT"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 348,
+        "question": "經由Gmail過濾後，分類到「垃圾郵件」中的郵件，預設會在幾天後自動刪除？",
+        "options": {
+            "A": "10",
+            "B": "20",
+            "C": "30",
+            "D": "40"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 349,
+        "question": "在Gmail的工具列介面中，下列哪一項按鈕圖示可將您所勾選的電子郵件回報為「垃圾郵件」？",
+        "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 350,
+        "question": "Gmail提供將原始郵件與所有回覆內容整合在同一個群組中，讓您能夠更加輕鬆地瞭解郵件的來龍去脈，此功能為下列哪一項？",
+        "options": {
+            "A": "寄件群組檢視",
+            "B": "聊天群組檢視",
+            "C": "收信群組檢視",
+            "D": "會話群組檢視"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 351,
+        "question": "Gmail可依據下列哪些欄位，建立電子郵件篩選器的條件？(複選題)",
+        "options": {
+            "A": "寄件者",
+            "B": "主旨",
+            "C": "有附件",
+            "D": "日期"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 352,
+        "question": "在一般的電子郵件軟體裡，都有所謂的「資料夾」用來將郵件整理歸類到不同的資料夾裡，然而，Gmail並不採用此機制，取而代之的是下列哪一項獨特的郵件整理歸類機制？",
+        "options": {
+            "A": "會話群組",
+            "B": "篩選器",
+            "C": "標籤",
+            "D": "星號"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 353,
+        "question": "您可以透過下列哪些存取協定，將郵件從Gmail伺服器下載至您的電腦，讓您在離線狀態下也能使用Microsoft Outlook或Thunderbird等程式來存取郵件？(複選題)",
+        "options": {
+            "A": "POP",
+            "B": "SMTP",
+            "C": "IMAP",
+            "D": "HTTP"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 354,
+        "question": "在Gmail的介面中，要將電子郵件進行「封存」的步驟為下列哪一項？",
+        "options": {
+            "A": "先勾選郵件，再點選工具列上的圖示",
+            "B": "先勾選郵件，再點選工具列上的圖示",
+            "C": "先點選工具列上的圖示，再勾選郵件",
+            "D": "先點選工具列上的圖示，再勾選郵件"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 355,
+        "question": "下列哪一項搜尋條件是用來幫助小谷能列出目前在他的Gmail收件匣中，在2020年5月份期間，收到主旨含有「面試」的所有電子郵件？",
+        "options": {
+            "A": "after:2020/5/1 before:2020/5/31 subject:(面試)",
+            "B": "after:2020/5/1 before:2020/5/31 title:(面試)",
+            "C": "after:2020/4/30 before:2020/6/1 subject:(面試)",
+            "D": "after:2020/4/30 before:2020/6/1 title:(面試)"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 356,
+        "question": "關於Gmail郵件搜尋技巧，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "「subject:雲端 OR subject:行動」表示搜尋主旨內含「雲端」或「行動」的所有郵件",
+            "B": "「subject:雲端 -subject:行動」表示搜尋主旨內含「雲端」；但不含「行動」的所有郵件",
+            "C": "「subject:(雲端 行動)」表示搜尋主旨同時內含「雲端」和「行動」的所有郵件",
+            "D": "「subject:雲端 & subject:行動」表示搜尋主旨同時內含「雲端」和「行動」的所有郵件"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 357,
+        "question": "如果小谷從未刪除郵件，則下列哪一項搜尋條件可幫助小谷統計他的Gmail帳號，目前一共有多少封電子郵件內附有PDF附件？",
+        "options": {
+            "A": "has:pdf",
+            "B": "file:pdf",
+            "C": "attachment:pdf",
+            "D": "filename:pdf"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 358,
+        "question": "使用Gmail撰寫新郵件時，郵件內容的編輯格式可採用下列哪些格式？(複選題)",
+        "options": {
+            "A": "HTML格式",
+            "B": "RTF格式",
+            "C": "純文字格式",
+            "D": "XML格式"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 359,
+        "question": "依使用者在視覺上的偏好程度，Gmail提供收件匣檢視畫面的密集程度，您將可能進入下列哪一項顯示模式？",
+        "options": {
+            "A": "「標準檢視」模式",
+            "B": "「基本檢視」模式",
+            "C": "「群組檢視」模式",
+            "D": "「網頁檢視」模式"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 360,
+        "question": "ABC公司的電子郵件網域名稱是「abc.com.tw」，下列哪一項郵件搜尋技巧可用來搜尋是否有來自於ABC公司的信件被自動分類到「垃圾郵件」？",
+        "options": {
+            "A": "in:rubbish from:abc.com.tw",
+            "B": "in:trash from:abc.com.tw",
+            "C": "in:garbage from:abc.com.tw",
+            "D": "in:spam from:abc.com.tw"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 361,
+        "question": "日積月累之下，您的Gmail收件匣已累積有多年的電子郵件，透過下列哪一項功能可讓您將郵件從「收件匣」中消失，但在需要重新檢視時，仍可搜尋得到郵件？",
+        "options": {
+            "A": "刪除",
+            "B": "封存",
+            "C": "標籤",
+            "D": "篩選器"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 362,
+        "question": "下列哪些標籤屬於Gmail系統標籤？(複選題)",
+        "options": {
+            "A": "加上星號",
+            "B": "重要郵件",
+            "C": "待處理",
+            "D": "機密"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 363,
+        "question": "小昌的Gmail郵件地址為chinsanchen@gmail.com，可採用的合法郵件地址別名有下列哪些？(複選題)",
+        "options": {
+            "A": "chinsanchen+school@gmail.com",
+            "B": "chinsan.chen@gmail.com",
+            "C": "chinsan+chen@gmail.com",
+            "D": "chinsanchen.school@gmail.com"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 364,
+        "question": "關於申請Gmail郵件地址帳戶，下列敘述哪些正確？(複選題)",
+        "options": {
+            "A": "帳戶名稱可以使用英文字母、數字、小數點及英文底線",
+            "B": "帳戶名稱不區分英文大小寫",
+            "C": "在帳戶名稱最右邊加上一個「+」，可用來擴增該郵件地址的別名",
+            "D": "密碼可以使用8個字元以下的英文字母和數字"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 365,
+        "question": "關於Gmail使用特色，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "信件只有在連線狀態下才能檢視",
+            "B": "對於同一收件者、同一主旨的往來信件可採用「會話群組」檢視",
+            "C": "可用不同顏色的星號來區分郵件的重要性",
+            "D": "一封電子郵件可貼上多個標籤"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 366,
+        "question": "在Gmail的環境中，點選下列哪一項圖示可以進入設定操作環境，如：顯示密度、背景主題等設定？",
+        "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 367,
+        "question": "下列哪一項Google雲端服務整合了與Microsoft Office功能性質相同的服務？",
+        "options": {
+            "A": "Google Drive",
+            "B": "Google Docs",
+            "C": "Google Analytics",
+            "D": "Google Calendar"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 368,
+        "question": "Google的雲端文件服務平台強調能提供個人可以和其他人，或者一個團隊成員，共同在線上進行即時的編寫動作，這樣的平台通稱為下列哪一項？",
+        "options": {
+            "A": "協作平台（Collaboration Platform）",
+            "B": "專案平台（Project Platform）",
+            "C": "網路服務平台（Web Services Platform）",
+            "D": "內容平台（Content Platform）"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 369,
+        "question": "您可以透過下列哪一項存取協定，由Microsoft Outlook或Thunderbird等程式將郵件撰寫完後，透過Gmail轉送寄出？",
+        "options": {
+            "A": "POP",
+            "B": "SMTP",
+            "C": "IMAP",
+            "D": "HTTP"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 370,
+        "question": "在Google雲端硬碟服務中，預設可建立以下哪些類型的檔案？(複選題)",
+        "options": {
+            "A": "Google試算表",
+            "B": "Google表單",
+            "C": "Google日曆",
+            "D": "Google繪圖"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "D"
+        ]
+    },
+    {
+        "question_number": 371,
+        "question": "建立一份新文件時，Google文件預設的文件名稱為「無標題文件」，下列哪些設定可用來修改文件名稱？(複選題)",
+        "options": {
+            "A": "點選功能表中「檔案/儲存」，輸入新的文件名稱後，點選「確定」按鈕",
+            "B": "點選功能表中「檔案/重新命名」，輸入新的文件名稱後，即可直接改名",
+            "C": "點選網頁「左上角」顯示的原始文件名稱，直接輸入新的文件名稱後，即可直接改名",
+            "D": "點選功能表中「檔案/建立副本」，輸入新的文件名稱後，點選「確定」按鈕"
+        },
+        "correct_answer": [
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 372,
+        "question": "在Google文件雲端服務中的「檔案/下載格式」，支援下列哪些檔案下載格式？(複選題)",
+        "options": {
+            "A": ".docx",
+            "B": ".tiff",
+            "C": ".odt",
+            "D": ".xml"
+        },
+        "correct_answer": [
+            "A",
+            "C"
+        ]
+    },
+    {
+        "question_number": 373,
+        "question": "Google試算表雲端服務提供的匯入檔案，支援下列哪些匯入格式？(複選題)",
+        "options": {
+            "A": ".xlsx",
+            "B": ".ods",
+            "C": ".csv",
+            "D": ".txt"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 374,
+        "question": "在Google試算表雲端服務中的「檔案/下載格式」，支援下列哪些檔案下載格式？(複選題)",
+        "options": {
+            "A": ".xml",
+            "B": ".pdf",
+            "C": ".xlsx",
+            "D": ".html"
+        },
+        "correct_answer": [
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 375,
+        "question": "若想將一份Google文件與他人共用時，可透過下列哪些方式進行Google文件共用？(複選題)",
+        "options": {
+            "A": "與使用者和群組共用，只與特定使用者共用",
+            "B": "直接寄信給擁有者申請共用",
+            "C": "Google文件預設即為公開狀態，不須另外設定",
+            "D": "取得共用連結，知道連結的人就可以共用此文件"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 376,
+        "question": "小谷擬將他所擁有的一份Google文件開放與其他同事共用，在新增共用使用者時，存取層級的設定選項為下列哪些？(複選題)",
+        "options": {
+            "A": "編輯者",
+            "B": "加註者",
+            "C": "檢視者",
+            "D": "發布者"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 377,
+        "question": "小谷擬將一份他所擁有的Google簡報通知同事阿山可共同編輯，下列哪些流程可幫助小谷完成此設定？(複選題)",
+        "options": {
+            "A": "點選後，輸入阿山的電子郵件地址，並設定存取權為「可以編輯」",
+            "B": "點選功能表中「檔案/共用」後，輸入阿山的電子郵件地址，並設定存取權為「可以編輯」",
+            "C": "點選功能表中「檔案/共用」後，輸入阿山的電子郵件地址，並設定存取權為「可以註解」",
+            "D": "點選功能表中「檔案/共用」後，輸入阿山的電子郵件地址，並設定存取權為「可以檢視」"
+        },
+        "correct_answer": [
+            "A",
+            "B"
+        ]
+    },
+    {
+        "question_number": 378,
+        "question": "關於Google試算表在多人共用時的描述，下列哪些正確？(複選題)",
+        "options": {
+            "A": "可以只開放表格中的特定欄位給特定人編輯",
+            "B": "已經共用的試算表沒辦法限制特定欄位的編輯權限",
+            "C": "可以設定在編輯某些欄位時顯示提醒資訊",
+            "D": "可以鎖住已經共用的試算表中的特定範圍欄位不讓其他人編輯"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 379,
+        "question": "智慧型手機下載安裝應用程式有下列哪些方式？(複選題)",
+        "options": {
+            "A": "透過軟體市集（Google Play、App Store）下載安裝",
+            "B": "透過手機廠商提供的同步管理軟體（iTunes、HTC Sync、Samsung Kies）由電腦安裝至手機",
+            "C": "Android手機可藉由AppsInstaller或ES文件管理器，安裝記憶卡內的APK檔",
+            "D": "透過相機鏡頭掃描二維條碼下載安裝程式"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 380,
+        "question": "Google雲端硬碟服務，支援下列哪些類型的智慧型手機？(複選題)",
+        "options": {
+            "A": "Android",
+            "B": "BlackBerry",
+            "C": "iPhone",
+            "D": "Nokia S60"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 381,
+        "question": "關於Google文件提供的複製及貼上功能，下列敘述哪一項錯誤？",
+        "options": {
+            "A": "不能將Microsoft Office文件中的內容複製後，再貼至Google文件中",
+            "B": "可使用滑鼠右鍵選單複製Google文件內容",
+            "C": "可將某一台電腦中複製的Google文件內容貼至另一台電腦上",
+            "D": "可使用鍵盤快速鍵[Ctrl]+[C]複製Google文件內容"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 382,
+        "question": "在Google文件的水平尺規上，下列哪一項可用來設定「首行縮排」的位置？",
+        "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 383,
+        "question": "在Google試算表的環境中，欲將資料格式化為日期應點選下列哪一項工具列圖示？",
+        "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 384,
+        "question": "小谷正在設計他的論文問卷調查表，下列哪一項Google雲端服務適合進行問卷調查表的設計？",
+        "options": {
+            "A": "Google文件",
+            "B": "Google簡報",
+            "C": "Google試算表",
+            "D": "Google表單"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 385,
+        "question": "編輯一份Google表單時，若要預覽目前的表單，該點選下列哪一項？",
+        "options": {
+            "A": "",
+            "B": "",
+            "C": "",
+            "D": ""
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 386,
+        "question": "下列哪些服務屬於網路社群服務？(複選題)",
+        "options": {
+            "A": "Facebook",
+            "B": "Microsoft Office",
+            "C": "Email",
+            "D": "Twitter"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 387,
+        "question": "關於網路社群服務使用，下列敘述哪一項正確？",
+        "options": {
+            "A": "社群服務皆可設定朋友的瀏覽權限，所以可放心在已經設定權限的網站放上私密的資料與相片",
+            "B": "規劃安排一趟國內旅遊，可到各縣市政府觀光局網站、部落格瞭解各種旅遊資訊及配套方案",
+            "C": "很多網站都是使用暱稱不是本人的真實姓名，所以可在上面為所欲為或謾罵",
+            "D": "學校附近的便當店漲價或用餐不愉快，可在留言板上罵對方是奸商或黑店"
+        },
+        "correct_answer": [
+            "B"
+        ]
+    },
+    {
+        "question_number": 388,
+        "question": "關於網路社群網站的認知，下列敘述哪一項正確？",
+        "options": {
+            "A": "應該完全相信社群網站的隱私權設定，在其網站上的資料不會外洩或被更改",
+            "B": "隱私權設定會經由應用程式將社群網站串連在一起，只要曾登入過的社群網站，其隱私權設定一定相同",
+            "C": "應嚴加控管社群網站的隱私設定，不適合利用網路社群網站傳輸銀行帳號或個人資料",
+            "D": "我的社群網站資料被外洩，一定可以向網站經營者請求因為資料外洩造成損害的賠償"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 389,
+        "question": "網路社群又稱為虛擬社群（Virtual Community），其特色為下列哪些？(複選題)",
+        "options": {
+            "A": "表達的自由",
+            "B": "多對多的傳播",
+            "C": "成員出自於自願的行為",
+            "D": "集中式的管理"
+        },
+        "correct_answer": [
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    {
+        "question_number": 390,
+        "question": "下列哪一項不是網路社群的主要目的？",
+        "options": {
+            "A": "預期互惠",
+            "B": "增加認同",
+            "C": "偷窺隱私",
+            "D": "建立自我形象"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 391,
+        "question": "下列哪一項不是即時通訊軟體的主要功能？",
+        "options": {
+            "A": "文字訊息交流",
+            "B": "語音交流",
+            "C": "視訊交流",
+            "D": "圖片修改"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 392,
+        "question": "下列哪一項為最早且被廣泛使用的即時通訊軟體？",
+        "options": {
+            "A": "ICQ",
+            "B": "Yahoo!奇摩即時通",
+            "C": "Windows Live Messenger",
+            "D": "LINE"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 393,
+        "question": "網路電話其傳輸語音的原理，是透過下列哪一項協定？",
+        "options": {
+            "A": "TelIP",
+            "B": "VoNET",
+            "C": "VoIP",
+            "D": "TelNet"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 394,
+        "question": "關於即時通訊軟體的使用，下列敘述哪一項正確？",
+        "options": {
+            "A": "即時通訊軟體登入會有紀錄，一定找得到是誰在使用電腦登入",
+            "B": "即時通訊軟體的帳號密碼只要保管好，絕對沒有外洩的問題",
+            "C": "通常即時通訊軟體已規範使用人的居住地，所以上網的地點一定是居住的所屬國家",
+            "D": "即時通訊軟體中不要傳輸或溝通帳號、密碼或信用等個人資料，以維護資訊安全"
+        },
+        "correct_answer": [
+            "D"
+        ]
+    },
+    {
+        "question_number": 395,
+        "question": "網路行銷及網拍產品的特質為下列哪些？(複選題)",
+        "options": {
+            "A": "網站環境具有親和力",
+            "B": "可靠度高",
+            "C": "產品數位化",
+            "D": "產品價位較低"
+        },
+        "correct_answer": [
+            "A",
+            "D"
+        ]
+    },
+    {
+        "question_number": 396,
+        "question": "下列哪一項為第一個結合即時通訊和VoIP的軟體？",
+        "options": {
+            "A": "Skype",
+            "B": "Yahoo!奇摩即時通",
+            "C": "LINE",
+            "D": "ICQ"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 397,
+        "question": "網路社群的本質為下列哪些？(複選題)",
+        "options": {
+            "A": "滿足表演欲望",
+            "B": "方便人肉搜索",
+            "C": "分享資訊",
+            "D": "透過朋友的關係交到新朋友"
+        },
+        "correct_answer": [
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    {
+        "question_number": 398,
+        "question": "在一般的社交網路中，大多數的用戶扮演的角色為下列哪一項？",
+        "options": {
+            "A": "閱讀者",
+            "B": "創作者",
+            "C": "分享者",
+            "D": "管理者"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    },
+    {
+        "question_number": 399,
+        "question": "強調互動的Web2.0社交網路最主要的目標為下列哪一項？",
+        "options": {
+            "A": "增加3C產品的販售量",
+            "B": "培養相關人才",
+            "C": "增加創作與分享的人數",
+            "D": "降低網路使用門檻"
+        },
+        "correct_answer": [
+            "C"
+        ]
+    },
+    {
+        "question_number": 400,
+        "question": "下列哪一項為網路社群的終極概念？",
+        "options": {
+            "A": "社群互動",
+            "B": "營利",
+            "C": "表演",
+            "D": "偷窺"
+        },
+        "correct_answer": [
+            "A"
+        ]
+    }
+]
