@@ -35,6 +35,14 @@
         <div id="app" class="question-card bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
             <!-- 這裡放你的 Vue 程式碼、模板 (照原樣) -->
             <div v-if="!sectionSelected" class="text-center">
+                <div class="bg-yellow-100 text-yellow-800 p-4 rounded mb-4 mx-auto max-w-xl text-left">
+                    <h3 class="font-bold text-lg mb-2">※Patch Update</h3>
+                    <ul class="list-disc list-inside">
+                        <li>支援鍵盤 1～4 選擇 A/B/C/D，單選多選自動判斷</li>
+                        <li>禁用滑鼠側鍵，避免誤按導致考試中斷</li>
+                        <li>修正最後一題做完顯示 0/50 錯誤的問題</li>
+                    </ul>
+                </div>
                 <img src="https://nic.tut.edu.tw/var/file/12/1012/pictures/684/m/mczh-tw400x400_small14858_202087529952.png"
                     alt="TQC  雲端技術及網路服務 第2版-專業級" class="mb-4 mx-auto w-3/4">
                 <p class="text-xl font-bold mb-4">TQC 雲端技術及網路服務 第2版-專業級</p>
@@ -163,18 +171,23 @@
                         <p class="font-bold text-red-600 text-xl mb-4">錯誤題目：</p>
 
                         <div class="max-h-[600px] overflow-y-auto">
-                            <div v-for="(wrong, index) in pagedWrongAnswers" :key="index"
-                                class="mb-4 p-4 border-b text-base font-sans leading-relaxed">
-                                <p class="font-bold text-gray-900">第 {{ wrong.question_number }} 題</p>
-                                <p class="font-bold text-gray-800">{{ wrong.question }}</p>
-                                <ul class="mt-2">
-                                    <li v-for="(option, key) in wrong.options" :key="key" class="ml-4">
-                                        <span
-                                            :class="{'text-red-500': wrong.selected.includes(key), 'text-green-600': wrong.correct.includes(key)}">
+                            <div v-for="(wrong, index) in pagedWrongAnswers" :key="index">
+                                <p class="font-bold">第 {{ wrong.question_number }} 題</p>
+                                <p>{{ wrong.question }}</p>
+                                <ul>
+                                    <li v-for="(option, key) in wrong.options" :key="key">
+                                        <span :class="{
+                                      'text-red-500': wrong.selected.includes(key),
+                                      'text-green-600': wrong.correct.includes(key)
+                                    }">
                                             {{ key }}: {{ option }}
                                         </span>
                                     </li>
                                 </ul>
+                                <!-- ★ 在這裡補上一行，顯示整個正確答案陣列 -->
+                                <p class="font-bold text-green-600">
+                                    正確答案：{{ wrong.correct.join(', ') }}
+                                </p>
                             </div>
                         </div>
 
@@ -207,7 +220,7 @@
 
     <script src="https://unpkg.com/vue@3"></script>
     <script>
-        const { createApp, ref, computed, onMounted, watch, nextTick } = Vue;
+        const { createApp, ref, computed, onMounted, onUnmounted, watch, nextTick } = Vue;
 
         createApp({
             setup() {
@@ -347,7 +360,8 @@
                         selectedOptions.value = answers.value[currentQuestionIndex.value] || [];
                     } else {
                         // 沒題目了 → 結束測驗
-                        currentQuestion.value = null;
+                        answers.value[currentQuestionIndex.value] = [...selectedOptions.value];
+                        jumpToResult();
                     }
                 }
 
@@ -450,6 +464,86 @@
                     link.click();
                     document.body.removeChild(link);
                 }
+
+                function handleKeyDown(e) {
+                    // 若當前沒有題目 (已交卷 or 在首頁)，就不做事
+                    if (!currentQuestion.value) return;
+
+                    let letter = null;
+                    switch (e.key) {
+                        case '1':
+                            letter = 'A';
+                            break;
+                        case '2':
+                            letter = 'B';
+                            break;
+                        case '3':
+                            letter = 'C';
+                            break;
+                        case '4':
+                            letter = 'D';
+                            break;
+                        default:
+                            return; // 只處理 1~4，其它按鍵忽略
+                    }
+
+                    // 取得此題的「正確答案」長度，用來判斷單選 or 複選
+                    const correctCount = currentQuestion.value.correct_answer.length;
+
+                    if (correctCount === 1) {
+                        // ================
+                        // 單選題邏輯
+                        // ================
+                        // 若按到跟目前已選相同，就取消勾選；否則就只保留這個選項
+                        if (selectedOptions.value.includes(letter)) {
+                            // 按到相同 -> 取消
+                            selectedOptions.value = [];
+                        } else {
+                            // 改成只選這一個
+                            selectedOptions.value = [letter];
+                        }
+
+                    } else {
+                        // ================
+                        // 複選題邏輯
+                        // ================
+                        // 原本的「toggle」切換
+                        if (selectedOptions.value.includes(letter)) {
+                            // 已選 -> 取消
+                            selectedOptions.value = selectedOptions.value.filter(item => item !== letter);
+                        } else {
+                            // 尚未選 -> 加入
+                            selectedOptions.value.push(letter);
+                        }
+                    }
+                }
+                // ----------------------------------
+                // (3) 新增: 停用滑鼠側鍵(阻擋返回/前進)
+                // ----------------------------------
+                function handlePopState(e) {
+                    // 一旦瀏覽器想要返回上一頁，就 push 回當前頁
+                    window.history.pushState(null, '', window.location.href);
+                }
+
+                // ----------------------------------
+                // (4) 在 onMounted() / onUnmounted() 註冊/解除事件
+                // ----------------------------------
+                onMounted(() => {
+                    // 監聽鍵盤事件
+                    window.addEventListener('keydown', handleKeyDown);
+
+                    // 讓瀏覽器的「上一頁」無效化
+                    // 1. 先 pushState 一次
+                    window.history.pushState(null, '', window.location.href);
+                    // 2. 監聽 popstate
+                    window.addEventListener('popstate', handlePopState);
+                });
+
+                onUnmounted(() => {
+                    window.removeEventListener('keydown', handleKeyDown);
+                    window.removeEventListener('popstate', handlePopState);
+                });
+
 
                 // ---------- onMounted ----------
                 onMounted(loadQuestions);
